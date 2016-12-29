@@ -1,0 +1,40 @@
+        /* responsive table */
+        @media only screen and (max-width: 600px) {
+            .aui table,
+            .aui tbody {
+                display: block;
+                width: 100%;
+            }
+            .aui thead { display: none; }
+            .aui table {
+                tr, td, th {
+                    display: block;
+                    padding: 0;
+                    text-align: left;
+                    white-space: normal;
+                }
+            }
+
+            .aui table tr {
+                border-bottom: 1px solid #eee;
+                padding-bottom: 11px;
+                margin-bottom: 11px;
+            }
+            .aui table th[data-title]:before,
+            .aui table td[data-title]:before {
+                content: attr(data-title) ":\00A0";
+                font-weight: bold;
+            }
+            .aui table td {
+                border: none;
+                margin-bottom: 6px;
+                color: #444;
+            }
+            .aui table td:empty { display: none; }
+            .aui table td:first-child {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 6px;
+                color: #333;
+            }
+        }

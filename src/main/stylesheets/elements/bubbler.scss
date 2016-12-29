@@ -1,0 +1,115 @@
+a.bubbler {
+   text-decoration: none;
+   border-bottom: 1px dashed #004677;
+}
+
+.aui .bubbler_popup {
+  position: absolute;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  left: 150px;
+  top: -15px;
+  z-index: 999;
+  margin-left: 15px;
+
+  -moz-background-clip: border;
+  -webkit-background-clip: border;
+  background-clip: border-box;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+
+  -moz-background-clip: content;
+  -webkit-background-clip: content;
+  background-clip: content-box;
+
+  &:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -25px;
+      border-style: solid;
+      border-width: 15px 15px 15px 0;
+      border-color: transparent rgba(0, 0, 0, 0.5);
+      display: block;
+      width: 0;
+      z-index: 1;
+  }
+
+	&.top:after {
+		top: auto;
+		bottom: 0;
+	}
+
+	&.to-left:after {
+		left: auto;
+		right: -25px;
+		transform: rotate(180deg);
+	}
+
+
+  .bubbler_popupIn {
+      padding: 20px;
+      background-color: white;
+      max-width: 30em;
+      min-width: 20em;
+   }
+
+	p { font-size: 100%; }
+	h2 { font-size: 117.65266%; }
+}
+.bubbler_linkWrap {
+   position: relative;
+}
+
+.ie8 .bubbler_popup {
+  border: 10px solid grey; }
+  .ie8 .bubbler_popup:after {
+    display: none; }
+
+.bubbler-info {
+	position: relative;
+	display: inline-block !important;
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+	border: none !important;
+	width: 21px !important;
+	height: 21px !important;
+	line-height: 21px !important;
+	background: transparent url("/cpoj-theme/images/cpoj/ico-info-sm.png") no-repeat scroll left center !important;
+}
+
+.att-list a.bubbler-info:before {
+	display: none !important;
+}
+
+.att-list a.infoDownload {
+  border: none;
+  text-decoration: underline;
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+.att-list a.infoDownload:hover {
+  text-decoration: none;
+}
+.att-list a.infoDownload::before {
+  left: -35px;
+  top: 3px;
+}
+.att-list .bubbler_popup a::before {
+  background: none;
+}
+.att-list .bubbler_popup .inline-btn {
+  text-align: center;
+}
+.att-list .bubbler_infoDownload {
+	display: block;
+}
+
+@media only screen and (max-width: 500px) {
+	.bubbler_popup {
+		display: none !important;
+	}
+}

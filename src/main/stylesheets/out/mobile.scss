@@ -1,0 +1,368 @@
+@media all and (orientation:portrait) {
+}
+
+@media all and (orientation:landscape) {
+}
+
+@media only screen and   (min-width: 100px)   and   (max-width: 760px) {
+
+	#wrapper #header {
+		width: auto;
+		padding: 0 10px;
+	}
+
+    .faq-page .col-content .faq-list { 
+        width:auto;
+    }
+
+	#header .user {
+		right: 10px;
+	}
+
+	#wrapper #nav {
+		width: auto;
+		padding: 0 10px;
+	}
+
+		#nav ul li,
+		#nav ul li a {
+			float: none;
+			width: auto !important;
+		}
+
+			#nav ul li a {
+				background-image: none !important;
+				-webkit-border-radius: 0px !important;
+				-moz-border-radius: 0px !important;
+				border-radius: 0px !important;
+				text-indent: 20px !important;
+				line-height: 29px;
+				margin: 0 0 2px;
+			}
+
+	.cpoj-theme-main {
+		width: auto;
+	}
+
+	.intro-wrapper .homepage .banner-rotator,
+	.banner-hp {
+		height: auto;
+		margin: 0;
+	}
+
+	.banner-hp {
+		background: none;
+		margin: 0px 15px 0;
+		padding: 0;
+	}
+
+		.banner-hp .inline-btn {
+			margin: 0 50px 10px 0;
+		}
+
+	.intro-wrapper .homepage .banner-rotator .prev, .intro-wrapper .homepage .banner-rotator .next,
+	.intro-wrapper .homepage .banner-rotator .pager,
+	.main-crossroad .tab-menu,
+	.main-crossroad .tip,
+	.main-crossroad .tab-products .slider,
+	.main-crossroad .tab-products .left-over, .main-crossroad .tab-products .right-over,
+	.homepage .contact-box .tweet,
+	.homepage .col-side,
+	.homepage .boxes .box1 .tip,
+	.homepage .boxes .box2,
+	.homepage .boxes,
+	#share,
+	#links ul li ul,
+	.textSize,
+	.user {
+		display: none !important;
+	}
+
+	.main-crossroad .tab-products {
+		width: auto;
+		margin: 0;
+		padding: 0 10px;
+	}
+
+	.main-crossroad h2 {
+		padding: 0;
+	}
+
+	.main-crossroad .tab-products .wrap {
+		margin: 15px 0 0;
+	}
+
+	.main-crossroad .tab-products .wrap .pane > ul,
+	.js .main-crossroad .tab-products .wrap .pane > ul {
+		width: 252px !important;
+	}
+
+	.main-crossroad .tab-products .wrap .pane > ul > li {
+		display: block;
+		margin: 0 0 10px !important;
+	}
+
+
+	#main-content {
+		width: auto;
+		padding: 25px 10px 0;
+	}
+
+	.homepage .col-content {
+		float: none;
+		width: auto;
+	}
+
+	.homepage .col-side {
+		float: none;
+	}
+
+	.homepage .contact-box .number {
+		position: static;
+		top: auto;
+		right: auto;
+	}
+
+	.homepage .contact-box .type {
+		width: auto;
+		float: none;
+	}
+
+	.homepage .contact-box h2 {
+		margin: 0 !important;
+	}
+
+	#links .in {
+		width: auto;
+		padding: 0 10px 20px;
+	}
+
+	#links ul {
+		margin: 0 !important;
+		float: none;
+	}
+
+	#wrapper #footer {
+		height: auto;
+		
+	}
+
+	#wrapper #footer .in {
+		width: auto;
+		padding: 0 10px;
+	}
+
+	#header .bottom {
+		width: auto;
+		margin: 0;
+		float: left;
+		clear: left;
+	}
+
+	#header p.phone {
+		margin: 6px 28px 15px 0;
+	}
+
+	#nav .nav-layer {
+		width: auto;
+		right: 10px;
+		left: 10px;
+	}
+
+	#nav .nav-layer .top {
+		background: #fff !important;
+		background-image: none;
+	}
+
+	#nav .nav-layer .bottom {
+		width: auto;
+	}
+
+	#nav .nav-layer .promo {
+		border-top: none !important;
+		padding: 15px 0 0 0 !important;
+	}
+	
+	#nav .nav-layer .promo p {
+		background: none !important;
+		width: auto !important;
+		float: none !important;
+		padding-left: 0 !important;
+	}
+
+	#nav .nav-layer .promo p a {
+		display: block !important;
+		width: auto !important;
+	}
+
+	#nav .nav-layer .leftSide {
+		display: none;
+	}
+
+	#nav .nav-layer .rightSide {
+		float: left !important;
+		width: auto !important;
+	}
+
+	#nav .nav-layer .rightSide .in {
+		padding: 20px;
+	}
+
+	#nav .nav-layer .rightSide .promo {
+		display: none;
+	}
+
+	#nav #nav-layer-kontakty .rightSide .col-r li {
+		display: block;
+	}
+
+	#nav .nav-layer .col-l,
+	#nav .nav-layer .col-r {
+		float: none !important;
+		width: auto !important;
+	}
+
+	#nav .nav-layer .rightSide ul li {
+		display: none;
+	}
+
+	#nav .nav-layer .leftSide ul li a,
+	#nav .nav-layer .rightSide ul li a {
+		text-indent: 0 !important;
+	}
+
+	#nav .nav-layer .rightSide ul li:first-child {
+		display: block;
+	}
+
+	#nav #nav-layer-obcane {
+		top: 60px;
+	}
+
+	#nav #nav-layer-obcane .promo,
+	#nav #nav-layer-firmy .promo {
+		background: none;
+		display: block;
+	}
+
+	#nav #nav-layer-obcane .promo a,
+	#nav #nav-layer-firmy .promo a {
+		width: auto;
+		margin: 0;
+	}
+
+	#nav #nav-layer-firmy {
+		top: 91px;
+	}
+
+	#nav #nav-layer-firmy .leftSide {
+		display: block;
+	}
+
+	#nav #nav-layer-online-sluzby {
+		top: 122px;
+	}
+
+	#nav #nav-layer-online-sluzby .leftSide {
+		display: block;
+		width: auto;
+	}
+
+	#nav #nav-layer-online-sluzby .dalsi-online-sluzby,
+	#nav #nav-layer-online-sluzby .sjednat-pojisteni {
+		padding: 0;
+	}
+
+	#nav #nav-layer-online-sluzby .dalsi-online-sluzby ul {
+		width: auto;
+		float: none;
+		margin: 0 0 10px;
+	}
+
+	#nav #nav-layer-online-sluzby .promo {
+		display: block;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti {
+		top: 153px;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti .leftSide {
+		display: block;
+		width: auto;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti .centrum-skod {
+		padding: 0;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti ul {
+		float: none;
+		width: auto;
+		margin: 0 0 15px;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti ul a {
+		text-indent: 0 !important;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti .leftSide p {
+		float: none;
+		width: 0;
+		margin: 0;
+	}
+
+	#nav #nav-layer-skody-a-pojistne-udalosti .kalamity {
+		padding: 0;
+	}
+
+	#nav #nav-layer-kontakty {
+		top: 184px;
+	}
+
+	#nav #nav-layer-o-nas {
+		top: 215px;
+	}
+
+	.column-1-2,
+	.column-2-2,
+	.col-content {
+		width: auto !important;
+		float: none !important;
+		border: 0 !important;
+		padding: 0 !important;
+	}
+
+	.cpoj-theme-main img {
+		width: 100%;
+		height: auto;
+	}
+
+	.col-side,
+	.contact-us-page .col-side {
+		width: auto;
+	}
+
+	.contact-media-page .column-2-3,
+	.contact-media-page .column-3-3 {
+		width: auto;
+		padding: 0;
+		margin: 20px 0 0;
+		border: none;
+	}
+
+	.col-h-l,
+	.col-h-r {
+		float: none;
+		width: auto;
+	}
+
+	.filter-box .fr {
+		width: auto;
+	}
+
+	html {
+		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust:none;
+	}
+}

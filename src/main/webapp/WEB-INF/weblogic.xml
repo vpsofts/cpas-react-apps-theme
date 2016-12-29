@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90" xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/90/weblogic-web-app.xsd">
+	<session-descriptor>
+		<cookie-name>JSESSIONID</cookie-name>
+		<cookie-path>/</cookie-path>
+		<!-- Session replication in clustered enviroment -->
+		<persistent-store-type>replicated_if_clustered</persistent-store-type>
+		<cookie-secure>true</cookie-secure>
+	</session-descriptor>
+	<jsp-descriptor>
+		<keepgenerated>false</keepgenerated>
+		<page-check-seconds>-1</page-check-seconds>
+		<!-- one 86400 day -->
+		<precompile>false</precompile>
+		<precompile-continue>true</precompile-continue>
+		<encoding>UTF-8</encoding>
+	</jsp-descriptor>
+	<container-descriptor>
+		<session-monitoring-enabled>true</session-monitoring-enabled>
+	</container-descriptor>
+	<charset-params>
+		<input-charset>
+			<resource-path>/</resource-path>
+			<java-charset-name>UTF-8</java-charset-name>
+		</input-charset>
+	</charset-params>
+</weblogic-web-app>

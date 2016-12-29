@@ -1,0 +1,9128 @@
+@import url(reset.css);
+@import url(custom_common.css);
+
+/* ---------- Base styles ---------- */
+html, body {
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, .aui body {
+  font-size: 71.4%;
+  font-family: "Arial CE", Arial, "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  color: #555;
+  position: relative;
+  background: #fff;
+  min-height: 100%;
+}
+
+.r, .r span {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-indent: -9999px;
+}
+
+.r span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent 0 0 no-repeat;
+}
+
+.c:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.c {
+  display: inline-block;
+}
+
+html[xmlns] .c {
+  display: block;
+}
+
+* html .c {
+  height: 1%;
+}
+
+.clear {
+  clear: both;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+// CEPOUP-3: override default .aui colours
+a, .aui a {
+  color: #004677;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+// CEPOUP-3: override default .aui colours
+a:hover, .aui a:hover,
+a:focus, .aui a:focus,
+a:active, .aui a:active {
+  color: #004677;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
+  font-weight: normal;
+  color: #222;
+}
+
+h1, .aui h1 {
+  font-size: 3em;
+  margin: 0 0 0.7em;
+  line-height: 1.28em;
+}
+
+h2, .aui h2 {
+  font-size: 3.2em;
+  margin-bottom: 25px;
+}
+
+h3, .aui h3 {
+  font-size: 2em;
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'FrutigerCELight';
+}
+
+h4, .aui h4 {
+  font-size: 1.7em;
+  color: #222;
+  font-family: 'FrutigerCELight';
+  margin-bottom: 5px;
+}
+
+h5, .aui h5 {
+  font-size: 1.4em;
+}
+
+.aui p {
+  font-size: 1.3em;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+p.noM {
+  margin-bottom: 20px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: #555;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* FrutigerCELight */
+@font-face {
+  font-family: 'FrutigerCELight';
+  src: url("../font/frut__l-webfont.eot");
+  src: url("../font/frut__l-webfont.eot?#iefix") format("embedded-opentype"), url("../font/frut__l-webfont.woff") format("woff"), url("../font/frut__l-webfont.ttf") format("truetype"), url("../font/frut__l-webfont.svgz#FrutigerCELight") format("svg"), url("../font/frut__l-webfont.svg#FrutigerCELight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* font cpoj */
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'CPojistovna';
+    src: url('../font/cpoj/ceska-pojistovna-webfont.eot');
+    src: url('../font/cpoj/ceska-pojistovna-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/cpoj/ceska-pojistovna-webfont.woff') format('woff'),
+         url('../font/cpoj/ceska-pojistovna-webfont.ttf') format('truetype'),
+         url('../font/cpoj/ceska-pojistovna-webfont.svg#cpbold') format('svg');
+}
+
+.fLight {
+  font-family: 'FrutigerCELight';
+}
+
+/* 3) MISC
+--------------------------------------------------------------------------*/
+.mT10 {
+  margin-top: 10px;
+}
+
+.mT20 {
+  margin-top: 20px;
+}
+
+.mT30 {
+  margin-top: 30px;
+}
+
+.mT40 {
+  margin-top: 40px;
+}
+
+.mT50 {
+  margin-top: 50px;
+}
+
+.mT60 {
+  margin-top: 60px;
+}
+
+.mB5 {
+  margin-bottom: 5px;
+}
+
+.mB10 {
+  margin-bottom: 10px;
+}
+
+.mB20 {
+  margin-bottom: 20px;
+}
+
+.mB30 {
+  margin-bottom: 30px;
+}
+
+.mB40 {
+  margin-bottom: 40px;
+}
+
+.mB50 {
+  margin-bottom: 50px;
+}
+
+.mL7 {
+  margin-left: 7px;
+}
+
+.mL10 {
+  margin-left: 10px;
+}
+
+.mL15 {
+  margin-left: 15px;
+}
+
+.mL20 {
+  margin-left: 20px;
+}
+
+.mL30 {
+  margin-left: 30px;
+}
+
+.mL40 {
+  margin-left: 40px;
+}
+
+.mL50 {
+  margin-left: 50px;
+}
+
+.mL60 {
+  margin-left: 60px;
+}
+
+.mR7 {
+  margin-right: 7px;
+}
+
+.mR10 {
+  margin-right: 10px;
+}
+
+.mR15 {
+  margin-right: 15px;
+}
+
+.mR20 {
+  margin-right: 20px;
+}
+
+.mR30 {
+  margin-right: 30px;
+}
+
+.mR40 {
+  margin-right: 40px;
+}
+
+.mR50 {
+  margin-right: 50px;
+}
+
+.mR60 {
+  margin-right: 60px;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/* 4) LAYOUT
+--------------------------------------------------------------------------*/
+
+// CEPOUP-3: fixes incorrect #wrapper padding
+#wrapper {
+    padding: 0;
+}
+
+#wrapper #nav {
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#wrapper #links {
+  zoom: 1;
+  background-color: #4c7193;
+  border-top: 1px solid #e8eff7;
+  text-align: left;
+}
+
+#wrapper #footer {
+  zoom: 1;
+  height: 100px;
+  margin: 0 auto -6px auto;
+  background: #013665 url("../images/cpoj/footer-bg.png") 0 0 repeat-x;
+  text-align: left;
+}
+
+.flexy #wrapper #footerWrapper {
+  width: 100%;
+  clear: both;
+  margin: 0px auto;
+}
+.flexy #wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.flexy #content {flex: 1;}
+
+html, body, #content, #wrapper {
+  height: 100%;
+}
+
+body #content {
+  height: auto;
+}
+
+/* 7) LINKS
+--------------------------------------------------------------------------*/
+#links {
+  clear: both;
+}
+
+#links .in {
+  width: 940px;
+  margin: 30px auto 0 auto;
+  padding-bottom: 20px;
+}
+
+#links ul {
+  float: left;
+}
+
+#links > .in > ul {
+  width: 88px;
+}
+
+#links > .in > ul + ul {
+  margin-left: 125px;
+  width: 220px;
+}
+
+#links > .in > ul + ul + ul {
+  margin-left: 70px;
+  width: 210px;
+}
+
+#links > .in > ul + ul + ul + ul {
+  margin-left: 110px;
+  width: 115px;
+}
+
+#links ul.solo {
+  margin-top: 38px;
+}
+
+#links ul li {
+  display: block;
+}
+
+#links ul li a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#links ul li a:hover,
+#links ul li a:focus,
+#links ul li a:active {
+  text-decoration: underline;
+}
+
+#links ul li ul {
+  margin-left: 0;
+}
+
+#links ul li ul li {
+  display: block;
+  background: url("../images/cpoj/list-put1.png") 0 4px no-repeat;
+  padding: 0 0 8px 15px;
+  line-height: 1.4;
+}
+
+#links ul li ul li a {
+  font-size: 1.2em;
+  color: #b7c6d3;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+/* 9) NAV
+--------------------------------------------------------------------------*/
+#nav {
+  clear: both;
+}
+
+#nav ul {
+  display: block;
+  position: relative;
+}
+
+#nav ul li {
+  display: block;
+  float: left;
+}
+
+#nav ul > li > a {
+  display: block;
+  background: #003d6e url("../images/cpoj/nav.png") 0 0 no-repeat;
+  line-height: 46px;
+  font-size: 1.4em;
+  color: #fff;
+  text-decoration: none;
+  text-indent: 21px;
+  position: relative;
+}
+
+#nav ul > li > a:hover,
+#nav ul > li > a:active,
+#nav ul > li > a.act {
+  background-position: 0 -46px;
+}
+
+#nav ul li#domu > a {
+  width: 57px;
+  text-indent: -9999px;
+  border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+#nav.open ul li#domu > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}
+
+#nav ul li#obcane > a {
+  width: 122px;
+  background-position: -57px 0;
+}
+
+#nav ul li#obcane > a:hover,
+#nav ul li#obcane > a:active,
+#nav ul li#obcane > a.act,
+#nav ul li#obcane > a.opn {
+  background-position: -57px -46px;
+}
+
+#nav ul li#firmy > a {
+  width: 122px;
+  background-position: -179px 0;
+}
+
+#nav ul li#firmy > a:hover,
+#nav ul li#firmy > a:active,
+#nav ul li#firmy > a.act,
+#nav ul li#firmy > a.opn {
+  background-position: -179px -46px;
+}
+
+#nav ul li#onlineSluzby > a {
+  width: 168px;
+  background-position: -301px 0;
+}
+
+#nav ul li#onlineSluzby > a:hover,
+#nav ul li#onlineSluzby > a:active,
+#nav ul li#onlineSluzby > a.act,
+#nav ul li#onlineSluzby > a.opn {
+  background-position: -301px -46px;
+}
+
+#nav ul li#pojUdalosti > a {
+  width: 233px;
+  background-position: -469px 0;
+}
+
+#nav ul li#pojUdalosti > a:hover,
+#nav ul li#pojUdalosti > a:active,
+#nav ul li#pojUdalosti > a.act,
+#nav ul li#pojUdalosti > a.opn {
+  background-position: -469px -46px;
+}
+
+#nav ul li#kontakty > a {
+  width: 127px;
+  background-position: -702px 0;
+}
+
+#nav ul li#kontakty > a:hover,
+#nav ul li#kontakty > a:active,
+#nav ul li#kontakty > a.act,
+#nav ul li#kontakty > a.opn {
+  background-position: -702px -46px;
+}
+
+#nav ul li#onas > a {
+  width: 111px;
+  background-position: -829px 0;
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+#nav.open ul li#onas > a {
+  border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+}
+
+#nav ul li#onas > a:hover,
+#nav ul li#onas > a:active,
+#nav ul li#onas > a.act,
+#nav ul li#onas > a.opn {
+  background-position: -829px -46px;
+}
+
+#nav .navLayer {
+  width: 940px;
+  display: none !important;
+  position: absolute;
+  z-index: 100;
+  top: 46px;
+}
+
+#nav .box1 .top {
+  background: white url("../images/cpoj/sw01.png") 260px 50% no-repeat;
+  border-left: 1px solid #d2deed;
+  border-right: 1px solid #d2deed;
+  position: relative;
+}
+
+#nav .box1 .top:before {
+  width: 940px;
+  height: 33px;
+  background: url("../images/cpoj/navLayerBottom.png") 0 0 no-repeat;
+  position: absolute;
+  bottom: -31px;
+  left: -1px;
+  content: "";
+}
+
+#nav .box1 .bottom .promo {
+  margin: -5px 0 0 120px;
+  float: left;
+}
+
+#nav .box1 .bottom .promo p {
+  font-size: 1.2em;
+}
+
+#nav .box1 .bottom .promo a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+#nav .box1 .bottom .promo a:hover,
+#nav .box1 .bottom .promo a:focus,
+#nav .box1 .bottom .promo a:active {
+  text-decoration: underline;
+}
+
+#nav .box1 .leftSide {
+  width: 260px;
+  float: left;
+}
+
+#nav .box1 .leftSide h3 {
+  color: #555;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.9em;
+  margin: 0 0 0.65em;
+}
+
+#nav .box1 .leftSide h4 {
+  color: #222;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.6em;
+  margin: 3px 0 6px;
+}
+
+#nav .box1 .leftSide img {
+  display: block;
+  margin: 0 0 18px;
+}
+
+#nav .box1 .leftSide p {
+  margin: 0 0 1.3em;
+}
+
+#nav .box1 .leftSide .m0 {
+  margin: 0;
+}
+
+#nav .box1 .leftSide .in {
+  padding: 20px 20px 1px;
+}
+
+#nav .box1 .rightSide {
+  width: 677px;
+  float: right;
+}
+
+#nav .box1 .rightSide .in {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#nav .box1 .rightSide ul {
+  float: left;
+  width: 125px;
+}
+
+#nav .box1 .rightSide ul.zivot,
+#nav .box1 .rightSide ul.automobil,
+#nav .box1 .rightSide ul.majetek,
+#nav .box1 .rightSide ul.cestovani,
+#nav .box1 .rightSide ul.odpovednost,
+#nav .box1 .rightSide ul.zvire,
+#nav .box1 .rightSide ul.zemedelstvi,
+#nav .box1 .rightSide ul.financni-rizika,
+#nav .box1 .rightSide ul.profil,
+#nav .box1 .rightSide ul.aktivity,
+#nav .box1 .rightSide ul.pro-media,
+#nav .box1 .rightSide ul.kariera {
+  background: url("../images/cpoj/ico-life.png") 43px 0 no-repeat;
+  padding: 0 0 0 96px;
+  margin: 5px 0 10px;
+}
+
+#nav .box1 .rightSide ul.automobil {
+  background-image: url("../images/cpoj/ico-car.png");
+  background-position: 39px 0;
+}
+
+#nav .box1 .rightSide ul.majetek {
+  background-image: url("../images/cpoj/ico-house.png");
+}
+
+#nav .box1 .rightSide ul.cestovani {
+  background-image: url("../images/cpoj/ico-traveling.png");
+}
+
+#nav .box1 .rightSide ul.odpovednost {
+  background-image: url("../images/cpoj/ico-responsibility.png");
+}
+
+#nav .box1 .rightSide ul.zvire {
+  background-image: url("../images/cpoj/ico-animals.png");
+  background-position: 37px 0;
+}
+
+#nav .box1 .rightSide ul.zemedelstvi {
+  background-image: url("../images/cpoj/ico-sheet.png");
+  background-position: 35px 0;
+}
+
+#nav .box1 .rightSide ul.financni-rizika {
+  background-image: url("../images/cpoj/ico-cube.png");
+  background-position: 45px 0;
+}
+
+#nav .box1 .rightSide ul.profil {
+  background-image: url("../images/cpoj/ico-profil.png");
+}
+
+#nav .box1 .rightSide ul.aktivity {
+  background-image: url("../images/cpoj/ico-aktivity.png");
+}
+
+#nav .box1 .rightSide ul.pro-media {
+  background-image: url("../images/cpoj/ico-pro-media.png");
+}
+
+#nav .box1 .rightSide ul.kariera {
+  background-image: url("../images/cpoj/ico-people.png");
+}
+
+#nav .box1 ul li {
+  float: none;
+  margin: 0 0 6px;
+}
+
+#nav .box1 ul li a {
+  background: none;
+  color: #003565;
+  display: block;
+  font-size: 1.2em;
+  line-height: 20px;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+#nav .box1 ul li a:hover,
+#nav .box1 ul li a:focus,
+#nav .box1 ul li a:active {
+  text-decoration: underline;
+}
+
+#nav .box1 .rightSide ul li strong a {
+  color: #222;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+#nav .out {
+  position: absolute;
+  left: -5000px;
+  top: -5000px;
+}
+
+#nav .box1 .promo {
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #dee8f4;
+  padding: 15px 0 0 96px;
+  background: url("../images/cpoj/ico-people.png") 45px 18px no-repeat;
+}
+
+#nav .box1 .promo h4 {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.6em;
+}
+
+#nav .box1 .promo a {
+  text-decoration: none;
+}
+
+#nav .box1 .promo a:hover {
+  text-decoration: underline;
+}
+
+#nav .box1 .promo p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#nav #obcaneL .promo {
+  background: none;
+}
+
+#nav #obcaneL .promo a {
+  margin: 0 0 3px 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+#nav #obcaneL .promo {
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #dee8f4;
+  padding: 15px 0 0 40px;
+}
+
+#nav #obcaneL .promo p {
+  float: left;
+  display: inline;
+  width: 250px;
+  padding: 0 0 0 30px;
+  background: url("../images/cpoj/ico-chair.png") 0 0 no-repeat;
+  min-height: 34px;
+}
+
+#nav #obcaneL .promo p:first-child {
+  background-image: url("../images/cpoj/ico-house.png");
+  width: 300px;
+}
+
+#nav #onlineSluzbyL .top {
+  background-position: 405px 50%;
+  background-image: url("../images/cpoj/sw02.png");
+}
+
+#nav #onlineSluzbyL .rightSide {
+  width: 530px;
+}
+
+#nav #onlineSluzbyL .leftSide {
+  width: 400px;
+}
+
+#nav #onlineSluzbyL h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 0 0 0.65em;
+  color: #222222;
+}
+
+#nav #onlineSluzbyL ul {
+  float: left;
+  width: 140px;
+  margin: 0 10px 25px 0;
+}
+
+#nav #onlineSluzbyL .promo h3 {
+  font-size: 15px;
+}
+
+#nav #onlineSluzbyL .sjednat-pojisteni {
+  background: url("../images/cpoj/ico-sjednat-pojisteni.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #onlineSluzbyL .dalsi-online-sluzby {
+  background: url("../images/cpoj/ico-dalsi-online-sluzby.png") 45px 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 96px;
+}
+
+#nav #onlineSluzbyL .promo {
+  background-image: url("../images/cpoj/ico-megaphone.png");
+}
+
+#nav #onlineSluzbyL .promo a {
+  margin-right: 20px;
+}
+
+#nav #pojUdalostiL .top {
+  background-position: 500px 50%;
+  background-image: url("../images/cpoj/sw02.png");
+}
+
+#nav #pojUdalostiL .rightSide {
+  width: 410px;
+}
+
+#nav #pojUdalostiL .leftSide {
+  width: 500px;
+}
+
+#nav #pojUdalostiL h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 0 0 0.65em;
+  color: #222222;
+}
+
+#nav #pojUdalostiL ul {
+  float: left;
+  width: 170px;
+  margin: 0 10px 25px 0;
+}
+
+#nav #pojUdalostiL .kalamity {
+  background: url("../images/cpoj/ico-kalamity.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #pojUdalostiL .centrum-skod {
+  background: url("../images/cpoj/ico-centrum-skod.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #pojUdalostiL .inline-btn {
+  text-transform: uppercase;
+}
+
+#nav #pojUdalostiL .leftSide p {
+  float: right;
+  margin-top: -78px;
+  width: 230px;
+}
+
+#nav #onasL .top {
+  background-position: 320px 50%;
+}
+
+#nav #onasL .rightSide {
+  width: 610px;
+}
+
+#nav #onasL .leftSide {
+  width: 315px;
+}
+
+#nav #onasL .rightSide ul {
+  width: 180px;
+}
+
+#nav #kontaktyL .top {
+  background-position: 365px 50%;
+}
+
+#nav #kontaktyL .rightSide {
+  width: 520px;
+}
+
+#nav #kontaktyL .leftSide {
+  width: 350px;
+}
+
+#nav #kontaktyL .leftSide form {
+  margin: -10px 0 15px;
+}
+
+#nav #kontaktyL .col-l {
+  float: left;
+  width: 250px;
+}
+
+#nav #kontaktyL .col-r {
+  float: right;
+  width: 230px;
+}
+
+#nav #kontaktyL .rightSide strong {
+  display: block;
+  margin: 0 0 0.8em;
+}
+
+#nav #kontaktyL .rightSide .number {
+  color: #222;
+  font-size: 1.15em;
+  display: block;
+  margin: 0 0 0.7em;
+  font-weight: bold;
+}
+
+#nav #kontaktyL .rightSide .col-l a {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#nav #kontaktyL .promo {
+  background: none;
+  padding: 20px 0 10px 50px;
+  margin: 10px 0 0 -50px;
+}
+
+#nav #kontaktyL .promo p {
+  font-size: 1.3em;
+}
+
+/* 10) BUTTONS
+--------------------------------------------------------------------------*/
+.btn,
+.btn span,
+.btn1,
+.btn1 span,
+.btn2,
+.btn2 span {
+  background: transparent url("../images/cpoj/btn.png") no-repeat 0 0;
+  display: block;
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 0 0 15px;
+  text-align: center;
+  color: #524700;
+  border: 0 none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn1,
+.btn1 span {
+  background-image: url("../images/cpoj/btn1.png");
+}
+
+.btn2,
+.btn2 span {
+  background-image: url("../images/cpoj/btn2.png");
+  color: #607999;
+  height: 35px;
+  padding: 0 0 0 10px;
+}
+
+.btn span,
+.btn1 span,
+.btn2 span {
+  background-position: 100% -33px;
+  padding: 0 15px 0 0;
+  font-size: 1.3em;
+}
+
+.btn2 span {
+  background-position: 100% -35px;
+  padding: 0 10px 0 0;
+}
+
+/* 11) BOXESES
+--------------------------------------------------------------------------*/
+.threeBox {
+  clear: both;
+}
+
+.threeBox div {
+  height: 286px;
+  background: url("../images/cpoj/three-box.png") 0 0 no-repeat;
+  float: left;
+  overflow: hidden;
+}
+
+.threeBox div .in {
+  padding: 27px;
+  width: auto;
+  height: auto;
+  display: block;
+  background: none;
+}
+
+.threeBox div a.in {
+  text-decoration: none;
+}
+
+.threeBox div:hover,
+.threeBox div:focus,
+.threeBox div:active {
+  background-position: 0 -286px;
+}
+
+.threeBox div.first {
+  width: 310px;
+}
+
+.threeBox div.second {
+  width: 320px;
+  background-position: -310px 0;
+}
+
+.threeBox div.second:hover,
+.threeBox div.second:focus,
+.threeBox div.second:active {
+  background-position: -310px -286px;
+}
+
+.threeBox div.third {
+  width: 310px;
+  background-position: -630px 0;
+}
+
+.threeBox div.third:hover,
+.threeBox div.third:focus,
+.threeBox div.third:active {
+  background-position: -630px -286px;
+}
+
+.threeBox h4 {
+  font-size: 2.5em;
+}
+
+.threeBox form.search .textW,
+.threeBox form.search .submitW {
+  background: url("../images/cpoj/input-search1.png") 0 0 no-repeat;
+  width: 175px;
+  margin-bottom: 0;
+}
+
+.threeBox form.search .submitW {
+  background: url("../images/cpoj/input-search1.png") 100% 0 no-repeat;
+  width: 70px;
+}
+
+.threeBox form.search input[type="text"] {
+  width: 155px;
+}
+
+.threeBox div.blueBubble,
+.blueBubble {
+  width: 257px;
+  height: 104px;
+  background: url("../images/cpoj/blue-bubble.png") 0 0 no-repeat;
+  float: none;
+}
+
+.threeBox div.blueBubble .in,
+.blueBubble .in {
+  padding: 20px 13px 0 13px;
+  float: none;
+}
+
+.threeBox div.blueBubble .in p,
+.blueBubble .in p {
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+/* 12) LISTS
+--------------------------------------------------------------------------*/
+ul.list1 li {
+  background: url("../images/cpoj/list-put.png") 0 8px no-repeat;
+  padding: 3px 0 3px 20px;
+  font-size: 1.3em;
+}
+
+/************************************************************************************
+   BASIC
+*************************************************************************************/
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+.break {
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+/************************************************************************************
+   CONTENT
+*************************************************************************************/
+.cpoj-theme-main {
+  font-size: 100%;
+  line-height: 1.23;
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 25px 0 0;
+}
+
+.cpoj-theme-main hr,
+.cpoj-theme-main .hr {
+  height: 1px;
+  font-size: 0px;
+  overflow: hidden;
+  line-height: 0px;
+  border: none;
+  background: #f0f0f0;
+  color: #f0f0f0;
+  display: block;
+  margin: 20px 0 18px;
+}
+
+.cpoj-theme-main hr + h2,
+.cpoj-theme-main .hr + h2 {
+  margin-top: .8em;
+}
+
+.aui .cpoj-theme-main h2 {
+  font-size: 1.53em;
+  margin: 1.3em 0 0.6em;
+  line-height: 1.23;
+}
+
+.aui .cpoj-theme-main h3 {
+  font-size: 1.23em;
+  margin: 1.4em 0 0.5em;
+  color: #555;
+  font-weight: bold;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 1.23;
+}
+
+.cpoj-theme-main .note {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+
+.cpoj-theme-main h2 + .note {
+  margin-top: -.7em;
+}
+
+.aui .cpoj-theme-main p {
+  font-size: 1em;
+  line-height: 1.23;
+  margin-bottom: 1.2em;
+}
+
+.aui .cpoj-theme-main ul {
+  margin-bottom: 1.2em;
+}
+
+.aui .cpoj-theme-main li {
+  background: url("../images/cpoj/list-put2.png") 0 4px no-repeat;
+  padding: 0 0 0 16px;
+  margin: 0 0 0.7em;
+}
+
+.cpoj-theme-main table {
+  border-spacing: expression(cellSpacing=0);
+  border-spacing: 0px;
+  empty-cells: show;
+}
+
+.cpoj-theme-main .big-number {
+  color: #a5c02a;
+  font-size: 270%;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.cpoj-theme-main img, .cpoj-theme-main iframe {
+  vertical-align: middle;
+}
+
+/* help class */
+.cpoj-theme-main .center {
+  text-align: center;
+}
+
+.aui .cpoj-theme-main .big {
+  font-size: 1.15em;
+}
+
+/* thick list */
+.aui .thick-list {
+  margin: 0.6em 0 0;
+}
+
+.aui .thick-list li {
+  padding: 0 0 0 43px;
+  position: relative;
+  margin: 0 0 20px;
+  background: none;
+}
+
+.note-box .thick-list li b, .thick-list li:before, .thick-list li b {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0;
+  background: url("../images/cpoj/ico-sprite.png") 0 0 no-repeat;
+}
+
+.aui ul.thick-list-row {
+  margin-left: -20px;
+  margin-bottom: 0;
+}
+
+.aui ul.thick-list-row li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 155px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+/* dot list */
+.aui .dot-list li {
+  padding: 0 0 0 18px;
+  position: relative;
+  margin: 0 0 0.9em;
+  background: none;
+}
+
+.dot-list li:before, .dot-list li b {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background: url("../images/cpoj/ico-sprite.png") 0 -30px no-repeat;
+}
+
+.aui .dot-list-row {
+  margin: 0.6em 0 1em -20px;
+  font-size: 0px;
+  letter-spacing: -1px;
+}
+
+.aui .dot-list-row li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 305px;
+  margin: 0 0 20px 20px;
+  font-size: 13px;
+  letter-spacing: 0px;
+  vertical-align: top;
+}
+
+/* hint list */
+.aui .num-list {
+  list-style: none;
+  counter-reset: item;
+}
+
+.aui .num-list li {
+  padding: 0 0 0 43px;
+  position: relative;
+  margin: 0 0 24px;
+  background: none;
+  min-height: 2em;
+  _height: 2em;
+}
+
+.num-list li:before, .num-list li .ie-counter {
+  content: counter(item) "";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -15px;
+  background: url("../images/cpoj/ico-sprite.png") -145px 0 no-repeat;
+}
+
+/* Annot */
+.aui p.annot {
+  margin: 0 0 2.9em;
+  font-size: 1.23em;
+  color: #114a78;
+  width: 700px;
+}
+
+.aui h1 + p.annot {
+  margin-top: -1.9em;
+}
+
+.aui p.annot.long {
+  width: auto;
+}
+
+/* Table */
+
+.aui table.content-table {
+  border-collapse: separate;
+}
+
+.content-table {
+  width: 100%;
+  border: 1px solid #cad7e7;
+  border-left: none;
+}
+
+.content-table td {
+  background: #f8fafc;
+  padding: 12px 20px 11px;
+  border: 1px solid #e3ecf6;
+  border-width: 1px 0 0 1px;
+}
+
+.content-table th {
+  background: #f2f6fa;
+  padding: 12px 20px 11px;
+  border: 1px solid #e3ecf6;
+  border-width: 1px 0 0 1px;
+}
+
+.content-table .even th {
+  background: #f8fafc;
+}
+
+.content-table .even td {
+  background: #fbfcfc;
+}
+
+.content-table tr:first-child > * {
+  border-top: none;
+}
+
+.content-table tr > :first-child {
+  border-left-color: #cad7e7;
+}
+
+.content-table thead th {
+  background: #8babd3 url("../images/cpoj/table-thead.png") 0 0px repeat-x;
+  color: #fff;
+  border-bottom: 1px solid #e3ecf6;
+  font-weight: bold;
+  border-left-color: #b5cce9;
+}
+
+.content-table thead th span {
+  font-weight: normal;
+}
+
+.content-table tr .heading {
+  background: #d3deeb;
+  font-size: 1.15em;
+  color: #607999;
+  font-weight: bold;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-top-color: #d3deeb;
+}
+
+.table-wrap-content-table {
+  margin: 0 0 35px;
+}
+
+.table-wrap {
+  position: relative;
+  zoom: 1;
+}
+
+.table-wrap .cor {
+  background-image: url("../images/cpoj/table-cor2.png");
+}
+
+.table-wrap .col-content .table-wrap {
+  float: left;
+  width: 282px;
+}
+
+/* Layout */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  zoom: 1;
+}
+
+.row-main {
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.cpoj-theme-main .mb0 {
+  margin-bottom: 0;
+}
+
+.cpoj-theme-main .mb10 {
+  margin-bottom: 10px;
+}
+
+.cpoj-theme-main .mb15 {
+  margin-bottom: 15px;
+}
+
+.cpoj-theme-main .mb20 {
+  margin-bottom: 20px;
+}
+
+.cpoj-theme-main .mb25 {
+  margin-bottom: 25px;
+}
+
+/* Cols */
+.aui .columns {
+  margin: 0 0 2.2em;
+}
+
+.columns > div,
+.aui .columns > ul {
+  float: left;
+  width: 220px;
+  margin: 0 0 0 20px;
+}
+
+.row.columns.mb25 .column-1-4,.column-2-4,.column-3-4 {
+    width: 220px;
+}
+
+.row.columns.mb25 .column-2-4,.column-3-4 {
+    margin-left: 20px;
+}
+
+.aui .columns > :first-child {
+  margin: 0;
+}
+
+.columns .column-1-2, .columns .column-2-2 {
+  width: 460px;
+}
+
+.columns > div > :first-child {
+  margin-top: 0;
+}
+
+.col-h-l {
+  float: left;
+  width: 48%;
+}
+
+.col-h-r {
+  float: right;
+  width: 48%;
+}
+
+.col-content {
+  float: left;
+  width: 700px;
+}
+
+.col-side {
+  float: right;
+  width: 220px;
+}
+
+.right-indent p {
+  padding-right: 35px;
+}
+
+/* Boxes */
+.boxes {
+  zoom: 1;
+  background: #f5f8f9 url("../images/cpoj/boxes.png") 0 0 repeat-x;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.boxes:before,
+.boxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.boxes > div {
+  float: left;
+  display: inline;
+  width: 429px;
+  padding: 20px 20px 10px;
+  border-left: 1px solid #d2dff0;
+}
+
+.boxes > div > a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  zoom: 1;
+  position: relative;
+}
+
+.boxes > div > a:before,
+.boxes > div > a b {
+  content: '';
+  width: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fafbfc url("../images/cpoj/box-hover.png") 100% 0 no-repeat;
+  visibility: hidden;
+}
+
+.boxes > div > a:hover {
+  background: #fafbfc url("../images/cpoj/box-hover.png") 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.boxes > div > a:hover:before,
+.boxes > div > a:hover b {
+  visibility: visible;
+}
+
+.boxes > div:first-child, .boxes > a:first-child > div {
+  border: none;
+}
+
+.boxes .box2 {
+  float: left;
+  width: 428px;
+}
+
+.boxes .msg {
+  background: #002f59 url("../images/cpoj/promo.png") 0 0 repeat-x;
+  color: #fff;
+  padding: 14px 13px 1px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 1.8em 0 1.3em;
+  position: relative;
+  zoom: 1;
+}
+
+.boxes .msg:before,
+.boxes .msg b {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: -8px;
+  height: 8px;
+  width: 12px;
+  background: url("../images/cpoj/ico-sprite.png") -60px -32px no-repeat;
+}
+
+.layout_homepage .boxes div ul, .layout_homepage-branding .boxes div ul {
+  margin-bottom: 0;
+}
+
+/* Corners */
+.cor {
+  overflow: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 5px;
+}
+
+.cor-tl {
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+}
+
+.cor-tr {
+  top: 0;
+  right: 0;
+  background-position: -5px 0;
+}
+
+.cor-bl {
+  bottom: 0;
+  left: 0;
+  background-position: 0 -5px;
+}
+
+.cor-br {
+  bottom: 0;
+  right: 0;
+  background-position: -5px -5px;
+}
+
+/* Std box */
+.std-box {
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 25px 25px 1px;
+}
+
+.aui .std-box > :first-child {
+  margin-top: 0;
+}
+
+.std-box-info {
+  background: url(/cpoj-theme/images/cpoj/ico-tipBult.png) 20px center no-repeat;
+  padding: 18px 20px 18px 80px;
+  clear: both;
+}
+
+.std-box-info p {
+  margin: 0;
+  padding: 18px 0 18px 0;
+}
+
+/* Packet */
+.packet-list h2 {
+  margin-bottom: .8em;
+}
+
+.packet-list .list {
+  margin: 0 0 0 -20px;
+  font-size: 0px;
+  letter-spacing: -1px;
+}
+
+.packet-list .packet {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 220px;
+  font-size: 13px;
+  letter-spacing: 0px;
+  margin: 0 0 23px 20px;
+  vertical-align: top;
+}
+
+.packet .spc {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: white url("../images/cpoj/packet.png") 0 100% repeat-x;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.packet .spc h3 {
+  font-size: 115%;
+  line-height: 1.2em;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 0 0.7em;
+}
+
+.packet .spc h3 a {
+  text-decoration: none;
+}
+
+.packet .spc h3 a:hover {
+  text-decoration: underline;
+}
+
+.packet .spc {
+  border: 1px solid #d2dff0;
+  padding: 15px 15px 17px;
+}
+
+.packet .spc p {
+  margin: 1em 0 0;
+}
+
+.packet .spc li {
+  margin: 0 0 0.6em;
+}
+
+.packet .inline-btn {
+  border-color: #cad7e7;
+}
+
+/* Intro */
+.intro img {
+  display: block;
+}
+
+.intro {
+  padding: 0 0 23px;
+  background: url("../images/cpoj/intro-full-shadow.png") 50% 100% no-repeat;
+  margin: 0 0 28px;
+}
+
+.image-box {
+  margin: 0 0 30px;
+}
+
+/* Contact */
+.contact-box {
+  border: 1px solid #d2dff0;
+  padding: 18px 20px 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #f5f8f9 url("../images/cpoj/bg-grad.png") 0 0 repeat-x;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.aui .contact-box h2,
+.aui .contact-us-page .col-side .contact-box h2 {
+  margin: 0 0 17px;
+  font-size: 1.53em;
+}
+
+.aui .contact-box .number,
+.aui .contact-us-page .col-side .contact-box .number {
+  border-top: 1px solid #d2dff0;
+  margin: 0;
+  padding: 10px 0 0 43px;
+  font-size: 277%;
+  line-height: 44px;
+  color: #555555;
+  background: url("../images/cpoj/ico-all.png") 0 -584px no-repeat;
+}
+
+.aui .contact-box .type {
+  overflow: hidden;
+  zoom: 1;
+  margin: 0 0 1.6em;
+}
+
+.contact-box .type a,
+.contact-us-page .col-side .type a {
+  float: left;
+  display: inline;
+  width: 70px;
+  margin: 0 0 0 20px;
+  background: url("../images/cpoj/ico-all.png") 50% 0 no-repeat;
+  padding: 8px 0 8px 55px;
+}
+
+.contact-box .type a.ico-tel,
+.contact-us-page .col-side .contact-box .type a.ico-tel {
+  background-position: 0 -197px;
+  margin: 0;
+}
+
+.contact-box .type a.ico-msg {
+  white-space: nowrap;
+  padding: 16px 0 16px 55px;
+}
+
+.layout_homepage .contact-box .type a.ico-msg, .layout_homepage-branding .contact-box .type a.ico-msg {
+  white-space: normal;
+}
+
+.contact-box .type a.ico-msg,
+.contact-us-page .col-side .contact-box .type a.ico-msg {
+  background-position: 0 0px;
+  padding-left: 60px;
+  width: 50px;
+}
+
+.col-side .contact-box {
+  padding: 14px 15px 10px;
+  margin: 0 0 20px;
+}
+
+.col-side .contact-box h2 {
+  font-size: 1.38em;
+}
+
+.col-side .contact-box .ico-tel {
+  width: auto;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.col-side .contact-box .ico-msg {
+  width: auto;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.col-side .contact-box .tweet {
+  border-top: 1px solid #d2dff0;
+  background: url("../images/cpoj/ico-all.png") 1px -1896px no-repeat;
+  padding: 13px 0 0 44px;
+}
+
+.aui .col-side .contact-box .number {
+  font-size: 2em;
+  background-position: 0 -2385px;
+}
+
+/* Cards-list */
+.cards-list ul {
+  font-size: 0px;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 22px 0 0;
+}
+
+.cards-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: none;
+  vertical-align: top;
+}
+
+.cards-list li div {
+  overflow: hidden;
+  zoom: 1;
+  padding: 32px 16px 13px;
+  font-size: 13px;
+  letter-spacing: 0;
+  border: 1px solid #bad1e1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #eff3fa url("../images/cpoj/card.png") 0 0 repeat-x;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.cards-list li img {
+  float: left;
+  margin: 0 11px 8px 0;
+}
+
+.cards-list li h3 {
+  font-size: 1.53em;
+  margin: 0 0 0.5em;
+  color: #222;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.cards-list li p {
+  margin: 0 0 7px;
+}
+
+.cards-list .pin1,
+.cards-list .pin2 {
+  position: absolute;
+  left: 26px;
+  top: -22px;
+  width: 31px;
+  height: 45px;
+  overflow: hidden;
+  background: url("../images/cpoj/card-sprite.png") -110px 0 no-repeat;
+}
+
+.cards-list .pin2 {
+  left: auto;
+  right: 26px;
+}
+
+.cards-list-scroll ul {
+  white-space: nowrap;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+}
+
+.js .cards-list-scroll ul {
+  overflow: hidden;
+}
+
+.cards-list-scroll li {
+  width: 360px;
+  padding: 0 0 0 20px;
+}
+
+.cards-list-scroll li:first-child {
+  padding: 0;
+}
+
+.cards-list-scroll li div {
+  white-space: normal;
+}
+
+.cards-list-scroll .wrap {
+  position: relative;
+}
+
+.cards-list-scroll .left-over,
+.cards-list-scroll .right-over {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 45px;
+  background: url("../images/cpoj/card-over.png") 0 0 repeat-y;
+  pointer-events: none;
+}
+
+.cards-list-scroll .right-over {
+  left: auto;
+  right: 0;
+  background-position: -45px 0;
+}
+
+.cards-list-scroll .prev,
+.cards-list-scroll .next {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 49px;
+  height: 62px;
+  overflow: hidden;
+  background: url("../images/cpoj/card-sprite.png") 0 0 no-repeat;
+  text-indent: 500px;
+  margin: -31px 0 0;
+}
+
+.cards-list-scroll .next {
+  left: auto;
+  right: 0;
+  background-position: -49px 0;
+}
+
+.cards-list-scroll .prev:hover {
+  background-position: 0 -62px;
+}
+
+.cards-list-scroll .next:hover {
+  background-position: -49px -62px;
+}
+
+/* Product list */
+.products-list:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.aui .products-list > ul {
+  font-size: 0px;
+  letter-spacing: -1px;
+  margin: 0 0 15px -20px;
+  padding: 0;
+}
+
+.aui .products-list > ul > li {
+  display: inline;
+  float: left;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 0;
+  background: none;
+  width: 220px;
+  vertical-align: top;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.products-list .bd {
+  background: #f5f8fc url("../images/cpoj/grad2.png") 0 100% repeat-x;
+  border: 1px solid #d2dff0;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 16px 12px 17px;
+}
+
+.products-list ul ul {
+  list-style: none;
+}
+
+.aui .products-list ul ul li {
+  margin: 0 0 0.6em;
+}
+
+.aui .products-list ul h2, .aui .products-list ul h3 {
+  font-size: 1.15em;
+  color: #607999;
+  font-weight: bold;
+  margin: 0 0 0.8em;
+  line-height: 1.23;
+}
+
+.products-list ul h2 a {
+  text-decoration: none;
+  color: #607999;
+}
+
+.products-list ul h2 a:hover {
+  text-decoration: underline;
+}
+
+.aui .products-list ul p {
+  margin: 1.1em 0 0;
+  font-size: .84em;
+  color: #003565;
+}
+
+.products-list ul li p.c {
+  width: 90%;
+}
+
+.products-list ul p strong {
+  font-size: 1.36em;
+}
+
+.products-list ul .inline-btn {
+  float: left;
+  border-color: #cad7e7;
+  margin-right: 9px;
+}
+
+.ie8 .products-list ul .inline-btn {
+  margin-right: 6px;
+}
+
+.products-list ul .inline-btn + .inline-btn {
+  margin-right: 0;
+}
+
+.products-list ul .inline-btn span {
+  width: auto;
+  padding: 0 14px;
+}
+
+.products-list ul p span {
+  /*width:65px;*/
+  float: right;
+  display: block;
+  clear: right;
+}
+
+.aui .products-list .statuses {
+  margin: 0 0 -107px;
+  position: absolute;
+  right: -2px;
+  bottom: 100%;
+}
+
+.products-list .statuses span {
+  margin: 0 0 2px;
+  border-radius: 3px 0 3px 3px;
+  -moz-border-radius: 3px 0 3px 3px;
+  -webkit-border-radius: 3px 0 3px 3px;
+}
+
+.products-list .statuses span:before,
+.products-list .statuses span b {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-top: 2px solid transparent;
+}
+
+.products-list .ico-top,
+.products-list .ico-tip,
+.products-list .ico-new {
+  position: absolute;
+  top: 7px;
+  right: -11px;
+  width: 47px;
+  height: 54px;
+  background: url("../images/cpoj/ico-top.png") 0 0 no-repeat;
+}
+
+.products-list .ico-tip {
+  background-image: url("../images/cpoj/ico-tip.png");
+}
+
+.products-list .ico-new {
+  background-image: url("../images/cpoj/ico-new.png");
+}
+
+#products-list .link-more-info {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+
+/* Faq list */
+.aui .faq-list ul > li {
+  padding: 0;
+  margin: 0 0 20px;
+  background: none;
+  width: 100%;
+  position: relative;
+}
+
+.aui .faq-list .spc {
+  padding: 16px 85px 18px 20px;
+  background: none;
+  border: 1px solid #cad7e7;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  -pie-watch-ancestors: 1;
+}
+
+.aui .faq-list > ul > li:hover .spc {
+  background: #f8fbfd;
+}
+
+.aui .faq-list > ul > li:hover span,
+.aui .faq-list > ul > li:hover h2 {
+  color: #607999;
+}
+
+.aui .faq-list h2 {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #003d6e;
+  margin: 0;
+}
+.aui .faq-list ul > li h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.faq-list h2:before, .faq-list h2 b {
+  content: '';
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background: url("../images/cpoj/ico-sprite.png") 0px -233px no-repeat;
+}
+
+.faq-list .open h2:before, .faq-list .open h2 b {
+  background-position: -30px -233px;
+}
+
+.faq-list > ul > li:hover h2:before, .faq-list > ul > li:hover h2 b {
+  background-position: -60px -233px;
+}
+
+.faq-list > ul > li.open:hover h2:before, .faq-list > ul > li.open:hover h2 b {
+  background-position: -90px -233px;
+}
+
+.faq-list .text {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.faq-list ul span {
+  float: left;
+  display: inline;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #003d6e;
+  margin: 0 5px 0 0;
+}
+
+.aui .faq-list .bd {
+  padding-top: 1px;
+  display: none;
+}
+
+.aui .faq-list .bd p {
+  margin: 1.2em 0 0;
+}
+
+.aui .faq-list .open .bd {
+  display: block;
+}
+
+.faq-list .spc h2.ico-tel,
+.faq-list .spc h2.ico-msg,
+.faq-list .spc h2.ico-online,
+.faq-list .spc h2.ico-advisor {
+  background-image: url("../images/cpoj/ico-all.png");
+  background-repeat: no-repeat;
+  padding: 16px 0 16px 55px;
+}
+
+.faq-list .spc h2.ico-tel {
+  background-position: 0 -197px;
+}
+
+.faq-list .spc h2.ico-msg {
+  background-position: 0 0;
+}
+
+.faq-list .spc h2.ico-online {
+  background-position: 0 -3337px;
+}
+
+.faq-list .spc h2.ico-advisor {
+  background-position: 0 -3196px;
+}
+
+/* Side box */
+.side-box {
+  margin: 0 0 40px;
+}
+
+.side-box .hd {
+  position: relative;
+}
+
+.side-box .hd img {
+  display: block;
+}
+
+.side-box .bd {
+  border: 1px solid #c2d4eb;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 17px 20px 3px;
+}
+
+.side-box .bd ul {
+  margin-bottom: 1.2em;
+}
+
+.side-box .cor {
+  background-image: url("../images/cpoj/side-cor.png");
+}
+
+.side-box .arr {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -7px;
+  width: 15px;
+  height: 10px;
+  background: url("../images/cpoj/ico-sprite.png") -10px -30px no-repeat;
+}
+
+.photo-side-box .bd {
+  border: none;
+  padding-top: 12px;
+}
+
+.photo-side-box .bd .pager {
+  margin: 0;
+  text-align: center;
+}
+
+.photo-side-box .bd .pager a {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+  background: url("../images/cpoj/ico-sprite.png") -34px -31px no-repeat;
+  margin: 0 4px;
+  font-size: 0px;
+  line-height: 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+.photo-side-box .bd .pager .active {
+  background-position: -25px -31px;
+}
+
+.side-box-simple {
+  border: 1px solid #c2d4eb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 17px 25px 8px;
+  margin: 0 0 30px;
+}
+
+.side-box-simple h2 {
+  color: #555;
+  font-size: 1.23em;
+  font-weight: bold;
+  margin-bottom: .65em;
+}
+
+.side-box-simple > :first-child {
+  margin-top: 0;
+}
+
+.side-box-simple li {
+  margin-bottom: .65em;
+}
+
+/* Context menu */
+.context-menu {
+  border: 1px solid #d2dff0;
+  background: #f5f8f9 url("../images/cpoj/grad4.png") 0 0 repeat-x;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.context-menu .spc {
+  overflow: hidden;
+  zoom: 1;
+  padding: 18px 28px 1px;
+}
+
+.context-menu h2 {
+  margin-top: 0;
+}
+
+.context-menu ul {
+  margin-bottom: 1.1em;
+  *margin-bottom: .5em;
+}
+
+.context-menu li {
+  margin-bottom: .7em;
+}
+
+/* Content box */
+.content-box {
+  border: 1px solid #d2dff0;
+  background: #f5f8f9 url("../images/cpoj/grad4.png") 0 0 repeat-x;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.content-box .spc {
+  padding: 29px 29px 8px;
+}
+
+.content-box .spc > :first-child {
+  margin-top: 0;
+}
+
+/* Paging */
+.paging {
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.paging a {
+  text-decoration: none;
+}
+
+.paging a:hover {
+  text-decoration: underline;
+}
+
+.paging .pages a {
+  margin: 0 2px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.paging .pages strong {
+  background: #fafcfd;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid #cad7e7;
+  padding: 5px 8px 4px;
+  color: #222;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  *vertical-align: middle;
+}
+
+.paging .dots {
+  margin: 0 6px;
+}
+
+.paging .prev {
+  margin: 0 5px 0 0;
+  background: url("../images/cpoj/ico-all.png") 0 -1096px no-repeat;
+  padding: 0 0 0 11px;
+}
+
+.paging .next {
+  margin: 0 0 0 5px;
+  background: url("../images/cpoj/ico-all.png") 100% -1146px no-repeat;
+  padding: 0 11px 0 0;
+}
+
+.paging span.prev {
+  background-position: 0 -996px;
+}
+
+.paging span.next {
+  background-position: 100% -1046px;
+}
+
+/* Messages */
+.insurance-msg {
+  border: 1px solid #d2dff0;
+  background: #f5f8f9 url("../images/cpoj/grad1.png") 0 0 repeat-x;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  zoom: 1;
+}
+
+.insurance-msg .spc {
+  padding: 25px 100px 27px 24px;
+  overflow: hidden;
+  zoom: 1;
+  margin: -1px;
+  background: url("../images/cpoj/insurance-msg.png") 0 0 no-repeat;
+  border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  zoom: 1;
+}
+
+.aui .insurance-msg h2 {
+  float: left;
+  display: inline;
+  color: #fff;
+  width: 210px;
+  margin: 0;
+  *margin-top: -2px;
+  line-height: 25px;
+  font-size: 1.53em;
+}
+
+.aui .insurance-msg p {
+  margin: 2px 0 0 260px;
+  background: url("../images/cpoj/ico-contact.png") 0 3px no-repeat;
+  padding: 8px 0 0 60px;
+  min-height: 36px;
+  _height: 36px;
+  font-size: 1em;
+  line-height: 1.23;
+}
+
+.error-msg {
+  border: 1px solid #e7caca;
+  color: #c63751;
+  padding: 17px 15px 15px 88px;
+  background: #f7e7e7 url("../images/cpoj/msg-error.png") 20px 50% no-repeat;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin: 25px 0 20px;
+}
+
+.error-msg h2 {
+  font-size: 123%;
+  color: #c63751;
+  font-weight: bold;
+  margin: 0 0 0.4em;
+}
+
+.error-msg ul {
+  margin: 0;
+}
+
+.error-msg li {
+  background: url("../images/cpoj/list-error.png") 0 5px no-repeat;
+  padding: 0 0 0 11px;
+  margin: 0 0 1px;
+}
+
+.compare-msg, .info-msg {
+  margin: 0 0 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.compare-msg .inline-btn {
+  float: right;
+  margin: 7px 0 0 13px;
+}
+
+.compare-msg > div {
+  overflow: hidden;
+  zoom: 1;
+  padding-right: 7px;
+}
+
+.compare-msg p,
+.info-msg p, .calamity-msg {
+  background: #ffeda7;
+  color: #87652a;
+  border: 1px solid #ecd67f;
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.compare-msg p:before,
+.compare-msg p b {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 17px;
+  width: 8px;
+  height: 14px;
+  overflow: hidden;
+  background: url("../images/cpoj/ico-sprite.png") -73px -32px no-repeat;
+}
+
+.calamity-msg {
+  margin: 0 0 30px;
+  padding: 20px 250px 17px 80px;
+}
+
+.calamity-msg .inline-btn {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  margin-top: -16px;
+}
+
+.calamity-msg p {
+  margin: 0;
+}
+
+.calamity-msg .big {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-bottom: .4em;
+}
+
+.calamity-msg .menu a {
+  border-left: 1px solid #ecd67f;
+  padding-left: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.calamity-msg .menu a:first-child {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calamity-msg p:before,
+.calamity-msg p b {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -20px;
+  width: 41px;
+  height: 41px;
+  overflow: hidden;
+  background: url("../images/cpoj/ico-sprite.png") -168px -55px no-repeat;
+}
+
+.alert.succcess,
+.portlet-msg-success {
+  border: 1px solid #c2d4eb;
+  background: #e2ecf9 url(../images/cpoj/ico-info.png) no-repeat 20px 50%;
+  color: #607999;
+  padding: 25px 25px 25px 75px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin-bottom: 30px;
+  margin-top: 13px;
+}
+
+// CEPOUP-3: rule for AUI version, fixed displaying (inline-block)
+.alert.error,
+.portlet-msg-error,
+.aui .portlet-msg-error {
+  display: inline-block;
+  border: 1px solid #f3b2b2;
+  background: #ffdddd url(../images/cpoj/ico-err.png) no-repeat 20px 50%;
+  color: #666;
+  padding: 25px 25px 25px 75px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin-bottom: 30px;
+  margin-top: 13px;
+}
+
+/* statuses */
+.status-lblue,
+.status-gblue,
+.status-red,
+.status-gray,
+.status-purple,
+.status-blue,
+.status-orange,
+.status-green {
+  display: block;
+  padding: 0 8px;
+  width: 55px;
+  line-height: 21px;
+  margin: 0 0 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  background: url("../images/cpoj/btn-all.png") 0 0 repeat-x;
+  position: relative;
+}
+
+.status-lblue {
+  background-color: #0091cd;
+  background-position: 0 -600px;
+}
+
+.status-gblue {
+  background-color: #445c7d;
+  background-position: 0 -650px;
+}
+
+.status-red {
+  background-color: #b12338;
+  background-position: 0 -700px;
+}
+
+.status-gray {
+  background-color: #676767;
+  background-position: 0 -750px;
+}
+
+.status-purple {
+  background-color: #904787;
+  background-position: 0 -800px;
+}
+
+.status-blue {
+  background-color: #003e6f;
+  background-position: 0 -850px;
+}
+
+.status-orange {
+  background-color: #f5740a;
+  background-position: 0 -900px;
+}
+
+.status-green {
+  background-color: #8aaa1a;
+  background-position: 0 -950px;
+}
+
+.status-lblue:before, .status-lblue b {
+  border-left-color: #00bee3;
+}
+
+.status-gblue:before, .status-gblue b {
+  border-left-color: #7d94af;
+}
+
+.status-red:before, .status-red b {
+  border-left-color: #d35670;
+}
+
+.status-gray:before, .status-gray b {
+  border-left-color: #9c9c9c;
+}
+
+.status-purple:before, .status-purple b {
+  border-left-color: #bd80b6;
+}
+
+.status-blue:before, .status-blue b {
+  border-left-color: #006197;
+}
+
+.status-orange:before, .status-orange b {
+  border-left-color: #f9a826;
+}
+
+.status-green:before, .status-green b {
+  border-left-color: #b9ce48;
+}
+
+/* Ico */
+.ico-cross {
+  display: inline-block;
+  width: 39px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 0px;
+  background: url("../images/cpoj/ico-sprite.png") -90px -55px no-repeat;
+}
+
+.ico-thick {
+  display: inline-block;
+  width: 39px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 0px;
+  background: url("../images/cpoj/ico-sprite.png") -129px -55px no-repeat;
+}
+
+.ico-thick-s {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 1em;
+  background: url("../images/cpoj/ico-sprite.png") -90px -95px no-repeat;
+  margin: 0 auto;
+  text-indent: -9999px;
+}
+
+td .ico-thick-s {
+  margin: -3px 0 -5px;
+}
+
+/* ToDo: preklopit na globalni ico-sprite.png */
+.ico-thick-p {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 0;
+  background: url("/cpoj-theme/images/cpoj/ico-plus.png") no-repeat;
+}
+
+/* Inline btn */
+.inline-btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: #e1ecf6 url("../images/cpoj/btn-all.png") 0 0px repeat-x;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #d5e4f2;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.inline-btn span, .inline-btn input {
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background: none;
+  border: none;
+  padding: 0 15px;
+  color: #607999;
+  cursor: pointer;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  overflow: visible;
+  letter-spacing: 0px;
+  width: auto;
+  position: static;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  text-shadow: none;
+}
+
+.buttons .inline-btn input {
+  color: #fff;
+}
+
+.inline-btn input::-moz-focus-inner {
+  padding: 0;
+}
+
+.inline-btn input:hover, .inline-btn input:active, .inline-btn input:focus {
+  background: none;
+  border: none;
+}
+
+.inline-btn:hover {
+  background-position: 0 -1000px;
+}
+
+.inline-btn:active {
+  background-position: 0 -1100px;
+}
+
+.yellow-btn {
+  border-color: #ffdc01;
+  background-color: #e3c402;
+  background-position: 0 -100px;
+}
+
+.yellow-btn span, .yellow-btn input {
+  color: #524700;
+}
+
+.yellow-btn:hover {
+  background-position: 0 -1300px;
+}
+
+.yellow-btn:active {
+  background-position: 0 -1400px;
+}
+
+.yellow-btn2 {
+  border-color: #efce01;
+  background-color: #e2c302;
+  background-position: 0 -501px;
+}
+
+.yellow-btn2 span, .yellow-btn2 input {
+  color: #6e6200;
+}
+
+.yellow-btn2:hover {
+  background-position: 0 -1300px;
+}
+
+.yellow-btn2:active {
+  background-position: 0 -1400px;
+}
+
+.blue-btn {
+  border-color: #2482bc;
+  background-color: #08508a;
+  background-position: 0 -300px;
+}
+
+.blue-btn span, .blue-btn input {
+  color: #fff;
+}
+
+.blue-btn:hover span, .blue-btn:hover input {
+  color: #c4e5f6;
+}
+
+.blue-btn:hover {
+  background-position: 0 -1500px;
+}
+
+.blue-btn:active {
+  background-position: 0 -1600px;
+}
+
+.aui .title-buttons {
+  float: right;
+  display: inline;
+  margin: 11px 0 0 20px;
+  *margin-right: -14px;
+}
+
+.title-buttons .inline-btn {
+  margin-left: 14px;
+}
+
+.aui .layout_pexeso h1 + p.annot {
+	margin-bottom: 1.2em;
+}
+
+.title-buttons .blue-btn2 {
+	min-width: 14em;
+	text-align: center;
+}
+.aui .title-buttons-archiv {
+	margin-top: -11px;
+}
+
+.blue-btn2 {
+  border: none;
+  height: 34px;
+  line-height: 34px;
+  background-color: #003e6f;
+  background-position: 0 -400px;
+}
+
+.blue-btn2 span, .blue-btn2 input {
+  color: #fff;
+  height: 34px;
+  line-height: 34px;
+}
+
+.blue-btn2:hover span, .blue-btn2:hover input {
+  color: #fff;
+}
+
+.blue-btn2:hover {
+  background-position: 0 -1500px;
+}
+
+.blue-btn2:active {
+  background-position: 0 -1600px;
+}
+
+.blue-big-btn {
+  line-height: 48px;
+  height: 48px;
+  border: none;
+  background: #003e6f url("../images/cpoj/btn-all-wide.png") 100% -100px no-repeat;
+}
+
+.blue-big-btn span, .blue-big-btn input {
+  line-height: 48px;
+  height: 48px;
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 0 60px 0 15px;
+}
+
+.blue-big-btn:hover span, .blue-big-btn:hover input {
+  color: #cae1f4;
+}
+
+.orange-big-btn {
+  line-height: 48px;
+  height: 48px;
+  border: none;
+  background: #e0a901 url("../images/cpoj/btn-all-wide.png") 100% -200px no-repeat;
+}
+
+.orange-big-btn span, .blue-big-btn input {
+  line-height: 48px;
+  height: 48px;
+  color: #524700;
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 0 60px 0 15px;
+}
+
+.orange-big-btn:hover span, .blue-big-btn:hover input {
+  color: #fff;
+}
+
+.blue-big-btn-down {
+  background: url("../images/cpoj/btn-all-wide-up-down.png") right 0 !important;
+}
+
+.blue-big-btn-down:hover {
+  background-position: right -50px !important;
+}
+
+.blue-big-btn-down:active {
+  background-position: right -100px !important;
+}
+
+.blue-big-btn-up {
+  background: url("../images/cpoj/btn-all-wide-up-down.png") right -150px !important;
+}
+
+.blue-big-btn-up:hover {
+  background-position: right -200px !important;
+}
+
+.blue-big-btn-up:active {
+  background-position: right -250px !important;
+}
+
+/* Form */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.aui .inp-text, .aui input.inp-text {
+  color: #39425c;
+  padding: 8px 7px;
+  font-size: 13px;
+  font-family: "mp", arial, helvetica, sans-serif;
+  /*height: 16px;*/
+  line-height: 16px;
+  border: none;
+  background: none;
+  *padding: 7px 7px 5px;
+}
+
+select.inp-text {
+  padding: 6px 2px 6px 4px;
+  *padding: 0;
+}
+
+textarea.inp-text {
+  height: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.inp-wrap {
+  background: #e7eef7;
+  padding: 4px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  position: relative;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.inp-wrap.error {
+  background: #f7e7e7;
+}
+
+.inp-wrap.error .inp-fix {
+  border-color: #e7caca;
+}
+
+.inp-wrap.error:before, .inp-wrap.error b {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  background: url("../images/cpoj/ico-sprite.png") -30px 0 no-repeat;
+}
+
+.inp-wrap.ok:before, .inp-wrap.ok b {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  background: url("../images/cpoj/ico-sprite.png") 0px 0 no-repeat;
+}
+
+.inp-fix {
+  padding: 0 14px 0 0;
+  display: block;
+  border: 1px solid #cad7e7;
+  background: #fcfdfd;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.inp-fix .w-full {
+  margin-right: -14px;
+}
+
+.inp-date {
+  font-size: 0px;
+  padding: 0 47px 0 15px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.inp-date input {
+  width: 40%;
+  margin-right: -47px;
+}
+
+.inp-date input:first-child {
+  margin-left: -15px;
+  margin-right: 0;
+  width: 60%;
+  border-right: 1px solid #cad7e7;
+}
+
+.inp-date img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.required {
+  color: #d50d0d;
+}
+
+.inp-row {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+
+.inp-row .inp-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.inp-row .inline-btn {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+}
+
+.inp-row .inline-btn:active {
+  background-position: 0 -1200px !important;
+}
+
+.form-box {
+  zoom: 1;
+}
+
+.form-box .error-msg {
+  margin-right: 45px;
+  margin-top: 0px;
+}
+
+.form-box p {
+  padding: 0 0 1.6em;
+  margin: 0;
+}
+
+.form-box .inp-wrap {
+  margin: 6px 45px 0 0;
+  *top: 6px;
+  *margin-top: 0;
+  *margin-bottom: 6px;
+}
+
+.form-box label {
+  color: #222;
+}
+
+.form-box .help {
+  display: block;
+  padding: 0.7em 30px 0 3px;
+}
+
+.form-box .buttons {
+  border-top: 1px solid #d2dff0;
+  padding: 22px 0 0;
+  margin-top: -2px;
+}
+
+/* Note box */
+.note-box {
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.note-box .bd {
+  border: 1px solid #f0ede1;
+  background: #f2f0df url("../images/cpoj/note-bg.png");
+  padding: 21px 20px 15px;
+}
+
+.note-box:after,
+.note-box b {
+  content: '';
+  width: 47px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  background: url("../images/cpoj/note-pin.png") 0 0 no-repeat;
+  margin: -11px 0 0 -10px;
+}
+
+.note-box .bd h2 {
+  margin-top: 0;
+}
+
+.note-box .shadow, .note-box .shadow div {
+  height: 6px;
+  overflow: hidden;
+  background: url("../images/cpoj/note-shadow.png") 0 0 no-repeat;
+}
+
+.note-box .shadow div {
+  background-position: 100% -6px;
+}
+
+.width-460 .note-box {
+  margin-right: -35px;
+}
+
+.note-box ul.thick-list-row {
+  margin-right: -5px;
+}
+
+/* Tooltip */
+.tooltip {
+  background: #ffeda7;
+  border: 1px solid #ecd67f;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding: 17px 52px 9px 20px;
+  width: 400px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  z-index: 99;
+}
+
+.tooltip:before, .tooltip b {
+  content: '';
+  position: absolute;
+  top: -9px;
+  *top: -7px;
+  left: 183px;
+  width: 16px;
+  height: 9px;
+  background: url("../images/cpoj/ico-sprite.png") -43px -31px no-repeat;
+}
+
+.tooltip h4 {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0 0 0.5em;
+}
+
+.tooltip p {
+  margin: 0 0 0.5em;
+}
+
+.tooltip .close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-indent: 500px;
+  right: 15px;
+  top: 15px;
+  background: url("../images/cpoj/ico-sprite.png") 0 -40px no-repeat;
+}
+
+.tooltip2 {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  background: url("../images/cpoj/tooltip2-bg.png");
+  padding: 10px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  text-align: left;
+  width: 380px;
+}
+
+.tooltip2 .spc {
+  background: #bacddb;
+  padding: 14px 38px 1px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  color: #004677;
+}
+
+.tooltip2 .spc h3 {
+  color: #004677;
+  margin: 0 0 0.4em;
+}
+
+.tooltip2 .close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-indent: 500px;
+  right: 10px;
+  top: 10px;
+  background: url("../images/cpoj/ico-sprite.png") -15px -40px no-repeat;
+}
+
+.tooltip2:before, .tooltip2 b {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: -8px;
+  width: 8px;
+  height: 14px;
+  background: url("../images/cpoj/ico-sprite.png") -82px -32px no-repeat;
+}
+
+/* obsolete-info */
+.obsolete-info {
+  background: #fafcfc;
+  border: 1px solid #d2dff0;
+  padding: 20px 15px;
+  font-size: 15px;
+  color: #004677;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.obsolete-info p {
+  padding-left: 40px;
+  margin-bottom: 0em;
+  position: relative;
+}
+
+.obsolete-info p:before {
+  background: url("../images/cpoj/ico-pozor.png") no-repeat left top;
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+/* Banner rotator */
+.banner-rotator {
+  position: relative;
+  margin: 0 0 25px;
+}
+
+.banner-rotator .prev,
+.banner-rotator .next {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75px;
+  height: 29px;
+  overflow: hidden;
+  margin-left: -37px;
+  text-indent: 500px;
+  background: url("../images/cpoj/rotator-sprite.png") 0 0 no-repeat;
+}
+
+.banner-rotator .next {
+  top: auto;
+  bottom: 0;
+  background-position: 0 -29px;
+}
+
+.banner-rotator .prev:hover {
+  background-position: 0 -58px;
+}
+
+.banner-rotator .next:hover {
+  background-position: 0 -87px;
+}
+
+.banner-rotator .pager {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+  margin: 0;
+}
+
+.banner-rotator .pager a {
+  display: block;
+  width: 10px;
+  height: 9px;
+  overflow: hidden;
+  text-indent: 500px;
+  margin: 5px 0 0;
+  background: url("../images/cpoj/rotator-sprite.png") 100% 0 no-repeat;
+}
+
+.banner-rotator .pager a:hover {
+  background-position: 100% -28px;
+}
+
+.banner-rotator .pager .active {
+  background-position: 100% -14px;
+}
+
+.layout_homepage .cycleMe,.layout_homepage-branding .cycleMe {
+  height: 266px;
+  overflow: hidden;
+}
+
+.layout_homepage.dockbar-ready .cycleMe, .layout_homepage-branding.dockbar-ready .cycleMe {
+  height: 400px;
+  overflow: visible;
+  overflow-y: scroll;
+}
+
+.layout_homepage .cycleMe .portlet-static, .layout_homepage-branding .cycleMe .portlet-static {
+  width: 940px;
+}
+
+/* Rotator */
+.cycleMe {
+  position: relative;
+}
+
+.cycleMe .switch {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  margin-bottom: 0;
+  z-index: 999;
+}
+
+.cycleMe .switch span {
+  display: block;
+  background: transparent url("../images/cpoj/rotator-sprite.png") -91px 0 no-repeat;
+  width: 10px;
+  height: 9px;
+  margin-bottom: 5px;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.cycleMe .switch span.selected {
+  background-position: -91px -14px;
+}
+
+.cycleMe .switch span:hover {
+  background-position: -91px -28px;
+}
+
+.cycleMe .nextPrev > span {
+  position: absolute;
+  background: transparent url("../images/cpoj/rotator-sprite.png") 0 0 no-repeat;
+  left: 50%;
+  margin-left: -37px;
+  height: 29px;
+  width: 75px;
+  overflow: hidden;
+  text-indent: -999px;
+  top: 0;
+  cursor: hand;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.cycleMe .nextPrev > span:hover {
+  background-position: 0 -58px;
+}
+
+.cycleMe .nextPrev > span.sec-banner-next {
+  background-position: 0 -29px;
+  bottom: 0;
+  top: auto;
+}
+
+.cycleMe .nextPrev > span.sec-banner-next:hover {
+  background-position: 0 -87px;
+}
+
+.cycleMe.cycleMe_horz .nextPrev > span {
+  background-image: url("../images/cpoj/rotator-sprite-h.png");
+  width: 27px;
+  height: 68px;
+  left: 0;
+  margin-left: 0;
+  top: 50%;
+  margin-top: -34px;
+}
+
+.cycleMe.cycleMe_horz .nextPrev > span.sec-banner-prev {
+  background-position: left bottom;
+}
+
+.cycleMe.cycleMe_horz .nextPrev > span.sec-banner-prev:hover {
+  background-position: left top;
+}
+
+.cycleMe.cycleMe_horz .nextPrev > span.sec-banner-next {
+  background-position: right bottom;
+  left: auto;
+  bottom: auto;
+  right: 0;
+  top: 50%;
+}
+
+.cycleMe.cycleMe_horz .nextPrev > span.sec-banner-next:hover {
+  background-position: right top;
+}
+
+/* popup */
+.hasPopupBox {
+  position: relative;
+  float: left;
+}
+
+.hasPopupBox + * {
+  clear: both;
+}
+
+.hasPopupBox .popupBox,
+.hasPopupBox .popupBox:before,
+.hasPopupBox .popupBox:after {
+  position: absolute;
+  width: 354px;
+  background: transparent url("../images/cpoj/popupBox.png") -800px 0 no-repeat;
+  z-index: 999;
+}
+
+.hasPopupBox .popupBox {
+  width: 332px;
+  padding: 0 11px;
+  margin-left: -97px;
+  background-repeat: repeat-y;
+  display: none;
+}
+
+.hasPopupBox:hover figcaption {
+  display: block;
+}
+
+.hasPopupBox .popupBox:before,
+.hasPopupBox .popupBox:after {
+  left: 0;
+  content: "";
+}
+
+.hasPopupBox .popupBox:before {
+  top: -15px;
+  height: 15px;
+  background-position: 0 0;
+}
+
+.hasPopupBox .popupBox:after {
+  bottom: -22px;
+  height: 22px;
+  background-position: -1220px 0;
+}
+
+.hasPopupBox .popupBox .in {
+  padding: 10px 20px;
+  background: white url("../images/cpoj/map-info-window-in.png") left bottom repeat-x;
+}
+
+.hasPopupBox .popupBox a.close {
+  background: url("../images/cpoj/map-info-window.png") no-repeat scroll -1180px 0 transparent;
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 19px;
+  text-indent: -500px;
+  top: 4px;
+  width: 15px;
+}
+
+.hasPopupBox .popupBox a.close:hover {
+  background-position: -1195px 0;
+}
+
+.hasPopupBox .popupBox h3 {
+  margin-top: 0;
+}
+
+.hasPopupBox .popupBox > .in > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.banner-why-have-insurance {
+  height: 238px;
+  padding: 27px 35px 1px;
+  background: url("../images/sample/banner-why-have-insurance.jpg") 0 0 no-repeat;
+  color: #222;
+}
+
+.banner-why-have-insurance h2 {
+  margin: 0 0 0.4em;
+  text-transform: uppercase;
+}
+
+.banner-why-have-insurance h2 strong {
+  display: block;
+  font-size: 1.5em;
+}
+
+.banner-why-have-insurance p {
+  font-size: 1.38em;
+  width: 400px;
+  margin: 0 0 1.4em;
+}
+
+.banner-why-have-insurance p + p {
+  width: auto;
+}
+
+.banner-why-have-insurance .inline-btn {
+  height: 48px;
+  line-height: 48px;
+  background: #54732b url("../images/cpoj/btn-all-wide.png") 100% 0 no-repeat;
+  border: none;
+  margin: 0 18px 0 0;
+}
+
+.banner-why-have-insurance .inline-btn span {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 55px 0 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.banner-why-have-insurance .inline-btn:hover span {
+  color: #f0ffad;
+}
+
+.banner-mobile-application {
+  height: 270px;
+  background: url("../images/sample/banner-mobile-application.jpg") 0 0 no-repeat;
+  padding: 130px 0 0 100px;
+}
+
+.banner-mobile-application h2 {
+  font-size: 1.54em;
+  color: #475607;
+  margin: 0;
+}
+
+.banner-mobile-application p {
+  color: #fff;
+  font-size: 3.08em;
+}
+
+/* HOMEPAGE */
+.main-crossroad {
+  padding: 0 0 26px;
+  position: relative;
+}
+
+.main-crossroad h2 {
+  display: inline;
+  font-size: 1.92em;
+  padding: 0 5px 0 35px;
+}
+
+.main-crossroad .tip {
+  position: absolute;
+  right: -150px;
+  top: 35px;
+  width: 169px;
+  height: 108px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url("../images/cpoj/tip-insurance.png") 0 0 no-repeat;
+  pointer-events: none;
+}
+
+.ie9 .main-crossroad .tip {
+  right: -160px;
+}
+
+.main-crossroad .tab-menu {
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.main-crossroad .tab-menu a {
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.main-crossroad .tab-menu .slider {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 34px;
+  vertical-align: middle;
+  background: url("../images/cpoj/slider.png") 0px 0 no-repeat;
+  position: relative;
+  top: -1px;
+  *margin-right: 5px;
+}
+
+.main-crossroad .tab-menu .slider-range {
+  display: block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.main-crossroad .tab-menu .slider-handle {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 31px;
+  height: 45px;
+  background: url("../images/cpoj/slider.png") 0px -35px no-repeat;
+  margin-left: -15px;
+}
+
+.main-crossroad .tab-menu > a {
+  padding-left: 16px;
+  background: url("../images/cpoj/slider.png") -59px -148px no-repeat;
+}
+
+.main-crossroad .tab-menu > .active {
+  background-position: -59px -98px;
+}
+
+.main-crossroad .tab-menu > a:first-child {
+  padding-left: 0;
+  padding-right: 16px;
+  background-position: 100% -148px;
+}
+
+.main-crossroad .tab-menu > a:first-child.active {
+  background-position: 100% -98px;
+}
+
+.main-crossroad .tab-products {
+  margin: 25px 0 0;
+}
+
+.main-crossroad .tab-products .wrap {
+  position: relative;
+  margin: 42px 0 0;
+}
+
+.main-crossroad .tab-products .wrap > ul {
+  white-space: nowrap;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-size: 0px;
+  padding: 0 0 35px;
+  letter-spacing: -1px;
+}
+
+.js .main-crossroad .tab-products .wrap > ul {
+  overflow: hidden;
+}
+
+.main-crossroad .tab-products .wrap > ul > li {
+  width: 252px;
+  margin: 0 13px 0 0;
+  padding: 0;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  background: none;
+}
+
+.main-crossroad .tab-products .wrap > ul > li:first-child {
+  margin-left: 13px;
+}
+
+.main-crossroad .tab-products ul div {
+  font-size: 13px;
+  letter-spacing: 0;
+  white-space: normal;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: white url("../images/cpoj/products.png") 0 100% no-repeat;
+  padding: 22px 22px 19px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  -pie-watch-ancestors: 1;
+}
+
+.main-crossroad .tab-products ul > li:hover div {
+  border-color: #c6d6e9;
+  background-color: #f0f4f7;
+  background-position: -500px 100%;
+  cursor: pointer;
+}
+
+.main-crossroad .tab-products ul h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 0 21px;
+  color: #003d6e;
+  font-size: 1.53em;
+}
+
+.main-crossroad .tab-products ul ul {
+  list-style: none;
+}
+
+.main-crossroad .tab-products ul p {
+  margin: 26px 0 0;
+}
+
+.main-crossroad .tab-products ul li {
+  margin: 0 0 18px;
+}
+
+.main-crossroad .tab-products ul .inline-btn {
+  margin-right: 12px;
+}
+
+.main-crossroad .tab-products ul .ico {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 50px;
+  height: 50px;
+  background: url("../images/cpoj/ico-products.png") 0 0 no-repeat;
+}
+
+.main-crossroad .tab-products .left-over,
+.main-crossroad .tab-products .right-over {
+  position: absolute;
+  left: -65px;
+  top: -55px;
+  width: 122px;
+  height: 384px;
+  background: url("../images/cpoj/products-over.png") 0 0 no-repeat;
+  pointer-events: none;
+}
+.layout_homepage .main-crossroad .tab-products .left-over, .layout_homepage-branding .main-crossroad .tab-products .left-over {
+    background: none;
+}
+
+.main-crossroad .tab-products .right-over {
+  left: auto;
+  right: -65px;
+  background-position: -122px 0;
+}
+
+.main-crossroad .tab-products .slider {
+  margin: 0 20px;
+  height: 8px;
+  background: #c2c2c2 url("../images/cpoj/slider2.png") 0 -25px repeat-x;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1;
+}
+
+.main-crossroad .tab-products .slider-range {
+  margin: 0 71px 0 70px;
+  position: relative;
+  height: 8px;
+}
+
+.main-crossroad .tab-products .slider-handle {
+  width: 141px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  *top: -3px;
+  margin-left: -70px;
+  background: url("../images/cpoj/slider2.png") 0 0 no-repeat;
+}
+
+.main-crossroad .tab-products .slider-handle:hover {
+  background-position: 0 -100px;
+}
+
+.main-crossroad .tab-products .item-life .ico {
+  background-position: 0 0;
+}
+
+.main-crossroad .tab-products .item-life:hover .ico {
+  background-position: 0 -50px;
+}
+
+.main-crossroad .tab-subjects {
+  margin: 25px 0 0;
+}
+
+.main-crossroad .tab-subjects ul {
+  margin: 35px -10px 0 -17px;
+  background: url("../images/cpoj/shelf.png") 0 94px no-repeat;
+  zoom: 1;
+  min-height: 199px;
+  _height: 199px;
+  padding: 0 34px 0 33px;
+}
+
+.main-crossroad .tab-subjects ul:before,
+.main-crossroad .tab-subjects ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-crossroad .tab-subjects ul + ul {
+  margin-top: -47px;
+}
+
+.main-crossroad .tab-subjects ul li {
+  float: left;
+  width: 180px;
+  padding: 135px 0 0;
+  margin: 0;
+  background: none;
+  position: relative;
+  text-align: center;
+}
+
+.main-crossroad .tab-subjects .item-traveling,
+.main-crossroad .tab-subjects .item-life {
+  width: 170px;
+}
+
+.main-crossroad .tab-subjects .ico-selected,
+.main-crossroad .tab-subjects .ico-selected-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: 500px;
+  background: url("../images/cpoj/ico-sprite.png") -60px 0 no-repeat;
+}
+
+.main-crossroad .tab-subjects .ico-selected-num {
+  left: 34px;
+  text-indent: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  background-position: -90px 0;
+}
+
+.main-crossroad .window {
+  position: absolute;
+  top: 77px;
+  left: -5000px;
+  background: url("../images/cpoj/window-bg.png");
+  padding: 10px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  text-align: left;
+}
+
+.main-crossroad .window-in {
+  background: #f5f8f9 url("../images/cpoj/map-info-window-in.png") 0 0 repeat-x;
+  padding: 9px 30px 9px 7px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.main-crossroad .window-in p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.main-crossroad .window-in .jquery-checkbox {
+  margin: 2px 6px 2px 0;
+}
+
+.main-crossroad .tab-subjects ul li:hover {
+  z-index: 2;
+}
+
+.main-crossroad .tab-subjects ul li:hover .window {
+  left: 50%;
+}
+
+.main-crossroad .tab-subjects .item-traveling {
+  background: url("../images/cpoj/item-traveling.png") 50% 30px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-housing {
+  background: url("../images/cpoj/item-housing.png") 50% 22px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-cottage {
+  background: url("../images/cpoj/item-cottage.png") 50% 18px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-injury {
+  background: url("../images/cpoj/item-injury.png") 50% 31px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-car {
+  background: url("../images/cpoj/item-car.png") 50% 47px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-life {
+  background: url("../images/cpoj/item-life.png") 50% 24px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-work {
+  background: url("../images/cpoj/item-work.png") 50% 25px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-pension {
+  background: url("../images/cpoj/item-pension.png") 50% 24px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-animals {
+  background: url("../images/cpoj/item-animals.png") 50% 21px no-repeat;
+}
+
+.main-crossroad .tab-subjects .item-responsibility {
+  background: url("../images/cpoj/item-responsibility.png") 50% 18px no-repeat;
+}
+
+.main-crossroad .result-banner {
+  margin: 0 80px;
+  background: #e1e1e1 url("../images/cpoj/result-box.png") 0 0px repeat-x;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 23px 16.5em 21px 15px;
+  position: relative;
+  font-size: 1.53em;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.main-crossroad .result-banner p {
+  color: #222;
+  margin: 0;
+  zoom: 1;
+}
+
+.main-crossroad .result-banner .inline-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -16px;
+  height: 33px;
+  line-height: 33px;
+  border: none;
+  background-position: 0 -400px;
+  background-color: #003e6f;
+}
+
+.main-crossroad .result-banner .inline-btn span,
+.main-crossroad .result-banner .inline-btn input {
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  padding: 0 12px;
+}
+
+.main-crossroad .result-banner .inline-btn:hover span,
+.main-crossroad .result-banner .inline-btn:hover input {
+  color: #c8ebff;
+}
+
+.main-crossroad .result-banner .rank {
+  position: absolute;
+  right: 9em;
+  top: 50%;
+  margin-top: -22px;
+  height: 44px;
+  width: 143px;
+  overflow: hidden;
+  text-indent: 500px;
+  background: url("../images/cpoj/ico-lights.png") 0 -44px repeat-x;
+}
+
+.main-crossroad .result-banner .rank-in {
+  display: block;
+  height: 44px;
+  width: 0%;
+  background: url("../images/cpoj/ico-lights.png") 0 0 repeat-x;
+}
+
+.main-crossroad .result-banner .rank-in-1 {
+  width: 33%;
+}
+
+.main-crossroad .result-banner .rank-in-2 {
+  width: 66%;
+}
+
+.main-crossroad .result-banner .rank-in-3 {
+  width: 100%;
+}
+
+.result-window {
+  background: url("../images/cpoj/result-window.png") 0 100% no-repeat, url("../images/cpoj/result-window.png") -1000px 0 no-repeat, url("../images/cpoj/result-window.png") -2000px 0 repeat-y, #feffff;
+  /* cesta k pozadí pro IE musí být od html */
+  -pie-background: url("/cpoj-theme/images/cpoj/result-window.png") 0 100% no-repeat, url("/cpoj-theme/images/cpoj/result-window.png") -1000px 0 no-repeat, url("/cpoj-theme/images/cpoj/result-window.png") -2000px 0 repeat-y, #feffff;
+  border: 1px solid #cad7e7;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 99;
+  width: 938px;
+}
+
+.main-crossroad .result-window {
+  border: 0 none;
+}
+
+.main-crossroad .result-window.show {
+  border: 1px solid #cad7e7;
+}
+
+.result-window .great-results {
+  padding: 24px 0 12px 160px;
+  position: relative;
+  min-height: 100px;
+  _height: 100px;
+}
+
+.result-window .bad-results {
+  padding: 24px 0 12px 160px;
+  border-top: 1px solid #d2dff0;
+  position: relative;
+  min-height: 100px;
+  _height: 100px;
+}
+
+.result-window .great-results:before,
+.result-window .bad-results:before {
+  content: '';
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  left: 28px;
+  top: 50%;
+  margin-top: -43px;
+  background: url("../images/cpoj/ico-sprite.png") 0 -55px no-repeat;
+}
+
+.result-window .bad-results:before {
+  background-position: 0 -145px;
+}
+
+.result-window p {
+  font-size: 1.15em;
+  width: 520px;
+  margin-bottom: 1em;
+}
+
+.result-window ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 180px;
+  padding: 0 0 0 50px;
+  margin: 0 20px 12px 0;
+  background: none;
+  position: relative;
+  vertical-align: top;
+}
+
+.result-window ul h2 {
+  padding: 0;
+  display: block;
+  margin: 0 0 2px;
+  font-size: 1.53em;
+}
+
+.result-window ul p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.result-window ul a {
+  color: #a9a9a9;
+}
+
+.result-window ul .ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("../images/cpoj/ico-products.png") 0 0 no-repeat;
+}
+
+.result-window .item-life .ico {
+  background-position: -8px -5px;
+}
+
+.result-window .close {
+  position: absolute;
+  width: 23px;
+  height: 24px;
+  overflow: hidden;
+  text-indent: 500px;
+  right: 18px;
+  top: 17px;
+  background: url("../images/cpoj/ico-sprite.png") -121px 0 no-repeat;
+}
+
+.homepage .row {
+  padding: 21px 0 28px;
+}
+
+.homepage .col-side {
+  float: left;
+  width: 300px;
+}
+
+.homepage .col-content {
+  float: right;
+  width: 619px;
+}
+
+.homepage .story-box .bd {
+  background: #002f59 url("../images/cpoj/promo.png") 0 0 repeat-x;
+  color: #fff;
+  padding: 12px 15px 8px;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.homepage .story-box .bd p {
+  overflow: hidden;
+  zoom: 1;
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.homepage .story-box .ft {
+  background: #144068 url("../images/cpoj/promo.png") 0 100% repeat-x;
+  padding: 7px 16px 12px;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.homepage .story-box .ft p {
+  margin: 0;
+}
+
+.homepage .story-box .ft a {
+  color: #8a9caf;
+}
+
+.homepage .story-box span {
+  float: left;
+  display: inline;
+  margin: -5px 14px -5px 0;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -5px;
+  font-weight: normal;
+}
+
+.homepage .story-box span strong {
+  font-size: 119px;
+  line-height: 100px;
+  font-weight: normal;
+}
+
+.homepage .contact-box {
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.aui .homepage .contact-box h2 {
+  margin-right: 7em;
+}
+
+.aui .homepage .contact-box .number {
+  border: none;
+  margin: 0;
+  font-size: 1.53em;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  line-height: 1.2;
+  padding: 0 0 0 23px;
+  background-position: 0 -1797px;
+}
+
+.homepage .contact-box .type {
+  float: left;
+  width: 286px;
+}
+
+.homepage .contact-box .tweet {
+  padding: 0 0 0 78px;
+  overflow: hidden;
+  zoom: 1;
+  border-left: 1px solid #c2d4eb;
+  background: url("../images/cpoj/ico-all.png") 35px -1909px no-repeat;
+}
+
+.homepage .boxes .box1,
+.homepage .boxes .box3 {
+  width: 258px;
+  padding: 20px 25px;
+}
+
+.homepage .boxes .box3 {
+  float: right;
+}
+
+.homepage .boxes .box2 {
+  width: 258px;
+  padding: 20px 30px;
+}
+
+.homepage .boxes .box1 > a {
+  margin: -20px -25px;
+  padding: 20px 25px;
+}
+
+.homepage .boxes h2 {
+  margin: 0 0 0.8em;
+}
+
+.homepage .boxes .box1 {
+  position: relative;
+}
+
+.homepage .boxes .box1 p {
+  margin: 16px 0 0;
+}
+
+.homepage .boxes .box1 .tip {
+  position: absolute;
+  left: -176px;
+  top: -30px;
+  width: 165px;
+  height: 106px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url("../images/cpoj/tip-saving-your-time.png") 0 0 no-repeat;
+  pointer-events: none;
+  margin: 0;
+}
+
+.homepage .boxes .box2 h2 {
+  margin-bottom: 1.2em;
+}
+
+.homepage .boxes .box2 p {
+  margin: 0 0 6px;
+}
+
+.homepage .boxes .box3 li {
+  margin: 0 0 0.5em;
+}
+
+.homepage .boxes .inline-btn:first-child {
+  margin-right: 3px;
+}
+
+.homepage .boxes .inline-btn span {
+  padding: 0 11px;
+}
+
+/* PACKET DETAIL */
+.packet-page .column-1-2 .wrap {
+  border-right: 1px solid #c2d4eb;
+  padding: 0 45px 0 0;
+  margin: 0 0 35px;
+}
+
+.packet-page .column-2-2 h2 {
+  margin-top: 2em;
+}
+
+.packet-page .columns {
+  margin: 0 0 35px;
+}
+
+.packet-page .column-1-2 {
+  float: left;
+  width: 470px;
+}
+
+.packet-page .column-2-2 {
+  float: right;
+  width: 440px;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+.packet-page .column-1-2 > div > :first-child, .packet-page .column-2-2 > :first-child {
+  margin-top: 0;
+}
+
+.packet-page .note-box {
+  margin: 0px;
+}
+
+.packet-page .note-box .bd {
+  padding: 0px 0 5px 20px;
+}
+
+.packet-page .note-box h2 {
+  margin: 20px 0 0.7em;
+}
+
+.packet-page .note-box .thick-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 158px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+/* FIRM CROSSROAD */
+.firm-crossroad-page .columns h2 {
+  color: #777;
+}
+
+.firm-crossroad-page .columns ul {
+  float: left;
+  width: 220px;
+  margin: 0 0 0 20px;
+}
+
+.firm-crossroad-page .columns h2 + ul {
+  margin: 0;
+}
+
+.firm-crossroad-page .col-content {
+  margin: 20px 0 0;
+}
+
+/* CONTACT US */
+.contact-us-page .gutter {
+  margin-top: 23px;
+}
+
+.contact-us-page .col-content {
+  width: 600px;
+}
+
+.contact-us-page .col-side {
+  width: 300px;
+}
+
+/* CONTACT */
+.contact-page .boxes {
+  margin: 0 0 3em;
+}
+
+.contact-page .boxes p {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.contact-page .boxes h2 {
+  margin: 0 0 0.9em;
+}
+
+.contact-page .boxes .ico-tel,
+.contact-page .boxes .ico-dsc,
+.contact-page .boxes .ico-msg {
+  padding: 58px 0 0;
+  text-align: center;
+  float: left;
+  display: inline;
+  background: url("../images/cpoj/ico-all.png") 50% 0 no-repeat;
+  margin: 0 0 0 65px;
+}
+
+.contact-page .boxes .ico-tel {
+  background-position: 50% -200px;
+  margin: 0;
+}
+
+.contact-page .boxes .ico-dsc {
+  background-position: 50% -1400px;
+}
+
+.contact-page .columns {
+  background: url("../images/cpoj/cols3.png") 50% 0 repeat-y;
+  margin: 0 0 2.5em;
+}
+
+.contact-page .columns > div {
+  padding: 0 25px;
+  width: 263px;
+  margin: 0;
+}
+
+.contact-page .column-1-3 p {
+  margin: 0 0 20px;
+}
+
+.contact-page .column-1-3 .inline-btn {
+  float: left;
+  margin: 0 16px 5px 0;
+}
+
+.contact-page .column-1-3 .big-number {
+  margin: -0.25em 0 0.1em;
+}
+
+.contact-page .column-1-3 .links {
+  margin: 26px 0 0;
+}
+
+.contact-page .columns img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-page .columns td {
+  color: #222;
+  padding: 0 0 3px 15px;
+  *padding-bottom: 1px;
+}
+
+.contact-page .columns th {
+  vertical-align: top;
+}
+
+.contact-page .columns form {
+  padding: 0 15px;
+}
+
+.layout_contact #main-content > .portlet-layout.boxes,
+.layout_contact #column-5,
+.layout_contact #column-6 {
+  display: none;
+}
+
+/* CONTACT MEDIA */
+.contact-media-page .column-1-3 {
+  width: 280px;
+}
+
+.contact-media-page .column-2-3 {
+  width: 205px;
+  padding: 0 95px 0 50px;
+  border-right: 1px solid #c2d4eb;
+  margin: 0;
+}
+
+.contact-media-page .column-3-3 {
+  width: 280px;
+  padding: 0 0 0 29px;
+  border-left: 1px solid #c2d4eb;
+  margin: 0 0 0 -1px;
+}
+
+.contact-media-page .columns td {
+  color: #222;
+  padding: 0 0 3px 15px;
+  *padding-bottom: 1px;
+}
+
+.contact-media-page .columns th {
+  vertical-align: top;
+}
+
+.contact-media-page .columns h3 {
+  margin: 0.75em 0 0.6em;
+}
+
+.contact-media-page .column-2-3 p {
+  margin: 1.6em 0 1.5em;
+}
+
+.contact-media-page .column-2-3 h3 + p {
+  margin: -0.6em 0 0.8em;
+}
+
+.contact-media-page .box1 {
+  width: 255px;
+  padding: 17px 26px;
+}
+
+.contact-media-page .box2 {
+  width: 269px;
+  padding: 17px 26px;
+}
+
+.contact-media-page .box1 > a, .contact-media-page .box2 > a {
+  margin: -17px -26px;
+  padding: 17px 26px;
+}
+
+.contact-media-page .box3 {
+  padding: 17px 26px;
+  width: 258px;
+}
+
+.contact-media-page .boxes h2 {
+  margin: 0 0 0.7em;
+}
+
+.contact-media-page .boxes img {
+  display: block;
+}
+
+.contact-media-page .boxes p {
+  margin: 1.1em 0 0;
+}
+
+.contact-media-page .box3 p {
+  margin: 0 0 1.2em;
+}
+
+.contact-media-page .box3 li {
+  background: url("../images/cpoj/ico-all.png") 0 -1598px no-repeat;
+  padding-left: 34px;
+  min-height: 28px;
+  _height: 28px;
+  margin: 0.8em 0 0;
+}
+
+/* CONSULTANT PAGE */
+.contact-detail-page h2 {
+  margin-top: 1.5em;
+}
+
+.contact-detail-page .col-content {
+  float: right;
+  width: 620px;
+}
+
+.contact-detail-page .col-side {
+  float: left;
+  width: 280px;
+}
+
+.contact-detail-page .columns > ul {
+  width: 186px;
+}
+
+.contact-detail-page .column-1-2 {
+  padding: 0;
+  width: 279px;
+  border-right: 1px solid #d2dff0;
+}
+
+.contact-detail-page .column-2-2 {
+  padding: 0 0 0 30px;
+  width: 310px;
+  border-left: 1px solid #d2dff0;
+  margin: 0 0 0 -1px;
+}
+
+.contact-detail-page .columns table {
+  float: none;
+  width: auto;
+  border: none;
+}
+
+.contact-detail-page .columns td {
+  color: #222;
+  padding: 0 0 3px 15px;
+  *padding-bottom: 1px;
+  background: none;
+}
+
+.contact-detail-page .columns th {
+  background: none;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+}
+
+.contact-detail-page .columns p {
+  margin: 0.8em 0 0;
+}
+
+.contact-detail-page .columns .inline-btn {
+  margin: 4px 0 0;
+}
+
+.contact-detail-page .note-box {
+  float: right;
+  width: 290px;
+  margin: 0 20px 0 0;
+}
+
+.contact-detail-page .note-box .bd {
+  padding-bottom: 5px;
+}
+
+.contact-detail-page .note-box h2 {
+  margin-bottom: 1.2em;
+}
+
+.contact-detail-page .note-box .shadow {
+  background-position: 0 -12px;
+}
+
+.contact-detail-page .note-box .shadow div {
+  background-position: 100% -18px;
+}
+
+.contact-detail-page table {
+  float: left;
+  width: 282px;
+  border: 1px solid #cad7e7;
+}
+
+.contact-detail-page td {
+  background: #f8fafc;
+  padding: 12px 10px 12px 20px;
+}
+
+.contact-detail-page th {
+  background: #f2f6fa;
+  padding: 12px 14px 12px 14px;
+  border-right: 1px solid #d2dff0;
+}
+
+.contact-detail-page .even th {
+  background: #f9fbfd;
+}
+
+.contact-detail-page .even td {
+  background: #fff;
+}
+
+.contact-detail-page .cor {
+  background-image: url("../images/cpoj/table-cor2.png");
+}
+
+.contact-detail-page .col-content .table-wrap {
+  float: left;
+  width: 282px;
+}
+
+/* GENERAL PAGE */
+.general-page .col-content {
+  width: 670px;
+  float: right;
+}
+
+.general-page .col-side {
+  float: left;
+  margin: 0;
+  width: 220px;
+}
+
+.general-page .media-box {
+  margin-left: 50px;
+}
+
+.general-page .table-wrap-content-table {
+  margin-bottom: 25px;
+}
+
+.general-page .std-box {
+  margin: 0 0 0 -25px;
+}
+
+.general-page .std-box.std-box-crossroad {
+  margin: 0;
+}
+
+.general-page .std-box > h2 {
+  margin-bottom: 1em;
+}
+
+.general-page .std-box .num-list {
+  margin: 1em 0;
+}
+
+.general-page .std-box .col-h-l, .general-page .std-box .col-h-r {
+  width: 46%;
+}
+
+.general-page .std-box .num-list li {
+  margin: 0 0 15px;
+}
+
+.general-page .std-box .num-list li:before, .general-page .std-box .num-list li .ie-counter {
+  background-position: -175px 0;
+  top: 0;
+  margin-top: 0px;
+}
+
+.general-page .std-box + h3 {
+  margin-bottom: .8em;
+}
+
+.annot-box {
+  border: 1px solid #d2dff0;
+  color: #003565;
+  background: #f5f8f9 url("../images/cpoj/annot-box.png") 100% 0 no-repeat;
+  padding: 30px 30px 11px;
+  margin-bottom: 30px;
+  font-size: 1.23em;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.aui .annot-box .small {
+  font-size: 13px;
+  color: #555;
+}
+
+.aui .annot-box .small strong {
+  display: block;
+  font-size: 1.15em;
+  margin-bottom: 5px;
+}
+
+/* CROSSROAD */
+.std-box-crossroad {
+  padding: 0px 14px;
+}
+
+.std-box-crossroad .crossroad {
+  margin: 15px 0;
+  zoom: 1;
+  position: relative;
+}
+
+.crossroad {
+  margin: 0 0 20px;
+  overflow: hidden;
+}
+
+.aui .crossroad > h2 {
+  color: #607999;
+  margin-top: 0;
+}
+
+.aui .crossroad ul {
+  list-style: none;
+  margin: 0 0 -20px -20px;
+  padding: 0;
+  font-size: 0px;
+  letter-spacing: -1px;
+}
+
+.aui .crossroad li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background: none;
+  margin: 0 0 20px 20px;
+  padding: 0;
+  width: 210px;
+  position: relative;
+  min-height: 120px;
+  font-size: 13px;
+  letter-spacing: 0;
+  vertical-align: top;
+}
+
+.aui .crossroad li:before, .aui .crossroad li b {
+  content: '';
+  width: 1px;
+  background: #c2d4eb;
+  position: absolute;
+  left: -11px;
+  top: 15px;
+  bottom: 15px;
+}
+
+.aui .crossroad a {
+  display: block;
+  padding: 15px;
+  text-decoration: underline;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.aui .crossroad a:hover {
+  background: #f3f6fb;
+}
+
+.aui .crossroad li h2, .aui .crossroad li h3 {
+  font-size: 100%;
+  font-weight: normal;
+  text-align: center;
+  color: #003565;
+  margin: 0;
+  padding: 0;
+}
+
+.aui .crossroad img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* STD LIST */
+.aui .std-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.aui .std-list > li {
+  border: 1px solid #c2d4eb;
+  margin: 0 0 30px;
+  padding: 25px 30px;
+  background: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.aui .std-list > li > h2 {
+  margin-top: 0;
+  color: #555;
+  font-size: 1.23em;
+  font-weight: bold;
+}
+
+.aui .std-list > li > h2 strong {
+  overflow: hidden;
+}
+
+.aui .std-list .date {
+  float: right;
+  display: inline;
+  width: 80px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.aui .std-list ul {
+  list-style: none;
+  margin-botton: 0;
+}
+
+.aui .std-list .att-list {
+  margin-bottom: -15px;
+}
+
+.aui .std-list .att-list li {
+  width: 154px;
+}
+
+.aui .std-list p {
+  margin: 0;
+}
+
+.aui .std-list .first {
+  background: url("../images/cpoj/grad1.png") 0 100% repeat-x;
+}
+
+.aui .std-list .first h2 {
+  font-weight: normal;
+  font-size: 1.54em;
+  margin: 0 0 0.6em 0;
+  color: #222;
+}
+
+.aui .std-list .first h3 {
+  font-size: 1.23em;
+  margin: 0.5em 0 0.7em;
+}
+
+/* ATT LIST */
+.aui .att-list {
+  margin: 0 0 0 -20px;
+  list-style: none;
+  font-size: 0px;
+  letter-spacing: -1px;
+}
+
+.aui .att-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 290px;
+  margin: 0 0 15px 20px;
+  padding: 0 0 0 35px;
+  color: #555;
+  background: none;
+  font-size: 13px;
+  letter-spacing: 0px;
+  position: relative;
+  min-height: 30px;
+  _height: 30px;
+  vertical-align: top;
+}
+
+.att-list a {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.att-list a:before, .att-list a b {
+  content: '';
+  width: 25px;
+  height: 27px;
+  background: url("../images/cpoj/ico-all.png") 0 -1600px no-repeat;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.att-list .ico-download {
+  padding-top: 8px;
+}
+
+.att-list .ico-download:before, .att-list .ico-download b {
+  background-position: 0 -2700px;
+}
+
+.att-list .ico-ppt:before, .att-list .ico-ppt b {
+  background-position: 0 -2800px;
+}
+
+.att-list .ico-img:before, .att-list .ico-img b {
+  background-position: 0 -2900px;
+}
+
+.att-list .ico-video:before, .att-list .ico-video b {
+  background-position: 0 -3000px;
+}
+
+/* PEOPLE LIST */
+.people-list {
+  list-style: none;
+  margin: 0 -5px 10px -13px;
+  font-size: 0px;
+  letter-spacing: -1px;
+  padding: 0;
+}
+
+.aui .people-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 154px;
+  background: none;
+  font-size: 13px;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0 0 10px 8px;
+  border: 5px solid white;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  behavior: none;
+}
+
+.people-list .name {
+  font-size: .85em;
+  display: block;
+  margin-top: 5px;
+  zoom: 1;
+}
+
+.people-list .overlay {
+  height: 80px;
+  padding: 64px 0 0 18px;
+  display: none;
+}
+
+.people-list .overlay a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0 0 0 25px;
+}
+
+.people-list .ico-zoom {
+  background: url("../images/cpoj/ico-all.png") 0 -2500px no-repeat;
+}
+
+.people-list .ico-download {
+  background: url("../images/cpoj/ico-all.png") 0 -2600px no-repeat;
+}
+
+.people-list li:hover {
+  background: white url("../images/cpoj/grad1.png") 0 100% repeat-x;
+}
+
+.people-list li:hover img {
+  display: block;
+  visibility: hidden;
+}
+
+.people-list li:hover .overlay {
+  display: block;
+}
+
+/* MEDIA BOX */
+.media-box {
+  border: 1px solid #cad7e7;
+  padding: 9px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin: 0 0 45px;
+  position: relative;
+}
+
+.media-box:before, .media-box b {
+  content: '';
+  background: url("../images/cpoj/media-box-shadow.png") 50% 0 no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: -24px;
+  width: 600px;
+  margin-left: -300px;
+  height: 23px;
+}
+
+/* SIDE MENU */
+.side-menu {
+  position: relative;
+}
+
+.side-menu ul {
+  list-style: none;
+}
+
+.aui .side-menu li {
+  margin: -1px 0 0 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+  vertical-align: bottom;
+  background: transparent;
+  zoom: 1;
+}
+
+.aui .side-menu li a {
+  text-decoration: none;
+  padding: 13px 35px 14px 15px;
+  background: url("../images/cpoj/side-menu.png") -230px 0 no-repeat;
+  display: block;
+  line-height: 16px;
+}
+
+.aui .side-menu .two-rows a {
+  padding: 7px 25px 7px 15px;
+}
+
+.aui .side-menu li a:hover {
+  background-position: -695px 0;
+}
+
+.aui .side-menu .active {
+  background: none;
+  background: #003d6f;
+  border-radius: 5px 0 5px 5px;
+  -moz-border-radius: 5px 0 5px 5px;
+  -webkit-border-radius: 5px 0 5px 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.aui .side-menu .active a, .aui .side-menu .active a:hover {
+  background-position: -459px 0;
+  margin-right: -16px;
+  color: #fff;
+  border-radius: 5px 0 5px 5px;
+  -moz-border-radius: 5px 0 5px 5px;
+  -webkit-border-radius: 5px 0 5px 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  height: 16px;
+  position: relative;
+  *position: static;
+}
+
+.aui .side-menu .active.two-rows a, .aui .side-menu .active.two-rows a:hover {
+  height: 29px;
+}
+
+.aui .side-menu .three-rows.active a, .aui .side-menu .three-rows.active a:hover {
+  height: 51px;
+}
+
+@media only screen and (max-width: 760px) {
+	.jsmenu-columns {
+		display: none;
+	}
+
+	.jsmenu {
+		display: block !important;
+	}
+
+	.jsmenu h2 {
+		display: block !important;
+	}
+}
+
+/* ICO MENU */
+.ico-menu {
+  position: relative;
+}
+
+.aui .ico-menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.aui .ico-menu li {
+  margin: 0 0 20px;
+  width: 100%;
+  vertical-align: bottom;
+  background: url("../images/cpoj/grad6.png") 0 100% repeat-x;
+  padding: 0;
+}
+
+.aui .ico-menu li a {
+  display: block;
+  padding: 15px 20px 15px 75px;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  background-position: 22px 50%;
+  background-repeat: no-repeat;
+  min-height: 32px;
+  position: relative;
+}
+
+.aui .ico-menu .tip {
+  position: absolute;
+  right: -25px;
+  top: -88px;
+  width: 218px;
+  height: 108px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-ico-menu.png") 0 0 no-repeat;
+  text-indent: -1000px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ico-menu li .ico-cal-house {
+  background-image: url("../images/cpoj/ico-cal-house.png");
+}
+
+.ico-menu li .ico-cal-cycle {
+  background-image: url("../images/cpoj/ico-cal-cycle.png");
+}
+
+.ico-menu li .ico-cal-reduction {
+  background-image: url("../images/cpoj/ico-cal-reduction.png");
+}
+
+.map-search-box {
+  border: 1px solid #cad7e7;
+  background: #f1f5f8 url("../images/cpoj/map-grad-top.png") 0 0 repeat-x;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.map-search-box .spc {
+  padding: 20px 19px 6px;
+  background: url("../images/cpoj/map-grad-bottom.png") 0 100% repeat-x;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.map-search-box .row {
+  position: relative;
+  clear: both;
+}
+
+.map-search-box .map-wrap {
+  margin: 0 0 15px;
+  position: relative;
+}
+
+.aui .map-search-box p {
+  margin: 0;
+}
+
+.aui .map-search-box p.paging {
+  margin: 0 0 20px 0;
+}
+
+.map-search-box .inp-row .inp-text {
+  width: 303px;
+}
+
+.aui .map-search-box .filter {
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.map-search-box .filter .inp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 344px;
+  margin: 0 5px 0 0;
+}
+
+.map-search-box .filter > input {
+  vertical-align: middle;
+}
+
+.map-search-box .filter > label {
+  vertical-align: middle;
+  margin: 0 16px 0 0;
+}
+
+.map-search-box .filter .checkbox {
+  margin-left: 10px;
+  position: relative;
+}
+
+.map-search-box .filter .checkbox > label {
+  position: relative;
+  top: 3px;
+}
+
+.map-search-box .filter .checkbox .layerChBox {
+  position: absolute;
+  top: -12px;
+  left: 100px;
+  border: 1px solid #cad7e7;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  /* behavior: url(/cpoj-theme/css/PIE.htc); */
+  border-radius: 5px;
+  width: 325px;
+  height: 95px;
+  z-index: 50;
+}
+
+.map-search-box .filter .checkbox .layerChBox .arrow {
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: -9px;
+  background: white url("../images/cpoj/layer-arrow.png") 0 0 no-repeat;
+  width: 9px;
+  height: 15px;
+}
+
+.map-search-box .filter .checkbox .layerChBox .in {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.map-search-box .filter .checkbox .layerChBox .checkbox {
+  margin: 0 0 10px 0;
+  width: 175px;
+  float: left;
+}
+
+.map-search-box .filter .checkbox .layerChBox .checkbox.first {
+  width: 130px;
+}
+
+.map-search-box .filter .checkbox .layerChBox .jquery-checkbox {
+  float: left;
+}
+
+.map-search-box .result-text {
+  display: block;
+  clear: both;
+  position: relative;
+  float: left;
+  margin-bottom: -15px;
+}
+
+.map-search-box .result-text .info-window-close {
+  top: 0;
+  right: -20px;
+}
+
+.map-search-box .map-wrap > img {
+  display: block;
+}
+
+.map-search-box .menu,
+.map-search-box .menu-left {
+  border-right: 1px solid #cad7e7;
+  border-top: 1px solid #cad7e7;
+  border-left: 1px solid #cad7e7;
+  padding: 10px;
+  float: right;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin: 50px 0 0;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.map-search-box .menu-left {
+  border: none;
+  padding: 10px;
+  float: left;
+  display: block;
+  padding: 10px 10px 10px 0;
+}
+
+.map-search-box .menu > *, .map-search-box .menu-left > * {
+  border-left: 1px solid #cad7e7;
+  padding: 2px 0 2px 8px;
+  margin: -2px 0 -2px 0;
+}
+
+.map-search-box .menu > :first-child, .map-search-box .menu-left > :first-child {
+  border: none;
+  padding: 2px 8px 0 0;
+  margin: 0;
+}
+
+.map-search-box p.error {
+  color: #c63751;
+}
+
+.map-search-box .legend span {
+  float: left;
+  padding: 0 0 13px 40px;
+  margin: 0 35px -5px 0;
+  background: url("../images/cpoj/ico-all.png") no-repeat;
+}
+
+.map-search-box .legend .ico-consultant {
+  background-position: 0 -700px;
+}
+
+.map-search-box .legend .ico-branch {
+  background-position: 0 -800px;
+}
+
+.map-search-box .legend .ico-sum {
+  background-position: 0 -900px;
+}
+
+.map-search-box .col-left {
+  float: left;
+  display: inline;
+}
+
+.map-search-box .col-right {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.map-search-box .col-left ul {
+  border-top: 1px solid #cad7e7;
+  width: 260px;
+  margin: 0 20px 20px 0;
+  padding: 0;
+}
+
+.map-search-box .col-left li {
+  border-bottom: 1px solid #cad7e7;
+  background: none;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+
+.map-search-box .col-left li a {
+  display: block;
+  margin: 0 -10px -2px;
+  position: relative;
+  top: -1px;
+  text-decoration: none;
+  color: #555555;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: url("../images/cpoj/map-item-active.png") 0 -500px repeat-x;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  zoom: 1;
+}
+
+.map-search-box .col-left li a:hover {
+  text-decoration: underline;
+}
+
+.map-search-box .col-left li a.active, .map-search-box .col-left li a.active:hover {
+  background-color: #f3f6fb;
+  background-position: 0 0;
+  text-decoration: none;
+}
+
+.map-search-box .col-left li strong {
+  color: #222;
+  font-weight: normal;
+}
+
+.map-search-box .col-left li .item-mark {
+  position: absolute;
+  left: 9px;
+  top: 15px;
+}
+
+.map-search-box .col-left .inline-btn {
+  background-color: #dee6f2;
+  background-position: 0 -200px;
+  margin: 0 11px 0 0;
+}
+
+.map-search-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 20px;
+}
+
+.map-search-box table.poradci-table td {
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.map-search-box .table-wrap {
+  margin: 0 0 20px;
+}
+
+.map-search-box .table-wrap table {
+  margin: 0;
+}
+
+.map-search-box .table-wrap .cor {
+  background-image: url("../images/cpoj/table-cor.png");
+}
+
+.map-search-box .table-wrap .cor.cor-tr {
+  display: none;
+}
+
+.map-search-box thead th {
+  background: #8babd3 url("../images/cpoj/table-thead.png") 0 0px repeat-x;
+  color: #fff;
+  border: 1px solid #e3ecf6;
+  border-width: 0 1px;
+  padding: 13px 20px;
+  font-weight: bold;
+}
+
+.map-search-box tbody td {
+  border: 1px solid #e3ecf6;
+  border-top: none;
+  padding: 12px 20px 11px;
+  background: #fefefe;
+}
+
+.map-search-box tbody .even td {
+  background: #f9fbfd;
+}
+
+.map-search-box tbody td table.contacts {
+  width: auto;
+}
+
+.map-search-box tbody td table.contacts .cor {
+  display: none;
+}
+
+.map-search-box tbody td table.contacts tr td,
+.map-search-box tbody td table.contacts tr th {
+  border: none;
+  padding: 0 0 5px 0;
+}
+
+.map-search-box tbody td table.contacts tr td {
+  color: #222;
+}
+
+.map-search-box tbody td table.contacts tr th {
+  width: 50px;
+}
+
+.map-search-box .status-dark-grey,
+.map-search-box .status-light-blue,
+.map-search-box .status-light-green,
+.map-search-box .status-dark-blue {
+  margin: 0 0 2px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #676767;
+  color: white;
+  display: block;
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
+  background: url("/cpoj-theme/images/cpoj/btn-all.png") 0 -750px repeat-x;
+  position: relative;
+  padding: 0 8px;
+  line-height: 21px;
+  text-decoration: none;
+  display: block;
+}
+
+.map-search-box .status-dark-grey + span,
+.map-search-box .status-light-blue + span,
+.map-search-box .status-light-green + span,
+.map-search-box .status-dark-blue + span {
+  display: block;
+}
+
+.map-search-box .status-light-blue {
+  background-position: 0 -600px;
+}
+
+.map-search-box .status-light-green {
+  background-position: 0 -950px;
+}
+
+.map-search-box .status-dark-blue {
+  background-position: 0 -850px;
+}
+
+.aui .map-search-box .column-of-4 {
+  border-right: 0 none;
+  margin-bottom: 0;
+}
+
+.map-search-box .std-box {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.map-search-box .filter .checkbox .layerChBox .status-dark-grey,
+.map-search-box .filter .checkbox .layerChBox .status-light-blue,
+.map-search-box .filter .checkbox .layerChBox .status-dark-blue,
+.map-search-box .filter .checkbox .layerChBox .status-light-green {
+  margin: 2px 0 0 10px;
+}
+
+.map-search-box table.poradci-table td.card .img-wrap,
+.map-search-box table.poradci-table td.card .desc {
+  display: block;
+  float: left;
+}
+
+.map-search-box table.poradci-table td.card .img-wrap img {
+  width:70px !important;
+  height:70px !important;
+}
+
+.map-search-box table.poradci-table td.card .desc a {
+  text-decoration: none;
+}
+
+.map-search-box table.poradci-table td.card .desc a:hover,
+.map-search-box table.poradci-table td.card .desc a:focus,
+.map-search-box table.poradci-table td.card .desc a:active {
+  text-decoration: underline;
+}
+
+.map-search-box table.poradci-table td.card {
+  width: 345px;
+}
+
+.map-search-box table.poradci-table td.card .desc {
+  width: 210px;
+  margin-left: 20px;
+}
+
+.map-search-box table.poradci-table td.card .desc strong {
+  display: block;
+  font-size: 15px;
+  color: #003565;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.map-search-box table.poradci-table td.card .desc span {
+  clear: none;
+  margin: 0 5px 5px 0;
+}
+
+.map-search-box .col-left li .item-icon {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  &.qualityStamp img {
+     position: relative;
+     left: 7px;
+	 top: -5px;
+  }
+}
+
+.info-window {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 354px;
+  z-index: 99;
+}
+
+.info-window-top {
+  overflow: hidden;
+  height: 15px;
+  background: url("../images/cpoj/map-info-window.png") 0 0px no-repeat;
+}
+
+.info-window-bot {
+  overflow: hidden;
+  height: 22px;
+  background: url("../images/cpoj/map-info-window.png") -1220px 0px no-repeat;
+}
+
+.info-window-mid {
+  background: url("../images/cpoj/map-info-window.png") -800px 0px repeat-y;
+  padding: 0 11px;
+}
+
+.info-window-in {
+  background: white url("../images/cpoj/map-info-window-in.png") 0 100% repeat-x;
+  padding: 11px 18px;
+  min-height: 125px;
+  _height: 125px;
+}
+
+.info-window .info-window-in h2 {
+  font-size: 115.3%;
+  font-weight: bold;
+  margin: 0 0 0.6em;
+}
+
+.info-window .info-window-in .title-branch {
+  color: #003565;
+  background: url("../images/cpoj/ico-all.png") 0 -1198px no-repeat;
+  padding: 0 0 0 21px;
+}
+
+.info-window .info-window-in p {
+  margin: 0 0 0.7em;
+}
+
+.info-window .info-window-in img {
+  margin: 0 5px 0 0;
+}
+.info-window.poradce .info-window-in .inner img {
+    margin-bottom: 10px;
+	width: auto !important;
+	height: auto !important;
+}
+
+.info-window.poradce .info-window-in .inner .imgWrap img {
+	width:70px !important;
+    height: 70px !important;
+}
+
+.info-window .info-window-in .geo {
+  border-top: 1px solid #c2d4eb;
+  font-size: 84.6%;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.info-window .info-window-in .results {
+  margin: 0;
+  padding: 0;
+}
+
+.info-window .info-window-in .results li {
+  margin: 0.9em 0 0;
+  padding: 0;
+  background: none;
+}
+.info-window .info-window-in .makeMeetingBtn + a {
+	float: right;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.info-window-close {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  right: 19px;
+  top: 18px;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-indent: -500px;
+  background: url("../images/cpoj/map-info-window.png") -1180px 0 no-repeat;
+}
+
+.info-window-close:hover {
+  background-position: -1195px 0;
+}
+
+/* MAP SEARCH */
+.map-search-box {
+  border: 1px solid #cad7e7;
+  background: #f1f5f8 url("../images/cpoj/map-grad-top.png") 0 0 repeat-x;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.map-search-box .spc {
+  padding: 20px 19px 6px;
+  background: url("../images/cpoj/map-grad-bottom.png") 0 100% repeat-x;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+.map-search-box .row {
+  position: relative;
+}
+
+.map-search-box .map-wrap {
+  margin: 0 0 30px;
+  position: relative;
+}
+
+.aui .map-search-box p {
+  margin: 0 0 1.3em;
+}
+
+.aui .map-search-box label {
+    display: inline-block;
+}
+
+.map-search-box .inp-row .inp-text {
+  width: 250px;
+}
+
+.aui .map-search-box .filter {
+  border-bottom: 1px solid #cad7e7;
+  padding: 0 0 20px;
+}
+
+.map-search-box .filter .inp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 345px;
+  margin: 0 22px 0 0;
+}
+
+.map-search-box .filter > input {
+  vertical-align: middle;
+}
+
+.map-search-box .filter > label {
+  vertical-align: middle;
+  margin: 0 16px 0 0;
+}
+
+.map-search-box .map-wrap > img {
+  display: block;
+}
+
+.map-search-box .menu {
+  float: right;
+  display: inline;
+  margin: 0 0 0 10px;
+}
+
+.map-search-box .menu > * {
+  border-left: 1px solid #cad7e7;
+  padding: 2px 0 2px 11px;
+  margin: -2px 0 -2px 8px;
+}
+
+.map-search-box .menu > :first-child {
+  border: none;
+}
+
+.map-search-box p.error {
+  color: #c63751;
+}
+
+.map-search-box .legend span {
+  float: left;
+  padding: 0 0 5px 40px;
+  margin: 0 35px -5px 0;
+  background: url("../images/cpoj/ico-all.png") no-repeat;
+}
+
+.map-search-box .legend .ico-consultant {
+  background-position: 0 -700px;
+}
+
+.map-search-box .legend .ico-branch {
+  background-position: 0 -800px;
+}
+
+.map-search-box .legend .ico-sum {
+  background-position: 0 -900px;
+}
+
+.map-search-box .col-left {
+  float: left;
+  display: inline;
+}
+
+.map-search-box .col-right {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.map-search-box .col-left ul {
+  border-top: 1px solid #cad7e7;
+  width: 260px;
+  margin: 0 20px 38px 0;
+  padding: 0;
+}
+
+.map-search-box .col-left li {
+  border-bottom: 1px solid #cad7e7;
+  background: none;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+}
+
+.map-search-box .col-left li a {
+  display: block;
+  margin: 0 -10px -2px;
+  position: relative;
+  top: -1px;
+  text-decoration: none;
+  color: #555555;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: url("../images/cpoj/map-item-active.png") 0 -500px repeat-x;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  zoom: 1;
+}
+
+.map-search-box .col-left li a:hover {
+  text-decoration: underline;
+}
+
+.map-search-box .col-left li a.active, .map-search-box .col-left li a.active:hover {
+  background-color: #f3f6fb;
+  background-position: 0 0;
+  text-decoration: none;
+}
+
+.map-search-box .col-left li strong {
+  color: #222;
+  font-weight: normal;
+}
+
+.map-search-box .col-left li .item-text {
+  padding: 15px 50px;
+}
+
+.map-search-box .col-left li .item-mark {
+  position: absolute;
+  left: 9px;
+  top: 15px;
+}
+
+.map-search-box .col-left .inline-btn {
+  background-color: #dee6f2;
+  background-position: 0 -200px;
+  margin: 0 11px 0 0;
+}
+
+.map-search-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 20px;
+}
+
+.map-search-box .table-wrap {
+  margin: 0 0 20px;
+}
+
+.map-search-box .table-wrap table {
+  margin: 0;
+}
+
+.map-search-box .table-wrap .cor {
+  background-image: url("../images/cpoj/table-cor.png");
+}
+
+.map-search-box thead th {
+  background: #8babd3 url("../images/cpoj/table-thead.png") 0 0px repeat-x;
+  color: #fff;
+  border: 1px solid #e3ecf6;
+  border-width: 0 1px;
+  padding: 13px 20px;
+  font-weight: bold;
+}
+
+.map-search-box tbody td {
+  border: 1px solid #e3ecf6;
+  border-top: none;
+  padding: 12px 20px 11px;
+  background: #fefefe;
+}
+
+.map-search-box tbody .even td {
+  background: #f9fbfd;
+}
+
+.info-window {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 354px;
+  z-index: 99;
+}
+
+.info-window-top {
+  overflow: hidden;
+  height: 15px;
+  background: url("../images/cpoj/map-info-window.png") 0 0px no-repeat;
+}
+
+.info-window-bot {
+  overflow: hidden;
+  height: 22px;
+  background: url("../images/cpoj/map-info-window.png") -1220px 0px no-repeat;
+}
+
+.info-window-mid {
+  background: url("../images/cpoj/map-info-window.png") -800px 0px repeat-y;
+  padding: 0 11px;
+}
+
+.info-window-in {
+  background: white url("../images/cpoj/map-info-window-in.png") 0 100% repeat-x;
+  padding: 11px 18px;
+  min-height: 125px;
+  _height: 125px;
+}
+
+.info-window .info-window-in h2 {
+  font-size: 115.3%;
+  font-weight: bold;
+  margin: 0 0 0.6em;
+}
+
+.info-window .info-window-in .title-branch {
+  color: #003565;
+  background: url("../images/cpoj/ico-all.png") 0 -1198px no-repeat;
+  padding: 0 0 0 21px;
+}
+
+.info-window .info-window-in p {
+  margin: 0 0 0.7em;
+}
+
+.info-window .info-window-in img {
+  margin: 0 5px 0 0;
+}
+
+.info-window .info-window-in .geo {
+  border-top: 1px solid #c2d4eb;
+  font-size: 84.6%;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.info-window .info-window-in .results {
+  margin: 0;
+  padding: 0;
+}
+
+.info-window .info-window-in .results li {
+  margin: 0.9em 0 0;
+  padding: 0;
+  background: none;
+}
+
+.info-window-close {
+  position: absolute;
+  right: 19px;
+  top: 18px;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-indent: -500px;
+  background: url("../images/cpoj/map-info-window.png") -1180px 0 no-repeat;
+}
+
+.info-window-close:hover {
+  background-position: -1195px 0;
+}
+
+.map-search-box .row > .info-window {
+  left: 50%;
+  top: 50%;
+  margin: 0 0 0 -177px;
+}
+
+.map-search-box .row > .info-window .info-window-bot {
+  background-position: -400px 0;
+  height: 15px;
+}
+
+.map-legend {
+  margin-top: 20px;
+  padding: 15px 25px 0;
+}
+
+.map-legend .row {
+  margin: 0 0 5px 0;
+}
+
+.map-legend a {
+  text-decoration: none;
+  float: left;
+}
+
+.map-legend .text {
+  clear: both;
+  display: block;
+}
+
+.aui .map-legend h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.aui .map-legend .column-of-4 {
+  border-right: none;
+}
+
+.map-legend .status-dark-grey,
+.map-legend .status-light-blue,
+.map-legend .status-light-green,
+.map-legend .status-dark-blue {
+  margin: 0 0 2px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #676767;
+  color: white;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  background: url("../images/cpoj/btn-all.png") 0 -750px repeat-x;
+  position: relative;
+  padding: 0 8px;
+  line-height: 21px;
+}
+
+.map-legend .status-light-blue {
+  background-position: 0 -600px;
+}
+
+.map-legend .status-light-green {
+  background-position: 0 -950px;
+}
+
+.map-legend .status-dark-blue {
+  background-position: 0 -850px;
+}
+
+/* bubbles for map */
+.info-window.poradce {
+  width: 430px !important;
+}
+
+.info-window.poradce .info-window-top,
+.info-window.poradce .info-window-bot,
+.info-window.poradci .info-window-top,
+.info-window.poradci .info-window-bot {
+  background: none;
+  height: 16px;
+  clear: both;
+  position: relative;
+  overflow: visible;
+}
+
+.info-window.poradce .info-window-mid, .info-window.poradci .info-window-mid {
+  background: none;
+  padding: 0;
+}
+
+.info-window.poradce .info-window-in, .info-window.poradci .info-window-in {
+  padding: 0;
+  min-height: 50px;
+}
+
+.info-window.poradce .info-window-in .inner, .info-window.poradci .info-window-in .inner {
+  padding: 11px 18px;
+  margin: 0 11px;
+  background: white url("../images/cpoj/map-info-window-in.png") 0 100% repeat-x;
+}
+
+.info-window.poradci .info-window-in .inner {
+  background-color: #eaeff3;
+  background-image: url("../images/cpoj/map-info-window-in1.png");
+  padding-bottom: 1px;
+}
+
+.info-window.poradce .cr, .info-window.poradci .cr {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/cpoj/cor.png") 0 0 no-repeat;
+}
+
+.info-window.poradci .cr {
+  background-image: url("../images/cpoj/cor1.png");
+}
+
+.info-window.poradce .cr.cr-arrow-b, .info-window.poradci .cr.cr-arrow-b {
+  display: block;
+  width: 12px;
+  height: 6px;
+  background: url("../images/cpoj/cor-arrow-b.png") 0 0 no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: 16px;
+}
+
+.info-window.poradce .cr.cr-tm, .info-window.poradce .cr.cr-bm, .info-window.poradci .cr.cr-tm, .info-window.poradci .cr.cr-bm {
+  background: url("../images/cpoj/cor-mtb.png") 0 0 repeat-x;
+  float: left;
+}
+
+.cr.cr-bm, .info-window.poradci .cr.cr-tm, .info-window.poradci .cr.cr-bm {
+  background-image: url("../images/cpoj/cor1-mtb.png");
+}
+
+.info-window-top .cr-tm, .info-window-bot .cr-bm {
+  width: 398px !important;
+}
+
+.info-window.poradce .cr-mr, .info-window.poradci .cr-mr {
+  background: url("../images/cpoj/cor-mr.png") top right repeat-y;
+}
+
+.info-window.poradce .cr-ml, .info-window.poradci .cr-ml {
+  background: url("../images/cpoj/cor-ml.png") top left repeat-y;
+}
+
+.info-window.poradce .cr.cr-tl, .info-window.poradce .cr.cr-tr, .info-window.poradce .cr.cr-bl, .info-window.poradce .cr.cr-br, .info-window.poradci .cr.cr-tl, .info-window.poradci .cr.cr-tr, .info-window.poradci .cr.cr-bl, .info-window.poradci .cr.cr-br {
+  float: left;
+}
+
+.info-window.poradce .cr.cr-tr, .info-window.poradci .cr.cr-tr {
+  background-position: -16px 0;
+}
+
+.info-window.poradce .cr.cr-bl, .info-window.poradci .cr.cr-bl {
+  background-position: 0 -16px;
+}
+
+.info-window.poradce .cr.cr-bm, .info-window.poradci .cr.cr-bm {
+  background-position: 0 -16px;
+}
+
+.info-window.poradce .cr.cr-br, .info-window.poradci .cr.cr-br {
+  background-position: -16px -16px;
+}
+
+.info-window.poradce .table-wrap, .info-window.poradci .table-wrap {
+  float: left;
+  margin: 0 0 10px;
+}
+
+.info-window.poradce .table-wrap span, .info-window.poradci .table-wrap span {
+  display: none;
+}
+
+.info-window.poradce .table-wrap table, .info-window.poradci .table-wrap table {
+  width: auto;
+}
+
+.info-window.poradce .table-wrap table th, .info-window.poradci .table-wrap table th {
+  width: 60px;
+  vertical-align: top;
+  padding: 2px 0;
+}
+
+.info-window.poradce .table-wrap table th {
+  text-indent: -9999px;
+  width: 30px;
+  overflow: hidden;
+  background: url("../images/cpoj/poradce-icons.png") left -163px no-repeat;
+}
+
+.info-window.poradce .table-wrap table .title-branch {
+  background: none !important;
+  padding-left: 10px;
+}
+
+.info-window.poradce .table-wrap table td.imgWrap, .info-window.poradci .table-wrap table td.imgWrap {
+  padding-right: 10px;
+  width: 70px;
+}
+
+.info-window.poradce .table-wrap table td, .info-window.poradci .table-wrap table td {
+  background: none;
+  border: none;
+  padding: 2px 0;
+  color: #222;
+  vertical-align: top;
+}
+
+.info-window.poradce .table-wrap table tr.desc-box-tel th {
+  background-position: 6px -163px;
+}
+
+.info-window.poradce .table-wrap table tr.desc-box-mail th {
+  background-position: 10px -327px;
+}
+
+.info-window.poradce .table-wrap table tr.desc-box-adr th {
+  background-position: 10px 0;
+}
+
+.info-window.poradce .table-wrap table th[colspan="3"] {
+  text-indent: 0px;
+  background: none !important;
+  width: auto;
+}
+
+.info-window.poradce .table-wrap table td.breakWord, .info-window.poradci .table-wrap table td.breakWord {
+  word-wrap: break-word;
+}
+
+.info-window.poradce .table-wrap table td.breakWord a, .info-window.poradci .table-wrap table td.breakWord a {
+  word-wrap: break-word;
+  display: block;
+  width: auto !important;
+}
+
+.info-window.poradce .table-wrap table h2, .info-window.poradci .table-wrap table h2 {
+  margin: 0 0 8px;
+}
+
+.info-window.poradce .flags, .info-window.poradci .flags {
+  clear: both;
+}
+
+.info-window.poradce .flags span, .info-window.poradci .flags span {
+  margin-right: 5px;
+}
+
+.info-window.poradce .tip-box, .info-window.poradci .tip-box {
+  clear: both;
+  margin: 15px 0;
+  line-height: 36px;
+  border: 1px solid #cad7e7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #e7eef7 url("../images/cpoj/tip-box.png") top left repeat-y;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.info-window.poradce .tip-box strong, .info-window.poradci .tip-box strong {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000;
+  padding: 0 10px;
+  margin-right: 13px;
+}
+
+.info-window.poradce .table-wrap table tr.desc-box-tel th {
+  font-size: 7px;
+}
+
+.info-window.poradce .table-wrap table .title-branch {
+  font-size: 14px;
+}
+
+.info-window.poradci ul {
+  margin-bottom: 0;
+}
+
+.info-window.poradci ul li {
+  background: url("../images/cpoj/ico-poradce.png") center left no-repeat;
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.info-window.poradci.open .sp {
+  padding: 10px;
+}
+
+.info-window.poradci.open ul {
+  float: left;
+  width: 185px;
+}
+
+.info-window.poradci.open ul li.act a {
+  background: url("../images/cpoj/arrow1.png") center right no-repeat;
+  display: block;
+  color: #555;
+  text-decoration: none;
+  cursor: default;
+}
+
+.info-window.poradci.open .con {
+  float: left;
+  position: relative;
+  top: -16px;
+  margin-bottom: -23px;
+  background-color: #FFF;
+  z-index: 50;
+  width: 370px;
+  padding-bottom: 10px;
+}
+
+.info-window.poradci.open .info-window-in .inner {
+  padding-right: 0;
+  margin-right: 16px;
+}
+
+.info-window.poradci.open .cr-mr {
+  background-image: url("../images/cpoj/cor-mr1.png");
+}
+
+.info-window.poradci.open .cr.cr-tr {
+  background-image: url("../images/cpoj/cor.png");
+}
+
+.info-window.poradci.open .cr.cr-br {
+  background-image: url("../images/cpoj/cor-br-white.png");
+  background-position: 0 0;
+}
+
+.map-search-box .row > .info-window {
+  left: 50%;
+  top: 50%;
+  margin: 0 0 0 -177px;
+}
+
+.map-search-box .row > .info-window .info-window-bot {
+  background-position: -400px 0;
+  height: 15px;
+}
+
+/* PRODUCTS PAGE */
+.products-page .std-box {
+  margin: 0 0 35px;
+}
+
+.products-page .std-box ul {
+  margin: 0 0 0.5em -30px;
+  letter-spacing: -1px;
+  font-size: 0px;
+}
+
+.products-page .std-box li {
+  margin: 0 0 0.9em 30px;
+  padding: 0;
+  background: none;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 309px;
+  letter-spacing: 0px;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.filter-box {
+  background: url("../images/cpoj/box.png") 0 0 repeat-x, url("../images/cpoj/box.png") 0 100% repeat-x, #fdfefe;
+  /* cesta k pozadí pro IE musí být od html */
+  -pie-background: url("/cpoj-theme/images/cpoj/box.png") 0 0 repeat-x, url("/cpoj-theme/images/cpoj/box.png") 0 100% repeat-x, #fdfefe;
+  border: 1px solid #cad7e7;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 24px 20px 22px;
+  margin: 0 0 20px !important;
+}
+
+.filter-box .spc {
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+}
+
+.filter-box .fl {
+  width: 102px;
+}
+
+.filter-box .fr {
+  width: 765px;
+}
+
+.filter-box .all {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.aui .filter-box p {
+  margin: 0;
+}
+
+.aui .filter-box .fl p:first-child {
+  margin-bottom: 45px;
+}
+
+.filter-box .fr {
+  margin-top: -3px;
+}
+
+.filter-box label {
+  color: #222;
+  display: inline-block;
+}
+
+.filter-box .jquery-checkbox {
+  margin: 3px 4px 4px 0;
+}
+
+/*
+.filter-box .item-1,
+.filter-box .item-2 { width:180px; margin-right:10px; }
+.filter-box .item-3,
+.filter-box .item-4 { width:125px; margin-right:10px; }
+.filter-box .item-5 { width:90px; }
+*/
+/* HINT PAGE */
+.hint-page .col-content {
+  width: 620px;
+}
+
+.hint-page .col-side {
+  width: 280px;
+}
+
+.hint-page .note-box {
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.hint-page .note-box .bd {
+  padding: 37px 25px 1px 22px;
+}
+
+.hint-page .note-box .shadow {
+  background-position: 0 -12px;
+}
+
+.hint-page .note-box .shadow div {
+  background-position: 100% -18px;
+}
+
+.hint-page .column-1-2 {
+  padding: 0 45px 0 0;
+  width: 430px;
+  border-right: 1px solid #c2d4eb;
+}
+
+.hint-page .column-1-2 .dot-list {
+  margin-left: 25px;
+  margin-bottom: 1.2em;
+}
+
+.hint-page .column-2-2 {
+  padding: 0 0 0 40px;
+  width: 424px;
+  border-left: 1px solid #c2d4eb;
+  margin-left: -1px;
+}
+
+.hint-page .column-2-2 h2 {
+  margin-top: 2.5em;
+}
+
+.hint-page .column-2-2 > :first-child {
+  margin-top: 0;
+}
+
+.hint-page .columns li {
+  margin: 0 0 0.7em;
+}
+
+/* ABOUT PAGE */
+.about-page .col-content {
+  width: 600px;
+}
+
+.about-page .col-side {
+  width: 300px;
+}
+
+.about-page .annot-box {
+  font-size: 1.07em;
+  line-height: 1.28;
+  color: #555;
+  margin-bottom: 2.2em;
+}
+
+.about-page .annot-box p {
+  line-height: 1.28;
+}
+
+/* PROFIL PAGE */
+.profil-page .profil-box {
+  border: 1px solid #d2dff0;
+  background: #f5f8f9 url("../images/cpoj/grad3.png") 0 0 repeat-x;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 30px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.profil-page .profil-box .columns {
+  margin: 0;
+}
+
+.profil-page .profil-box .column-1-2 {
+  padding: 28px 0 0 30px;
+  width: 400px;
+}
+
+.profil-page .columns {
+  margin: 0 0 15px;
+}
+
+.profil-page .columns .wrap {
+  border-left: 1px solid #c2d4eb;
+  padding: 0 0 0 28px;
+  margin-bottom: 40px;
+}
+
+.profil-page .columns h3 {
+  margin: 30px 0 15px;
+}
+
+.profil-page .column-1-2 {
+  float: left;
+  width: 430px;
+}
+
+.profil-page .column-2-2 {
+  float: right;
+  width: 470px;
+}
+
+.profil-page .column-2-2 > div > :first-child, .profil-page .column-1-2 > :first-child {
+  margin-top: 0;
+}
+
+/* CHANGE INSURANCE PAGE */
+.change-insurance-page .table-wrap-content-table {
+  margin: 0 0 30px;
+}
+
+.change-insurance-page .cor-bl {
+  display: none;
+}
+
+.change-insurance-page .content-table {
+  border-bottom: none;
+}
+
+.change-insurance-page .content-table .foot td {
+  border-left: none;
+  border-bottom: 1px solid #cad7e7;
+}
+
+.change-insurance-page .content-table .foot .empty {
+  border-top-color: #cad7e7;
+  border-bottom: none;
+  background: #fff;
+}
+
+.change-insurance-page .content-table .foot .empty + td {
+  border-left: 1px solid #cad7e7;
+}
+
+.change-insurance-page .content-box .big {
+  font-weight: bold;
+  margin-left: 38px;
+  font-size: 1.15em;
+}
+
+/* INSURANCE INFO PAGE */
+.aui .insurance-info-page p {
+  zoom: 1;
+}
+
+.aui .insurance-info-page .box1 {
+  width: 260px;
+  padding: 0 20px 5px 28px;
+}
+
+.aui .insurance-info-page .box2 {
+  width: 260px;
+  padding: 0 30px 5px;
+  position: relative;
+}
+
+.aui .insurance-info-page .box3 {
+  width: 248px;
+  padding: 0 30px 5px;
+}
+
+.aui .insurance-info-page .boxes h3 {
+  margin-bottom: .7em;
+}
+
+.aui .insurance-info-page .box2 h3 {
+  margin-bottom: .9em;
+}
+
+.aui .insurance-info-page .box2 .tip {
+  position: absolute;
+  right: -45px;
+  top: -68px;
+  width: 204px;
+  height: 84px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-twitter.png") 0 0 no-repeat;
+}
+
+.aui .insurance-info-page .box2 .tip a {
+  display: block;
+  width: 204px;
+  height: 84px;
+  text-indent: -1000px;
+}
+
+.aui .insurance-info-page .att-list {
+  margin-bottom: 10px;
+  margin-top: -4px;
+}
+
+.aui .insurance-info-page .att-list li {
+  padding-left: 35px;
+  width: auto;
+  display: block;
+  margin-bottom: .6em;
+}
+
+.aui .insurance-info-page .box1 p strong {
+  display: block;
+  margin: 6px 0 0;
+}
+
+.aui .insurance-info-page .big-number {
+  color: #003d6e;
+  margin: 0 0 0.45em;
+  padding-left: 43px;
+  background: url("../images/cpoj/ico-all.png") 0 -3097px no-repeat;
+  font-size: 36px;
+  line-height: 38px;
+}
+
+.aui .insurance-info-page .std-box {
+  padding-left: 28px;
+  padding-bottom: 10px;
+  margin-bottom: 38px;
+}
+
+.aui .insurance-info-page .columns {
+  margin: 0 0 1.2em;
+  overflow: hidden;
+}
+
+.aui .insurance-info-page .column-1-3 {
+  width: 261px;
+  padding: 0 20px 200px 0;
+  margin-bottom: -200px;
+}
+
+.aui .insurance-info-page .column-2-3 {
+  width: 260px;
+  padding: 0 30px 200px;
+  margin: 0 0 -200px;
+  border-left: 1px solid #c2d4eb;
+}
+
+.aui .insurance-info-page .column-3-3 {
+  width: 248px;
+  padding: 0 0 200px 30px;
+  margin: 0 0 -200px;
+  border-left: 1px solid #c2d4eb;
+}
+
+.aui .insurance-info-page .columns li {
+  margin: 0.9em 0 0;
+}
+
+.aui .insurance-info-page .columns li:first-child {
+  margin: 0;
+}
+
+/* CALAMITY PAGE & MORTGAGE PAGE */
+.calamity-page .col-side, .mortgage-page .col-side {
+  width: 200px;
+}
+
+.calamity-page .col-side .tip {
+  display: block;
+  width: 169px;
+  height: 108px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-we-help.png") 0 0 no-repeat;
+  pointer-events: none;
+  text-indent: -1000px;
+  margin: 0 0 0 31px;
+}
+
+.mortgage-page .col-side .tip {
+  display: block;
+  width: 218px;
+  height: 127px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-help-with-housing.png") 0 0 no-repeat;
+  pointer-events: none;
+  text-indent: -1000px;
+  margin: 0 -10px 0 -8px;
+}
+
+/* REPORTING PAGE */
+.aui .reporting-page .dot-list li {
+  margin-bottom: 1.4em;
+}
+
+.reporting-page .box1 {
+  width: 260px;
+  padding: 20px 20px 5px 28px;
+}
+
+.reporting-page .box2 {
+  width: 250px;
+  padding: 20px 40px 5px 30px;
+  position: relative;
+  background: url("../images/cpoj/boxes-map.png") 48% 16px no-repeat;
+}
+
+.aui .reporting-page .box2 p {
+  margin: 1.2em 0 0;
+}
+
+.reporting-page .box3 {
+  width: 248px;
+  padding: 20px 30px 5px;
+}
+
+.aui .reporting-page .boxes h2 {
+  margin: 0 0 0.6em;
+}
+
+.reporting-page .box3 .tip {
+  position: absolute;
+  right: -45px;
+  top: -68px;
+  width: 204px;
+  height: 84px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-twitter.png") 0 0 no-repeat;
+}
+
+.reporting-page .box3 .tip a {
+  display: block;
+  width: 204px;
+  height: 84px;
+  text-indent: -1000px;
+}
+
+.reporting-page .box3 p strong {
+  display: block;
+  margin: 6px 0 0;
+}
+
+.aui .reporting-page .att-list {
+  margin-bottom: 10px;
+  margin-top: -4px;
+}
+
+.aui .reporting-page .att-list li {
+  padding-left: 35px;
+  width: auto;
+  display: block;
+  margin-bottom: .6em;
+}
+
+.reporting-page .boxes .msg {
+  margin-top: 1.5em;
+}
+
+.aui .reporting-page .big-number {
+  color: #003d6e;
+  margin: 0 0 0;
+  padding-left: 43px;
+  background: url("../images/cpoj/ico-all.png") 0 -3097px no-repeat;
+  font-size: 36px;
+  line-height: 38px;
+}
+
+.reporting-page .inp-row {
+  margin: 0 0 5px;
+}
+
+/* NEW MORTGAGE PAGE */
+.new-mortgage-page .contact-box, .new-mortgage-page .std-box {
+  margin-bottom: 20px;
+}
+
+.new-mortgage-page .columns {
+  padding: 0;
+}
+
+.new-mortgage-page .column-1-2, .new-mortgage-page .column-2-2 {
+  padding: 25px 25px 10px;
+  width: 298px;
+  border: 1px solid #d2dff0;
+  margin: 0;
+}
+
+.new-mortgage-page .column-1-2 {
+  border-width: 0 1px 0 0;
+}
+
+.new-mortgage-page .column-2-2 {
+  border-width: 0 0 0 1px;
+  margin-left: -1px;
+}
+/* Box list */
+.aui .box-list:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.aui .box-list > ul {
+    font-size:0px;
+    letter-spacing:-1px;
+    margin:0 0 15px -20px;
+    padding:0;
+}
+.aui .box-list > ul > li {
+    float:left;
+    position:relative;
+    margin:0 0 20px 20px;
+    padding:0;
+    width:218px;
+    font-size:13px;
+    letter-spacing:0;
+    background:#f5f8fc url('../images/cpoj/grad2.png') 0 100% repeat-x;
+    border:1px solid #d2dff0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    behavior: url(/cpoj-theme/css/PIE.htc);
+}
+.aui .box-list li .in { padding:16px 12px 25px 12px; }
+.aui .box-list ul ul { list-style:none; }
+.aui .box-list ul ul li { margin:0 0 .6em; }
+.aui .box-list ul h2, .box-list ul h3 {
+    font-size:1.15em;
+    color:#607999;
+    font-weight:bold;
+    margin:0 0 .8em;
+}
+.aui .box-list ul h2 a {text-decoration: none; color: #004677; }
+.aui .box-list ul h2 a:hover {text-decoration: underline;}
+
+.new-mortgage-page .col-h-l, .new-mortgage-page .col-h-r {
+  width: 298px;
+}
+
+.new-mortgage-page .note-box .bd {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.new-mortgage-page .note-box .thick-list {
+  margin-bottom: 0;
+}
+
+.new-mortgage-page .note-box .thick-list li:before, .new-mortgage-page .note-box .tick-list li b {
+  margin-top: 0;
+  top: 1px;
+}
+
+.new-mortgage-page .story-box {
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 15px 15px 1px;
+  margin: 20px 0 0;
+  position: relative;
+}
+
+.new-mortgage-page .story-box:before, .new-mortgage-page .story-box b {
+  content: '';
+  position: absolute;
+  right: 15px;
+  bottom: -12px;
+  width: 14px;
+  height: 12px;
+  background: url("../images/cpoj/ico-sprite.png") -125px -35px no-repeat;
+}
+
+.new-mortgage-page .story-box h2 {
+  font-size: .85em;
+  color: #607999;
+  margin: 0;
+}
+
+.new-mortgage-page .story-box h3 {
+  font-size: 1.23em;
+  color: #607999;
+  margin: 0.5em 0 1em;
+}
+
+.new-mortgage-page .story-box p {
+  font-style: italic;
+}
+
+.new-mortgage-page label {
+  display: inline-block;
+  padding-bottom: 6px;
+  color: #333;
+}
+
+.new-mortgage-page label span {
+  color: #c63751;
+}
+
+.new-mortgage-page .inp-unit {
+  padding-right: 37px;
+}
+
+.new-mortgage-page .inp-unit .inp-text {
+  padding-right: 30px;
+  margin-right: -37px;
+}
+
+.new-mortgage-page .unit {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  line-height: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.new-mortgage-page .info {
+  line-height: 42px;
+  vertical-align: middle;
+  background: url("../images/cpoj/ico-info.png") 0 50% no-repeat;
+}
+
+.new-mortgage-page .info span {
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+.new-mortgage-page p .col-h-l, .new-mortgage-page p .col-h-r {
+  width: 49%;
+}
+
+.new-mortgage-page .results-box {
+  background: #e7eef7;
+  padding-top: 20px;
+  margin-top: 20px;
+  *behavior: none;
+}
+
+.new-mortgage-page .results-box h2 {
+  font-size: 20px;
+  color: #607999;
+  margin: 0 0 0.8em;
+}
+
+.new-mortgage-page .results-box .openBtn {
+  margin: 15px 0 20px;
+}
+
+.new-mortgage-page .results-box td {
+  font-weight: bold;
+  color: #003d6e;
+  border-left: 1px solid #c2d4eb;
+  padding: 0 10px;
+}
+
+.new-mortgage-page .results-box td:first-child {
+  border: none;
+  padding-left: 0;
+  color: #607999;
+}
+
+.new-mortgage-page .results-box td .number {
+  font-weight: normal;
+  font-size: 34px;
+  display: block;
+}
+
+.new-mortgage-page .results-box h3 {
+  color: #607999;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.new-mortgage-page .results-box .inp-wrap {
+  padding: 0;
+}
+
+.new-mortgage-page .results-box .info {
+  line-height: 43px;
+  background-position: 0 2px;
+}
+
+body .new-mortgage-page .results-box .inline-btn {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.new-mortgage-page .results-box form p {
+  margin: 0 0 1.5em;
+}
+
+.new-mortgage-page .results-box .box {
+  margin: 0 -25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.new-mortgage-page .results-box .in {
+  border-top: 1px solid #c2d4eb;
+  padding: 0 25px;
+}
+
+.new-mortgage-page .results-box .inp-text {
+  color: #8d8d8d;
+}
+
+.new-mortgage-page .results-box .inp-text.fill {
+  color: #000;
+}
+
+.new-mortgage-page .results-box .ok-message {
+  background: url("../images/cpoj/ok-message.png") 0 0 no-repeat;
+  margin: 20px 0;
+  min-height: 75px;
+  padding: 5px 0 0 100px;
+}
+
+.new-mortgage-page .results-box .ok-message .big {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.new-mortgage-page .results-box .ok-message p {
+  margin: 0 0 10px;
+}
+
+/* PAY INSURANCE PAGE */
+.pay-insurance-page .std-box {
+  margin: 0 0 20px;
+}
+
+.pay-insurance-page .col-side .std-box {
+  padding: 15px 20px 5px;
+}
+
+.pay-insurance-page .col-side h2 {
+  font-size: 1.15em;
+  color: #555555;
+  font-weight: bold;
+  margin: 0 0 0.8em;
+}
+
+.pay-insurance-page .col-side strong {
+  color: #333;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pay-insurance-page .columns {
+  padding: 0;
+}
+
+.pay-insurance-page .column-1-2, .pay-insurance-page .column-2-2 {
+  padding: 0;
+  width: 298px;
+  border: 1px solid #d2dff0;
+  margin: 0;
+}
+
+.pay-insurance-page .column-1-2 {
+  border-width: 0 1px 0 0;
+  padding-right: 25px;
+}
+
+.pay-insurance-page .column-2-2 {
+  border-width: 0 0 0 1px;
+  margin-left: -1px;
+  padding-left: 25px;
+}
+
+.pay-insurance-page .columns h3 {
+  font-size: 1.53em;
+  color: #222;
+  font-weight: normal;
+}
+
+.pay-insurance-page .num-list li {
+  margin-bottom: 10px;
+  padding-top: 4px;
+}
+
+.pay-insurance-page .num-list li:before, .pay-insurance-page .num-list li .ie-counter {
+  background-position: -175px 0;
+  top: 0;
+  margin-top: 0;
+}
+
+.pay-insurance-page .separator {
+  border-top: 1px solid #c2d4eb;
+  margin: 0 0 15px;
+}
+
+.aui .pay-insurance-page h2 + .col-h-l li,
+.aui .pay-insurance-page h2 + .col-h-l + .col-h-r li {
+  line-height: 1.8;
+}
+
+/* LOGO LIST */
+.aui .logo-list {
+  list-style: none;
+  margin: 0 0 0 -25px;
+  padding: 0;
+  font-size: 0px;
+  letter-spacing: -1px;
+}
+
+.aui .logo-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 0 20px 25px;
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+
+.aui .logo-list img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.aui .logo-list strong {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* HASH MENU */
+.aui .hash-menu li {
+  margin-bottom: .8em;
+}
+
+.aui .hash-menu li a {
+  text-decoration: none;
+  border-bottom: 1px dashed #003d6e;
+}
+
+.aui .hash-menu li a:hover {
+  border: none;
+}
+
+/* AFTER accident PAGE */
+.aui .after-accident-page .columns {
+  padding: 0;
+}
+
+.after-accident-page .column-1-2, .after-accident-page .column-2-2 {
+  padding: 25px 28px 5px 28px;
+  width: 412px;
+  border: 1px solid #d2dff0;
+  margin: 0;
+}
+
+.after-accident-page .column-1-2 {
+  border-width: 0 1px 0 0;
+}
+
+.after-accident-page .column-2-2 {
+  border-width: 0 0 0 1px;
+  margin-left: -1px;
+}
+
+.after-accident-page .box1 {
+  width: 260px;
+  padding: 0 20px 5px 28px;
+}
+
+.after-accident-page .box2 {
+  width: 260px;
+  padding: 0 30px 5px;
+  position: relative;
+}
+
+.after-accident-page .box3 {
+  width: 248px;
+  padding: 0 30px 5px;
+}
+
+.aui .after-accident-page .boxes h3 {
+  margin-bottom: .7em;
+  font-size: 1.15em;
+}
+
+.aui .after-accident-page .box2 h3 {
+  margin-bottom: .9em;
+}
+
+.after-accident-page .tip {
+  position: absolute;
+  right: -35px;
+  top: -55px;
+  width: 204px;
+  height: 84px;
+  overflow: hidden;
+  background: url("../images/cpoj/tip-twitter.png") 0 0 no-repeat;
+}
+
+.aui .after-accident-page .tip a {
+  display: block;
+  width: 204px;
+  height: 84px;
+  text-indent: -1000px;
+}
+
+.aui .after-accident-page .big-number {
+  color: #003d6e;
+  margin: 0 0 0.45em;
+  padding-left: 43px;
+  background: url("../images/cpoj/ico-all.png") 0 -3097px no-repeat;
+  font-size: 36px;
+  line-height: 38px;
+}
+
+/* STEP LIST */
+.aui .step-list {
+  margin: 0 0 20px -15px;
+  overflow: hidden;
+  background: url("../images/cpoj/step-list.png") 15px -259px no-repeat;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.aui .step-list > li {
+  background: url("../images/cpoj/step-list.png") 15px 0 no-repeat;
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 15px 0 30px;
+  min-height: 118px;
+  width: 215px;
+  position: relative;
+}
+
+.aui .step-list > li:first-child {
+  background-position: 15px 0;
+  padding-right: 25px;
+  width: 205px;
+}
+
+.aui .step-list > li:first-child + li {
+  background-position: -245px 0;
+  padding-left: 25px;
+  width: 188px;
+}
+
+.aui .step-list > li:first-child + li + li {
+  background-position: -473px 0;
+  padding-left: 20px;
+  width: 192px;
+}
+
+.aui .step-list > li:first-child + li + li + li {
+  background-position: -700px 0;
+  padding-left: 35px;
+  width: 190px;
+}
+
+.aui .step-list > li > a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.08em;
+  white-space: nowrap;
+}
+
+.aui .step-list > li > strong {
+  color: #003d6e;
+  font-size: 1.08em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.aui .step-list li ul {
+  list-style: none;
+  margin: 15px 0 0 5px;
+  font-size: 0.85em;
+  color: #7d92ad;
+}
+.aui .layout_after_accident .step-list li ul {
+  font-size: 1em;
+}
+
+.aui .step-list li .att-list {
+  margin-left: 0;
+}
+
+.aui .step-list li li {
+  margin-left: 0;
+  background-position: 0 3px;
+  margin-bottom: .5em;
+}
+
+.big-font .step-list > li > strong {
+  font-size: 14px;
+}
+
+.big-font .step-list > li > a {
+    font-size: 0.9em;
+}
+
+.aui .big-font .step-list ul li {
+  font-size: 0.85em;
+}
+.aui .big-font .layout_after_accident .step-list ul li {
+    font-size: 0.85em;
+}
+.aui .big-font .layout_after_accident .step-list > li > a {
+    font-size: 0.9em;
+}
+
+.aui .step-list.variant2 > li {
+  min-height: 123px;
+  padding-top: 10px;
+}
+
+.aui .step-list strong.smart {
+  margin-bottom: 0;
+}
+
+.aui .step-list strong.smart + ul {
+  margin-top: 7px;
+}
+
+.aui .step-list .inline-btn.wArrow {
+  overflow: visible;
+}
+
+.aui .step-list .inline-btn.wArrow:before {
+  position: absolute;
+  width: 32px;
+  height: 40px;
+  content: '';
+  background-image: url("../images/cpoj/blue-bottom-arrow.png");
+  top: -46px;
+  right: 15px;
+}
+
+.aui .step-list .sale {
+  color: #fff;
+  text-shadow: -1px -1px 0 #dcb404;
+  background: url("../images/cpoj/ico-sprite.png") -100px -125px no-repeat;
+  width: 46px;
+  padding-right: 11px;
+  padding-left: 3px;
+  height: 52px;
+  font-size: 1.23em;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.aui .step-list .sale-big {
+  width: 44px;
+  height: 56px;
+  line-height: 18px;
+  padding-top: 6px;
+  padding-left: 5px;
+  background: url(../images/cpoj/sticker-bigger.png) left top no-repeat;
+}
+
+/*life-insurance-page*/
+.aui .life-insurance-page .step-list > li:first-child {
+  background-position: -945px 0;
+}
+
+.aui .life-insurance-page .step-list > li:first-child + li {
+  background-position: -1205px 0;
+}
+
+.aui .life-insurance-page .step-list > li:first-child + li + li {
+  background-position: -1433px 0;
+  padding-left: 20px;
+  width: 192px;
+}
+
+/* ORGANIZATIONAL STRUCTURE */
+.organizational-structure-page .separator {
+  border-top: 1px solid #c2d4eb;
+  margin: 0;
+}
+
+.organizational-structure-page .people-list {
+  margin: -10px -15px 5px -27px;
+}
+
+.aui .organizational-structure-page .people-list li {
+  padding: 10px;
+  margin: 0 0 10px 12px;
+}
+
+.organizational-structure-page .people-list .overlay {
+  height: 194px;
+  padding: 0;
+  font-size: .85em;
+  color: #222;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.organizational-structure-page .people-list .overlay strong {
+  font-weight: normal;
+  color: #555;
+  display: block;
+}
+
+.organizational-structure-page .people-list .name strong {
+  font-size: 1.2em;
+}
+
+.organizational-structure {
+  background: url("../images/cpoj/organizational-structure.png") 0 0 no-repeat;
+  height: 465px;
+  position: relative;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  color: #555;
+}
+
+.organizational-structure h2 {
+  position: absolute;
+  left: 700px;
+  top: 40px;
+  margin: 0;
+  font-size: 1.23em;
+  color: #555;
+  font-weight: bold;
+}
+
+.organizational-structure h2 span {
+  font-size: .81em;
+  display: block;
+  margin: 7px 0 0;
+}
+
+.organizational-structure p {
+  position: absolute;
+  font-size: .85em;
+  width: 110px;
+  text-align: center;
+}
+
+.organizational-structure img {
+  display: block;
+  margin: 0 auto 3px;
+}
+
+.organizational-structure .item {
+  display: block;
+  padding: 7px 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.organizational-structure a.item:hover {
+  background: #f1f5f9;
+}
+
+.organizational-structure .pos-1-1 {
+  left: 400px;
+  width: 130px;
+  top: 5px;
+}
+
+.organizational-structure .pos-1-2 {
+  left: 120px;
+  top: 85px;
+  width: 116px;
+}
+
+.organizational-structure .pos-2-2 {
+  left: 298px;
+  top: 85px;
+  width: 116px;
+}
+
+.organizational-structure .pos-1-3 {
+  left: 410px;
+  top: 153px;
+}
+
+.organizational-structure .pos-1-4 {
+  left: 280px;
+  top: 233px;
+}
+
+.organizational-structure .pos-1-5 {
+  left: 1px;
+  top: 335px;
+  width: 80px;
+}
+
+.organizational-structure .pos-2-5 {
+  left: 86px;
+  top: 335px;
+}
+
+.organizational-structure .pos-3-5 {
+  left: 192px;
+  top: 335px;
+}
+
+.organizational-structure .pos-4-5 {
+  left: 300px;
+  top: 335px;
+}
+
+.organizational-structure .pos-5-5 {
+  left: 411px;
+  top: 335px;
+}
+
+.organizational-structure .pos-6-5 {
+  left: 523px;
+  top: 335px;
+}
+
+.organizational-structure .pos-7-5 {
+  left: 629px;
+  top: 335px;
+}
+
+.organizational-structure .pos-8-5 {
+  left: 736px;
+  top: 335px;
+}
+
+.organizational-structure .pos-9-5 {
+  left: 849px;
+  top: 335px;
+  width: 86px;
+}
+
+/* MOBILE APPS PAGE */
+.aui .faq-box > ul {
+  margin: 0;
+}
+
+.aui .faq-box > ul > li {
+  margin: 0;
+  padding: 0 0 3px 42px;
+  background: none;
+  position: relative;
+  zoom: 1;
+}
+
+.aui .faq-box > ul h3 {
+  margin: 0 0 0.45em;
+}
+
+.aui .faq-box > ul > li:before, .aui .faq-box > ul > li b {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: -5px 0 0;
+  background: url("../images/cpoj/ico-sprite.png") -205px 0 no-repeat;
+  font-size: 0px;
+  overflow: hidden;
+}
+
+.apps-page .note-box .thick-list {
+  width: 200px;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.apps-page .note-box .bd {
+  overflow: hidden;
+  zoom: 1;
+  padding-bottom: 8px;
+}
+
+.apps-page .note-box h2 + .thick-list {
+  margin-left: 0;
+}
+
+.apps-page .columns {
+  margin: 0 0 36px;
+}
+
+.apps-page .faq-box > ul {
+  width: 425px;
+  padding: 4px 44px 0 0;
+  border-right: 1px solid #c2d4eb;
+  float: left;
+}
+
+.apps-page .faq-box > ul + ul {
+  width: 430px;
+  padding: 4px 0 0 40px;
+  border-right: none;
+  border-left: 1px solid #c2d4eb;
+  margin-left: -1px;
+}
+
+.apps-page .content-box .spc {
+  padding-top: 20px;
+}
+
+.apps-page .content-box img {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.apps-page .content-box h3 {
+  font-size: 1.15em;
+  margin: 0 0 0.6em;
+}
+
+.apps-page .news-list {
+  overflow: hidden;
+  margin: 0 0 40px;
+}
+
+.apps-page .news-list ul {
+  font-size: 0px;
+  letter-spacing: 0px;
+  margin: 0 0 -40px -89px;
+}
+
+.apps-page .news-list li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  background: none;
+  padding: 0 0 15px 44px;
+  margin: 0 0 40px 44px;
+  border-left: 1px solid #d2dff0;
+  width: 254px;
+  font-size: 13px;
+  letter-spacing: 0px;
+}
+
+.apps-page .news-list li h3, .apps-page .news-list li h2 {
+  font-size: 1.15em;
+  margin: 0.9em 0 0.8em;
+}
+
+.apps-page .news-list p {
+  margin: 0;
+}
+
+.apps-page .news-list ul li > p > img {
+  height: 100px !important;
+}
+
+.apps-page .banner-rotator .tip {
+  position: absolute;
+  right: 0px;
+  top: -125px;
+  width: 169px;
+  height: 112px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url("../images/cpoj/tip-mobile-app.png") 0 0 no-repeat;
+}
+
+.apps-page .col-side {
+  width: 195px;
+}
+
+/* CAR INSURANCE PAGE */
+.car-insurance-page .std-box {
+  margin: 0 0 20px;
+}
+
+.car-insurance-page .col-side .std-box {
+  padding: 15px 20px 5px;
+}
+
+.car-insurance-page .col-side h2 {
+  font-size: 1.15em;
+  color: #555555;
+  font-weight: bold;
+  margin: 0 0 0.8em;
+}
+
+.car-insurance-page .story-box {
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 15px 15px 1px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.car-insurance-page .story-box:before, .new-mortgage-page .story-box b {
+  content: '';
+  position: absolute;
+  right: 15px;
+  bottom: -12px;
+  width: 14px;
+  height: 12px;
+  background: url("../images/cpoj/ico-sprite.png") -125px -35px no-repeat;
+}
+
+.car-insurance-page .story-box h2 {
+  font-size: .85em;
+  color: #607999;
+  margin: 0;
+}
+
+.car-insurance-page .story-box h3 {
+  font-size: 1.23em;
+  color: #607999;
+  margin: 0.5em 0 1em;
+}
+
+.car-insurance-page .story-box p {
+  font-style: italic;
+}
+
+.car-insurance-page .columns > ul {
+  width: 200px;
+}
+
+.aui .car-insurance-page .step-list {
+  background-position: 15px -140px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.aui .car-insurance-page .step-list li {
+  position: relative;
+}
+
+.aui .car-insurance-page .step-list strong {
+  color: #003d6e;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.aui .car-insurance-page .step-list ul {
+  font-size: .85em;
+  color: #7d92ad;
+}
+
+.aui .car-insurance-page .step-list ul li {
+  background-position: 0 3px;
+  margin-bottom: .5em;
+}
+
+.aui .car-insurance-page .step-list .sale {
+  color: #fff;
+  text-shadow: -1px -1px 0 #dcb404;
+  background: url("../images/cpoj/ico-sprite.png") -100px -125px no-repeat;
+  width: 46px;
+  padding-right: 11px;
+  padding-left: 3px;
+  height: 52px;
+  font-size: 1.23em;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.aui .car-insurance-page .step-list {
+  background-position: -945px 100%;
+}
+
+.aui .car-insurance-page .step-list li:first-child {
+  background-position: -945px 0;
+  padding-right: 25px;
+  width: 205px;
+}
+
+.aui .car-insurance-page .step-list li:first-child + li {
+  background-position: -1205px 0;
+  width: 188px;
+}
+
+.aui .car-insurance-page .step-list li:first-child + li + li {
+  background-position: -1433px 0;
+  width: 192px;
+}
+
+.aui .car-insurance-page .packet-list {
+  position: relative;
+  zoom: 1;
+  margin-top: 10px;
+}
+
+.aui .car-insurance-page .packet-list .tip {
+  position: absolute;
+  right: 15px;
+  top: -110px;
+  width: 215px;
+  height: 100px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url("../images/cpoj/tip-car-insurance.png") 0 0 no-repeat;
+  pointer-events: none;
+}
+
+.car-insurance-page .packet-list h3 a {
+  color: #607999;
+}
+
+.car-insurance-page .packet .spc {
+  overflow: hidden;
+}
+
+.car-insurance-page .packet .fr {
+  font-size: .85em;
+  color: #003565;
+  width: 65px;
+  text-align: right;
+}
+
+.car-insurance-page .packet .fr strong {
+  font-size: 1.36em;
+}
+
+.car-insurance-page .note-box ul {
+  margin-bottom: 0;
+}
+
+.car-insurance-page .status-lblue,
+.car-insurance-page .status-gblue,
+.car-insurance-page .status-red,
+.car-insurance-page .status-gray,
+.car-insurance-page .status-purple,
+.car-insurance-page .status-blue,
+.car-insurance-page .status-orange,
+.car-insurance-page .status-green {
+  text-decoration: none;
+  display: inline-block;
+  margin: -2px 13px 11px 0px;
+  position: relative;
+}
+
+.car-insurance-page .status-lblue:hover,
+.car-insurance-page .status-gblue:hover,
+.car-insurance-page .status-red:hover,
+.car-insurance-page .status-gray:hover,
+.car-insurance-page .status-purple:hover,
+.car-insurance-page .status-blue:hover,
+.car-insurance-page .status-orange:hover,
+.car-insurance-page .status-green:hover {
+  border: 3px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: -5px 10px 8px -3px;
+}
+
+/* LIFE INSURANCE PAGE */
+.aui .life-insurance-page .std-box {
+  margin: 0 0 20px;
+}
+
+.aui .life-insurance-page .col-side .std-box {
+  padding: 15px 20px 5px;
+}
+
+.aui .life-insurance-page .col-side h2 {
+  font-size: 1.15em;
+  color: #555555;
+  font-weight: bold;
+  margin: 0 0 0.8em;
+}
+
+.aui .life-insurance-page .story-box {
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  padding: 15px 15px 1px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.life-insurance-page .story-box:before, .new-mortgage-page .story-box b {
+  content: '';
+  position: absolute;
+  right: 15px;
+  bottom: -12px;
+  width: 14px;
+  height: 12px;
+  background: url("../images/cpoj/ico-sprite.png") -125px -35px no-repeat;
+}
+
+.aui .life-insurance-page .story-box h2 {
+  font-size: .85em;
+  color: #607999;
+  margin: 0;
+}
+
+.aui .life-insurance-page .story-box h3 {
+  font-size: 1.23em;
+  color: #607999;
+  margin: 0.5em 0 1em;
+}
+
+.aui .life-insurance-page .story-box p {
+  font-style: italic;
+}
+
+.aui .life-insurance-page .columns > ul {
+  width: 200px;
+}
+
+.aui .life-insurance-page .packet-list {
+  position: relative;
+  zoom: 1;
+  margin-top: 10px;
+}
+
+.aui .life-insurance-page .packet-list .tip {
+  position: absolute;
+  right: 15px;
+  top: -110px;
+  width: 215px;
+  height: 100px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url("../images/cpoj/tip-car-insurance.png") 0 0 no-repeat;
+  pointer-events: none;
+}
+
+.life-insurance-page .packet-list h3 a {
+  color: #607999;
+}
+
+.life-insurance-page .packet .spc {
+  overflow: hidden;
+}
+
+.life-insurance-page .packet .fr {
+  font-size: .85em;
+  color: #003565;
+  width: 65px;
+  text-align: right;
+}
+
+.life-insurance-page .packet .fr strong {
+  font-size: 1.36em;
+}
+
+.life-insurance-page .note-box ul {
+  margin-bottom: 0;
+}
+
+.life-insurance-page a.status-lblue,
+.life-insurance-page a.status-gblue,
+.life-insurance-page a.status-red,
+.life-insurance-page a.status-gray,
+.life-insurance-page a.status-purple,
+.life-insurance-page a.status-blue,
+.life-insurance-page a.status-orange,
+.life-insurance-page a.status-green {
+  text-decoration: none;
+  display: inline-block;
+  margin: -2px 13px 11px 0px;
+  position: relative;
+}
+
+.life-insurance-page a.status-lblue:hover,
+.life-insurance-page a.status-gblue:hover,
+.life-insurance-page a.status-red:hover,
+.life-insurance-page a.status-gray:hover,
+.life-insurance-page a.status-purple:hover,
+.life-insurance-page a.status-blue:hover,
+.life-insurance-page a.status-orange:hover,
+.life-insurance-page a.status-green:hover {
+  border: 3px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: -5px 10px 8px -3px;
+}
+
+.life-insurance-page .left-over,
+.life-insurance-page .right-over {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  width: 57px;
+  height: 364px;
+  background: url("../images/cpoj/products-over-diamant.png") 0 0 no-repeat;
+  pointer-events: none;
+}
+
+.life-insurance-page .right-over {
+  left: auto;
+  right: 0;
+  background-position: -57px 0;
+}
+
+.life-insurance-page .slider {
+  margin: 0 20px;
+  height: 8px;
+  background: #c2c2c2 url("../images/cpoj/slider2.png") 0 -25px repeat-x;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1;
+  top: -10px;
+}
+
+.life-insurance-page .slider-range {
+  margin: 0 71px 0 70px;
+  position: relative;
+  height: 8px;
+}
+
+.life-insurance-page .slider-handle {
+  width: 141px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  *top: -3px;
+  margin-left: -70px;
+  background: url("../images/cpoj/slider2.png") 0 0 no-repeat;
+}
+
+.life-insurance-page .slider-handle:hover {
+  background-position: 0 -100px;
+}
+
+/* OPEN BOX */
+.open-box .link {
+  display: none;
+}
+
+.js .open-box .link {
+  display: block;
+}
+
+.js .open-box .box {
+  display: none;
+}
+
+.js .open-box.opened .link {
+  display: none;
+}
+
+.js .open-box.opened .box {
+  display: block;
+}
+
+.js .open-box .archiv {
+  display: none;
+}
+
+/* featured box */
+.featured-box {
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.featured-box.std-box {
+  overflow: hidden;
+}
+
+.featured-box > h2 {
+  position: relative;
+  margin-bottom: 10px !important;
+  color: #004677 !important;
+  font-size: 1.15em !important;
+  font-weight: bold !important;
+}
+
+.featured-box > h2:before {
+  background: url("../images/cpoj/ico-sprite.png") no-repeat 0 -233px;
+  content: "";
+  height: 31px;
+  overflow: hidden;
+  position: absolute;
+  right: 9px;
+  top: -3px;
+  width: 30px;
+}
+
+.featured-box:hover {
+  background-color: #f8fbfd;
+}
+
+.featured-box:hover > h2 {
+  color: #222222 !important;
+}
+
+.featured-box .box {
+  display: none;
+}
+
+.featured-box.open .box {
+  display: block;
+}
+
+.featured-box.open > h2:before {
+  background-position: -30px -233px;
+}
+
+.featured-box h3 {
+  color: #555555;
+  font-family: arial,helvetica,sans-serif;
+  font-size: 1.23em;
+  font-weight: bold;
+  margin: 1.4em 0 0.5em;
+}
+
+.featured-box p {
+  font-size: 0.9em;
+  line-height: 1.23;
+  margin-bottom: 1.2em;
+}
+
+/* 404 */
+.page-404 .col-side h2 {
+  font-size: 1.15em;
+  color: #555555;
+  font-weight: bold;
+  margin: 0 0 0.8em;
+}
+
+.aui .page-404 .row {
+  margin-left: 0px;
+}
+
+.signed-out .portlet-topper, .controls-hidden .portlet-topper {
+  display: none;
+}
+
+/* 505 */
+.page-505 .number {
+  background: url("../images/cpoj/ico-all.png") no-repeat scroll 0 -594px transparent;
+  color: #555555;
+  font-size: 2.31em;
+  line-height: 44px;
+  margin: -10px 0 15px;
+  padding: 0 0 0 43px;
+}
+
+/* HISTORY PAGE */
+.history-page .history-box {
+  border: 1px solid #d2dff0;
+  background: #f5f8f9 url("../images/cpoj/grad3.png") 0 0 repeat-x;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 30px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.history-page .history-box .columns {
+  margin: 0;
+}
+
+.history-page .history-box .column-1-2 {
+  padding: 28px 0 0 30px;
+  width: 400px;
+}
+
+.history-page .history-box .column-2-2 {
+  float: right;
+  width: 470px;
+}
+
+.history-page .history-box .column-1-2 p:first-child {
+  font-size: 1.15em;
+}
+
+.history-page .annot-box {
+  font-size: 1.08em;
+  color: #555;
+}
+
+.aui .history-page .annot-box p {
+  line-height: 1.35;
+}
+
+.history-list {
+  width: 54px;
+  margin: 0 auto 40px;
+  background: url("../images/cpoj/history-list.png") 50% 0 no-repeat;
+  padding: 10px 0 0;
+}
+
+.aui .history-list ul {
+  background: url("../images/cpoj/history-list.png") 50% 100% no-repeat;
+  padding: 0 0 1px;
+  margin: 0;
+}
+
+.aui .history-list li {
+  padding: 0;
+  margin: 0 0 10px;
+  background: none;
+  width: 54px;
+  height: 54px;
+  position: relative;
+}
+
+.aui .history-list h2 {
+  line-height: 54px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url("../images/cpoj/ico-sprite.png") 0px -300px no-repeat;
+}
+
+.aui .history-list .active {
+  background-position: -100px -300px;
+}
+
+.history-list .even div {
+  left: -442px;
+}
+
+.history-list div {
+  position: absolute;
+  left: 75px;
+  top: -41px;
+  height: 130px;
+  width: 420px;
+  line-height: 130px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 1px 0;
+  *display: block;
+}
+
+.aui .history-list p {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 15px 20px;
+  width: 378px;
+  background: white url("../images/cpoj/grad7.png") 0 100% repeat-x;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin: 0;
+  position: relative;
+  line-height: 1.23;
+}
+
+.aui .history-list p:before, .history-list p b {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  margin-top: -9px;
+  height: 18px;
+  width: 9px;
+  background: url("../images/cpoj/ico-sprite.png") -75px -300px no-repeat;
+}
+
+.aui .history-list .even p:before, .history-list .even p b {
+  left: auto;
+  right: -9px;
+  background-position: -75px -325px;
+}
+
+/************************************************************************************
+   IE SPECIAL
+*************************************************************************************/
+/* before */
+.thick-list li,
+.dot-list li,
+.inp-wrap.error,
+.inp-wrap.ok,
+.boxes .msg,
+.tooltip,
+.media-box,
+.att-list a,
+.boxes > div > a,
+.products-list .statuses span,
+.compare-msg p,
+.note-box,
+.tooltip2,
+.faq-list h2,
+.calamity-msg p,
+.modelator-form-footer .bd,
+.modelator-popup,
+.new-mortgage-page .story-box,
+.crossroad li,
+.modelator-custom-variant .form-ok,
+.faq-box > ul > li,
+.history-list p {
+  *behavior: expression(function(element){ 		element.innerHTML = '<b></b>'+element.innerHTML; 		element.runtimeStyle.behavior = "none"; 	}(this));
+}
+
+/* OL */
+.num-list, .num-list ol {
+  *behavior: expression(function(element){ 		var s = element.getAttribute('start') - 1 || 0; 		element.setAttribute('data-counter', s); 		element.runtimeStyle.behavior = "none"; 	}(this));
+}
+
+.num-list li {
+  *behavior: expression(function(element){ 	 	var counter = element.parentNode && element.parentNode.getAttribute('data-counter'); 	 	if(element.parentNode && typeof counter != 'undefined'){ 	 		element.parentNode.setAttribute('data-counter', ++counter); 			element.innerHTML = '<span class="ie-counter">' + (counter) + '</span>' + element.innerHTML; 			element.runtimeStyle.behavior = "none"; 		} 		 	}(this));
+}
+
+/************************************************************************************
+   JavaScript
+*************************************************************************************/
+.jquery-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  cursor: hand;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.jquery-checkbox .mark {
+  width: 33px;
+  height: 33px;
+  display: block;
+}
+
+.jquery-checkbox img {
+  display: block;
+  width: 33px;
+  height: 33px;
+}
+
+.jquery-checkbox img {
+  background: transparent url("../images/cpoj/checkbox.png") no-repeat;
+}
+
+.jquery-checkbox img {
+  background-position: 0px 0px;
+}
+
+.jquery-checkbox-checked img {
+  background-position: -33px 0;
+}
+
+.jquery-checkbox-disabled img {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.jquery-radio {
+  display: inline-block;
+  cursor: pointer;
+  cursor: hand;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.jquery-radio .mark {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.jquery-radio img {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.jquery-radio img {
+  background: transparent url("../images/cpoj/radio.png") no-repeat;
+}
+
+.jquery-radio img {
+  background-position: 0px 0px;
+}
+
+.jquery-radio-checked img {
+  background-position: -25px 0;
+}
+
+.jquery-radio-disabled img {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* Dropdown control */
+.selectBox-dropdown, .aui a.selectBox-dropdown {
+  width: 210px;
+  padding-right: 40px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  outline: none;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: default;
+  background: #fcfdfd url("../images/cpoj/select.png") 100% 0 no-repeat;
+  border: 1px solid #cad7e7;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0 40px 0 0;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.selectBox-dropdown:hover {
+  background-position: 100% -100px;
+}
+
+.selectBox-dropdown.w-full {
+  width: auto;
+  display: block !important;
+}
+
+.selectBox-dropdown.selectBox-menuShowing {
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.selectBox-menuShowing, .selectBox-menuShowing:hover {
+  background-position: 100% -200px;
+}
+
+.selectBox-dropdown .selectBox-label {
+  line-height: 16px;
+  padding: 8px 0px 8px 7px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+  display: none;
+}
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+  font-size: 13px;
+  line-height: 16px;
+  position: absolute;
+  z-index: 99999;
+  max-height: 200px;
+  border: solid 1px #cad7e7;
+  background: #FFF;
+  overflow: auto;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Inline control */
+.selectBox-inline {
+  width: 250px;
+  outline: none;
+  border: solid 1px #bbbbbb;
+  background: #FFF;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+/* Options */
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {
+  list-style: none;
+  display: block;
+  cursor: default;
+  padding: 0;
+  margin: 0;
+}
+
+.selectBox-options li a {
+  padding: 5px 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.selectBox-options li.selectBox-hover a {
+  background-color: #EEE;
+}
+
+.selectBox-options li.selectBox-disabled a {
+  color: #888;
+  background-color: transparent;
+}
+
+.selectBox-options li.selectBox-selected a {
+  background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+  color: #666;
+  background: #EEE;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 0.3em;
+  white-space: nowrap;
+}
+
+/* Disabled state */
+.selectBox.selectBox-disabled {
+  color: #888888 !important;
+}
+
+.selectBox-inline.selectBox-disabled {
+  color: #888888 !important;
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options a {
+  background-color: transparent !important;
+}
+
+/* Compatibility Browsers Portlet  */
+#compatibleBar {
+  width: 100%;
+  background: #ffeeab;
+  border-bottom: 1px solid #ecd67f;
+  color: #444;
+  text-align: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.screenshoter #compatibleBar {
+  display: none !important;
+}
+
+#compatibleBar .in {
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 15px;
+  position: relative;
+}
+
+#compatibleBar .in p {
+  float: left;
+  background: transparent url("../images/cpoj/browser-alert.png") 0 0 no-repeat;
+  padding: 0 0 0 41px;
+  font-size: 13px;
+  width: 540px;
+}
+
+#compatibleBar .in p strong {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#compatibleBar .in ul {
+  margin: 25px 25px 0 0;
+  float: right;
+}
+
+#compatibleBar .in ul li {
+  float: left;
+}
+
+#compatibleBar .in ul li a {
+  background: transparent url("../images/cpoj/browsers.jpg") 0 0 no-repeat;
+  width: 64px;
+  padding-top: 35px;
+  color: #003d6e;
+  font-size: 12px;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+}
+
+#compatibleBar .in ul li a:hover,
+#compatibleBar .in ul li a:focus,
+#compatibleBar .in ul li a:active {
+  text-decoration: none;
+}
+
+#compatibleBar .in ul li a.ie9 {
+  background-position: -4px 0;
+}
+
+#compatibleBar .in ul li a.chrome {
+  background-position: -139px 0;
+  width: 72px;
+}
+
+#compatibleBar .in ul li a.firefox {
+  background-position: -68px 0;
+  width: 67px;
+}
+
+#compatibleBar .in ul li a.opera {
+  background-position: -212px 0;
+  width: 66px;
+}
+
+#compatibleBar .in ul li a.safari {
+  background-position: -278px 0;
+}
+
+#compatibleBar .in a.close {
+  background: transparent url("/cpoj-theme/images/cpoj/browser-close.png") 0 0 no-repeat;
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -80px;
+  text-indent: -99999px;
+  zoom: 1;
+  visibility: visible;
+  float: right;
+}
+
+/* CHANGE */
+.map-search-box {
+  position: relative;
+}
+
+.aui .map-search-box .filter {
+  border-bottom: 0 none;
+  margin-bottom: -12px;
+}
+
+.map-search-box .result-text {
+  margin-top: 5px;
+  margin-bottom: 75px;
+}
+
+.map-search-box .menu,
+.map-search-box .menu-left {
+  position: absolute;
+  top: 129px !important;
+  margin-top: 0;
+}
+
+.map-search-box .menu {
+  top: 124px;
+  right: 20px;
+}
+
+.map-search-box .filter .checkbox .layerChBox {
+  left: 93px;
+}
+
+.map-search-box table.poradci-table td table.contacts tr.even > * {
+  background-color: white;
+}
+
+.map-search-box table.poradci-table tr.even td table.contacts tr.even > * {
+  background-color: #F9FBFD;
+}
+
+/* zobrazeni zon kam se daji pretahovat portlety */
+.dockbar-ready .portlet-dropzone.empty {
+  height: 20px;
+  min-height: 20px;
+  min-width: 50px;
+  background-color: #DFF4FF;
+  border: 1px dotted #a7cedf;
+}
+
+#content .helpBubble {
+  background: #bacddb;
+  position: absolute;
+  top: -37px;
+  right: -330px;
+  width: 332px;
+  z-index: 100;
+  display: block;
+  background: url("../images/cpoj/as-tooltip.png") 0 14px no-repeat;
+}
+
+#content .helpBubble .in {
+  background: url("../images/cpoj/as-tooltip.png") -332px 100% no-repeat;
+  position: relative;
+  bottom: -5px;
+  padding: 30px;
+  display: block;
+  color: #004677;
+}
+
+.aui .last-press-news h3 {
+  margin-top: 0;
+}
+
+
+.boxb-wrap>div {
+  border: 1px solid #d2dff0;
+  position: relative;
+  float: left;
+  width: 233px;
+  height: 120px;
+  z-index: 99;
+}
+.boxb-wrap div:hover { background-color: #f3f6fb;}
+.boxb-wrap>div.boxb1 {
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+}
+.boxb-wrap>div.boxb4 {
+    border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+}
+.boxb-wrap>div + div { margin-left: -1px;}
+.boxb-wrap>div.boxb1,
+.boxb-wrap>div.boxb4 {
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.boxb-wrap div h4 {
+  font-family: arial, sans-serif;
+  line-height: 1em;
+  font-size: 1.5em;
+  background-image: url("../images/cpoj/kc-icons.png");
+  background-repeat: no-repeat;
+  margin: 35px 20px 20px 20px;
+  padding-left: 68px;
+  padding-bottom: 10px;
+}
+.boxb-wrap div h4 a {
+  color: #222222;
+  text-decoration: none;
+  display: inline-block;
+}
+.boxb-wrap div h4 a:hover { text-decoration: underline;}
+
+.boxb-wrap .boxb1 h4 { background-position: 0 -5px; }
+.boxb-wrap .boxb2 h4 { background-position: 0 -100px; }
+.boxb-wrap .boxb3 h4 { background-position: 0 -202px; }
+.boxb-wrap .boxb4 h4 { background-position: 0 -297px; }
+
+.boxb-wrap .b-pop {
+  position: absolute;
+  z-index: 99;
+  top: 120px;
+  left: -1px;
+  border: 1px solid #D2DFF0;
+  background-color: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+  width: 80%;
+  padding: 20px 10%;
+  display: none;
+}
+.boxb-wrap .b-pop p {
+  font-size: 1em;
+  margin-bottom: 0.7em;
+}
+.boxb-wrap div:hover .b-pop {
+    background-color: #ffffff;
+    display: block;
+}
+
+.boxb-footer .box-icon-light,
+.boxb-footer .box-icon-alert {
+  padding: 0 0 0 0px;
+  margin: 20px 0 0 0px;
+  background-position: 0 0;
+  position: relative;
+  float:left;
+  width: 50%;
+  height:120px;
+}
+.boxb-footer .box-icon-light>p,
+.boxb-footer .box-icon-alert>p {
+  margin-left: 62px;
+
+}
+.boxb-footer .box-icon-light>p { margin-right: 45px; }
+.boxb-footer .box-icon-alert>p { margin-top: 17px;}
+
+.box-icon-light{
+    background: url("../images/cpoj/ico-box-light.png") no-repeat center left;
+}
+.box-icon-alert{
+    background: url("../images/cpoj/ico-box-alert.png") no-repeat center left;
+}
+
+
+/***************************************************
+    CSS pro layout s fixnimi bannery
+****************************************************/
+
+.aui .span4.col-banner {
+    position: relative;
+}
+.aui .col-banner .banner {
+    /* position: fixed; */
+}
+@media screen and (max-width: 1419px) {
+    .aui .col-banner {
+        display: none;
+    }
+    .aui .span4.col-main {
+        box-sizing: border-box;
+        display: block;
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+    .aui .homepage .row {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1420px) {
+    #main-content.homepage {
+        width: 1400px;
+    }
+    .aui .span4.col-banner,
+    .aui .col-banner .banner {
+        width: 200px;
+    }
+    .aui .span4.col-main {
+        width: 940px;
+    }
+}
+
+/*import custom*/
+@import url(custom_lfr62.css);
+
+@media only screen and (max-width: 960px) {
+	#main-content.insurance-info-page {
+		width: 96%;
+	}
+
+	.aui .reporting-page .big-number,
+	.aui .insurance-info-page .big-number {
+		font-size: 2em;
+	}
+
+	.aui .insurance-info-page .column-1-3,
+	.aui .insurance-info-page .column-2-3,
+	.aui .insurance-info-page .column-3-3 {
+		padding: 0;
+		border: none;
+		margin: 0 0 10px !important;
+		float: none;
+	}
+
+	.aui .insurance-info-page .box1,
+	.aui .insurance-info-page .box2,
+	.aui .insurance-info-page .box3 {
+		max-width: 100%;
+		height: auto !important;
+		width: auto;
+		box-sizing: border-box;
+		border-left: none;
+	}
+}

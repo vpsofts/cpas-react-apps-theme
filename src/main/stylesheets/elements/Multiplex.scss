@@ -1,0 +1,59 @@
+.multiplex_container {
+   display: inline;
+
+	input.isFill,
+	input[type="file"] {
+		visibility: hidden;
+		position: absolute;
+	}
+   button {
+      display: inline;
+      float: none;
+      border: 1px solid #CAD7E7;
+      font-weight: normal;
+   }
+
+	& .multiplex_reset {
+            display: none;
+            position: absolute;
+            right: 7px;
+            //margin-top: 29px;
+            top: 60px;
+
+      &:before {
+         content: "";
+         background: url("/cpoj-theme/images/cpoj/ico-sprite.png") 0 -40px no-repeat;
+         width: 15px;
+         height: 15px;
+         overflow: hidden;
+         margin-right: 5px;
+         position: relative;
+         top: 2px;
+         display: inline-block;
+      }
+   }
+	&.hasFiles .multiplex_reset { display: block; }
+
+   & ul {
+        display: none;
+        border: 1px solid #cad7e7;
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 5px;
+
+        li {
+            padding-top: 5px;
+        }
+   }
+   &.hasFiles ul {
+      display: block;
+   }
+   ul:before {
+  	  content: "Vybrané soubory:";
+      font-weight: bold;
+      display: block;
+   }
+	&.en ul:before {
+		content: "Selected files:";
+	}
+}

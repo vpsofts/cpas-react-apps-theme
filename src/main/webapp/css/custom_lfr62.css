@@ -1,0 +1,142 @@
+.aui body > .portlet-boundary .portlet-borderless-container {
+  min-height: 0;
+}
+
+.aui #breadcrumb ul {
+  box-sizing: border-box;
+}
+
+.aui li {
+  line-height: 1.23;
+}
+
+.filter-box label {
+  margin-bottom: 0;
+}
+
+.aui .row.portlet-layout {
+  margin-left: 0;
+}
+
+.aui form {
+  margin: 0;
+}
+
+.aui form label {
+  font-size: inherit;
+  line-height: 1.23;
+}
+
+.aui label, .aui input, .aui button, .aui select, .aui textarea {
+  font-size: 1em;
+}
+
+.aui .portlet-body .row {
+  margin-left: 0;
+}
+
+.signed-out .portlet-column-content.empty {
+  padding: 0;
+}
+
+.aui input[type="text"], .aui input[type="text"]:focus,
+.aui textarea, .aui textarea:focus {
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.portlet-journal .journal-article-header-edit .btn {
+  float: none;
+  height: auto;
+  text-decoration: none;
+}
+
+.portlet-journal .journal-article-header-edit .btn span {
+  background: transparent;
+  display: inline;
+  float: none;
+  font-size: inherit;
+  line-height: 1.23;
+  padding: 0;
+}
+
+/* Web Form Portlet*/
+.aui .web-form-portlet form {
+  background: #f5f8f9 url("../images/cpoj/grad4.png") repeat-x scroll 0px 0px;
+  border: 1px solid #d2dff0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.aui form .fieldset em {
+  color: #555;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin: 0 0 0.8em !important;
+  font-style: normal;
+  display: block;
+}
+
+.aui .web-form-portlet textarea {
+  width: 100%;
+  height: auto;
+}
+
+/*// fixes incorrect list spacing*/
+.aui ul,
+.aui ol {
+  padding: 0;
+  margin: 0;
+}
+
+/*// removes underline from sidebar's nav pills*/
+.aui .nav-pills > li > a {
+  text-decoration: none;
+}
+
+/*// remove underline from AUI icons*/
+.aui a [class^="icon-"], .aui a [class*=" icon-"] {
+  text-decoration: none;
+}
+
+/*// remove spacing around specific AUI form components*/
+.input.c input, .input.c textarea {
+  border: none;
+  margin-bottom: 0;
+}
+
+/*// set specific AUI labels as bold*/
+.c .aui-field-label {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/*// remove incorrect left padding from AUI radios and checkboxes*/
+.aui .c .radio, .aui .c .checkbox {
+  padding-left: 0;
+}
+
+.aui .zavolame-vam input.inp-text {
+  width: 240px;
+}
+
+.aui .zavolame-vam textarea {
+  width: 98%;
+  height: 180px;
+}
+
+.gsc-table-result {
+  border-collapse: inherit !important;
+}
+
+/* Make homepage banner WCM controls visible */
+.dockbar-ready .banner-hp {
+  padding: 0 35px;
+}
+
+/* Set fixed input width in login portlet*/
+.portlet-login input[type="text"], .portlet-login input[type="text"]:focus, .portlet-login input[type="password"], .portlet-login input[type="password"]:focus {
+  width: 206px;
+}

@@ -1,0 +1,173 @@
+#header #logo span img {
+  display: none;
+  width: 223px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.print-ban {
+  display: none;
+}
+
+@media print {
+  .col-content {
+    width: 100%;
+  }
+
+  #header #variableHeaderPhone {
+    margin: 0;
+    padding: 0;
+  }
+
+  #header #variableHeaderPhone:before {
+    display: inline-block;
+    content: "Tel:";
+    margin: 0 10px 0 0;
+  }
+
+  #header #logo,
+  #header .bottom,
+  #header.v1 .rows {
+    float: none;
+    display: block;
+  }
+
+  .dockbar,
+  .breadcrumbs,
+  .search,
+  .user,
+  #header .top,
+  #nav,
+  #wrapper #links,
+  #share,
+  #footer p a.symbio,
+  .new-kontakt-inner .kcboxes h2:before {
+    display: none !important;
+  }
+
+  #header #logo span {
+    display: block;
+  }
+
+  #header #logo span img {
+    display: block;
+  }
+
+  .thick-list li {
+    padding: 0 0 0 20px;
+  }
+
+  .thick-list li:before {
+    content: '\2022';
+    font-size: 2em;
+    top: 30%;
+    width: 10px;
+  }
+
+  .dot-list li:before {
+    content: '\2022';
+    font-size: 2em;
+    top: -8px;
+  }
+
+  .products-list > ul > li,
+  .note-box,
+  .col-h-l,
+  .col-h-r {
+    page-break-inside: avoid;
+  }
+
+  .new-kontakt-inner .kcboxes h2 {
+    padding: 0;
+  }
+
+  #wrapper #footer {
+    height: auto;
+  }
+
+  .col-h-l li,
+  .col-h-r li,
+  .att-list li,
+  #footerWrapper li li {
+    position: relative;
+    margin-bottom: 0.3em;
+  }
+
+  .col-h-l li:before,
+  .col-h-r li:before,
+  #footerWrapper li li:before {
+    content: '\2022';
+    font-size: 2em;
+    top: -8px;
+    left: -3px;
+    width: 10px;
+    position: absolute;
+  }
+
+  .att-list li:before {
+    content: '\2022';
+    font-size: 2em;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    position: absolute;
+  }
+
+  .att-list a::before, .att-list a b {
+    display: none;
+  }
+
+  .note-box .col-h-l li:before, .note-box .col-h-r li:before {
+    top: 30%;
+  }
+
+  .note-box .bd {
+    padding: 0;
+  }
+
+  .col-side {
+    width: 100%;
+  }
+
+  .col-side .contact-box .ico-tel:before,
+  .col-side .contact-box .ico-msg:before,
+  .col-side .contact-box .tweet:before,
+  .col-side .contact-box .number:before {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+
+  .col-side .contact-box .ico-tel:before {
+    content: "Tel:";
+  }
+
+  .col-side .contact-box .ico-msg:before {
+    content: "E-mail:";
+  }
+
+  .col-side .contact-box .tweet {
+    width: 100%;
+  }
+
+  .col-side .contact-box .tweet:before {
+    content: "Tweet:";
+  }
+
+  .col-side .contact-box .number:before {
+    content: "Tel:";
+  }
+
+  .image-box .banner-hp {
+    padding: 0;
+  }
+
+  .image-box .banner-hp p {
+    display: none;
+  }
+
+  .print-ban {
+    display: block;
+  }
+}

@@ -1,0 +1,2728 @@
+/* ---------- Hidden Accessible ---------- */
+#skip-to-content, #banner h2, #banner h3, #navigation h1, .site-breadcrumbs h1 {
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+#content .chat-portlet {
+  display: none;
+}
+
+/* Oproti SK */
+#content {
+  z-index: 1;
+  position: relative;
+}
+
+.portlet-boundary_cpasmainmenu_WAR_cpasportletstheme_ {
+  z-index: 2;
+  position: relative;
+}
+
+#main-content {
+  font-size: 1.3em;
+  line-height: 1.23;
+  width: 940px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 25px 0 0;
+}
+
+#nav ul li#online-sluzby a {
+  width: 168px;
+  background-position: -301px 0;
+}
+
+#nav ul li#online-sluzby a:hover,
+#nav ul li#online-sluzby a:active,
+#nav ul li#online-sluzby a.act,
+#nav ul li#online-sluzby a.opn {
+  background-position: -301px -46px;
+}
+
+#nav ul li#skody-a-pojistne-udalosti a {
+  width: 245px;
+  background-position: -469px 0;
+}
+
+#nav ul li#skody-a-pojistne-udalosti a:hover,
+#nav ul li#skody-a-pojistne-udalosti a:active,
+#nav ul li#skody-a-pojistne-udalosti a.act,
+#nav ul li#skody-a-pojistne-udalosti a.opn {
+  background-position: -469px -46px;
+}
+
+#nav ul li#o-nas a {
+  width: 111px;
+  background-position: -829px 0;
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+#nav.open ul li#o-nas a {
+  border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+}
+
+#nav ul li#o-nas a:hover,
+#nav ul li#o-nas a:active,
+#nav ul li#o-nas a.act,
+#nav ul li#o-nas a.opn {
+  background-position: -829px -46px;
+}
+
+#nav .nav-layer {
+  width: 940px;
+  position: absolute;
+  z-index: 100;
+  top: 46px;
+}
+
+#nav .box1 h3 a {
+  text-decoration: none;
+}
+
+#nav #nav-layer-obcane .promo {
+  background: none;
+}
+
+#nav #nav-layer-obcane .promo a {
+  margin: 0 0 3px 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+#nav #nav-layer-obcane .promo {
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #dee8f4;
+  padding: 15px 0 0 40px;
+}
+
+#nav #nav-layer-obcane .promo p {
+  float: left;
+  display: inline;
+  width: 250px;
+  padding: 0 0 0 35px;
+  background: url("../images/cpoj/ico-chair.png") 0 0 no-repeat;
+  min-height: 34px;
+}
+
+#nav #nav-layer-obcane .promo p:first-child {
+  background-image: url("../images/cpoj/ico-house.png");
+  width: 300px;
+}
+
+#nav #nav-layer-obcane .promo2012 {
+  background: none;
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #dee8f4;
+  padding: 15px 0 0 50px;
+}
+
+#nav #nav-layer-obcane .promo2012 a {
+  margin: 0 0 3px 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  color: #222222;
+  font-size: 1.333em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#nav #nav-layer-obcane .promo2012 a:hover {
+  text-decoration: underline;
+}
+
+#nav #nav-layer-obcane .promo2012 p {
+  float: left;
+  display: inline;
+  width: 193px;
+  padding: 0 0 0 26px;
+  background: url("../images/cpoj/ico-house-phone.png") 0 0 no-repeat;
+  min-height: 34px;
+}
+
+#nav #nav-layer-obcane .promo2012 p + p {
+  background-image: url("../images/cpoj/ico-pen.png");
+  padding-left: 27px;
+}
+
+#nav #nav-layer-obcane .promo2012 p + p + p {
+  background-image: url("../images/cpoj/ico-chair.png");
+  width: 147px;
+  padding-left: 29px;
+}
+
+#nav #nav-layer-online-sluzby .top {
+  background-position: 405px 50%;
+  background-image: url("../images/cpoj/sw02.png");
+}
+
+#nav #nav-layer-online-sluzby .rightSide {
+  width: 530px;
+}
+
+#nav #nav-layer-online-sluzby .leftSide {
+  width: 400px;
+}
+
+#nav #nav-layer-online-sluzby h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 0 0 0.65em;
+  color: #222222;
+}
+
+#nav #nav-layer-online-sluzby h3 a {
+  color: #222222;
+  text-decoration: none;
+}
+
+#nav #nav-layer-online-sluzby h3 a:hover {
+  color: #222222;
+  text-decoration: underline;
+}
+
+#nav #nav-layer-online-sluzby ul {
+  float: left;
+  width: 140px;
+  margin: 0 10px 25px 0;
+}
+
+#nav #nav-layer-online-sluzby .promo h3 {
+  font-size: 15px;
+}
+
+#nav #nav-layer-online-sluzby .sjednat-pojisteni {
+  background: url("../images/cpoj/ico-sjednat-pojisteni.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #nav-layer-online-sluzby .dalsi-online-sluzby {
+  background: url("../images/cpoj/ico-dalsi-online-sluzby.png") 45px 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 96px;
+}
+
+#nav #nav-layer-online-sluzby .promo {
+  background-image: url("../images/cpoj/ico-megaphone.png");
+}
+
+#nav #nav-layer-online-sluzby .promo a {
+  margin-right: 20px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .top {
+  background-position: 500px 50%;
+  background-image: url("../images/cpoj/sw02.png");
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .rightSide {
+  width: 410px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .leftSide {
+  width: 500px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 0 0 0.65em;
+  color: #222222;
+  line-height: 22px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti h3 a {
+  color: #222222;
+  text-decoration: none;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti h3 a:hover {
+  color: #222222;
+  text-decoration: underline;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti ul {
+  float: left;
+  width: 170px;
+  margin: 0 10px 25px 0;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .kalamity {
+  background: url("../images/cpoj/ico-kalamity.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .centrum-skod {
+  background: url("../images/cpoj/ico-centrum-skod.png") 0 5px no-repeat;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .inline-btn {
+  text-transform: uppercase;
+}
+
+#nav #nav-layer-skody-a-pojistne-udalosti .leftSide p {
+  float: right;
+  margin-top: -78px;
+  width: 230px;
+}
+
+#nav #nav-layer-o-nas .top {
+  background-position: 320px 50%;
+}
+
+#nav #nav-layer-o-nas .rightSide {
+  width: 610px;
+}
+
+#nav #nav-layer-o-nas .leftSide {
+  width: 315px;
+}
+
+#nav #nav-layer-o-nas .rightSide ul {
+  width: 180px;
+}
+
+#nav #nav-layer-kontakty .top {
+  background-position: 365px 50%;
+}
+
+#nav #nav-layer-kontakty .rightSide {
+  width: 520px;
+}
+
+#nav #nav-layer-kontakty .leftSide {
+  width: 350px;
+}
+
+#nav #nav-layer-kontakty .leftSide form {
+  margin: -10px 0 15px;
+}
+
+#nav #nav-layer-kontakty .col-l {
+  float: left;
+  width: 250px;
+}
+
+#nav #nav-layer-kontakty .col-r {
+  float: right;
+  width: 230px;
+}
+
+#nav #nav-layer-kontakty .rightSide strong {
+  display: block;
+  margin: 0 0 0.8em;
+}
+
+#nav #nav-layer-kontakty .rightSide .number {
+  color: #222;
+  font-size: 1.15em;
+  display: block;
+  margin: 0 0 0.7em;
+  font-weight: bold;
+}
+
+#nav #nav-layer-kontakty .rightSide .col-l a {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#nav #nav-layer-kontakty .promo {
+  background: none;
+  padding: 20px 0 10px 50px;
+  margin: 10px 0 0 -50px;
+}
+
+#nav #nav-layer-kontakty .promo p {
+  font-size: 1.3em;
+}
+
+.main-crossroad {
+  width: 100%;
+}
+
+.main-crossroad .loader {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 690px;
+  top: 11px;
+  display: none;
+  background: url("../images/cpoj/ajax-loader-small.gif");
+}
+
+.main-crossroad .tab-menu {
+  z-index: 2;
+  right: 14px;
+}
+
+.main-crossroad .tab-menu .ui-slider-handle {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 31px;
+  height: 45px;
+  background: url("../images/cpoj/slider.png") 0px -35px no-repeat;
+  margin-left: -15px;
+}
+
+.main-crossroad .tab-products {
+  position: relative;
+  width: 100%;
+}
+
+.main-crossroad .tab-products .ui-slider-handle {
+  width: 141px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  *top: -3px;
+  margin-left: -70px;
+  background: url("../images/cpoj/slider2.png") 0 0 no-repeat;
+}
+
+.main-crossroad .tab-products .wrap .pane {
+  overflow: hidden;
+  position: relative;
+}
+
+.main-crossroad .tip {
+  z-index: 1;
+}
+
+.main-crossroad .tab-menu .slider-range {
+  cursor: pointer;
+  height: 30px;
+}
+
+.main-crossroad .tab-products ul div {
+  font-size: 1em;
+}
+
+.main-crossroad .tab-products .slider-range {
+  cursor: pointer;
+}
+
+.main-crossroad .tab-products .wrap .pane > ul {
+  white-space: nowrap;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 35px;
+  letter-spacing: -1px;
+}
+
+.js .main-crossroad .tab-products .wrap .pane > ul {
+  overflow: hidden;
+}
+
+.main-crossroad .tab-products .wrap .pane > ul > li {
+  width: 252px;
+  margin: 0 13px 0 0;
+  padding: 0;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  background: none;
+}
+
+.main-crossroad .tab-products .wrap .pane > ul > li:first-child {
+  margin-left: 13px;
+}
+
+.main-crossroad .tab-products ul .inline-btn {
+  margin-right: 11px;
+}
+
+.big-font .main-crossroad .tab-products .one-row,
+.main-crossroad .tab-products .two-rows {
+  display: inline-block;
+  height: 34px;
+  vertical-align: middle;
+  width: 114px;
+}
+
+.main-crossroad .tab-products .item-zivot .two-rows {
+  width: 99px;
+}
+
+.main-crossroad .tab-subjects {
+  width: 100%;
+}
+
+.main-crossroad .tab-subjects ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.main-crossroad .tab-subjects ul li ul {
+  display: none;
+}
+
+.main-crossroad .tab-products ul > li:hover div {
+  cursor: default;
+}
+
+.main-crossroad .window {
+  margin-left: -105.5px;
+  z-index: 2;
+}
+
+.result-window {
+  left: -9999px;
+  overflow: hidden;
+}
+
+.filter-box label {
+  position: relative;
+  padding: 11px 0 0 43px;
+  min-height: 26px;
+  vertical-align: top;
+}
+
+*:first-child + html .filter-box label {
+  padding: 11px 0 0 0;
+}
+
+.filter-box label input {
+  left: 0;
+  top: 0;
+}
+
+.filter-box .jquery-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+*:first-child + html .filter-box .jquery-checkbox {
+  position: relative;
+}
+
+.filter-box .item-1, .filter-box .item-2, .filter-box .item-3 {
+  width: 137px;
+  margin-right: 10px;
+}
+
+.filter-box .item-4 {
+  width: 137px;
+  margin-right: 0;
+}
+
+*:first-child + html .filter-box .item-1, *:first-child + html .filter-box .item-2, *:first-child + html .filter-box .item-3, *:first-child + html .filter-box .item-4 {
+  width: 180px;
+}
+
+.status-lblue, .status-gblue, .status-red, .status-gray, .status-purple, .status-blue, .status-orange, .status-green {
+  display: inline-block;
+}
+
+.products-list .statuses {
+  text-align: right;
+}
+
+.products-list > ul {
+  font-size: 1em;
+}
+
+.products-list > ul > li {
+  height: 394px;
+  font-size: 1em;
+}
+
+.big-font .products-list > ul > li {
+  height: 474px;
+}
+
+.products-list > ul > li > p:first-child {
+  margin: 0;
+}
+
+.products-list > ul > li > img {
+  height: 111px;
+}
+
+.products-list > ul > li > .bd {
+  width: 194px;
+  position: absolute;
+  top: 111px;
+  left: 0;
+}
+
+.big-font .products-list > ul > li > .bd {
+  height: 330px;
+}
+
+.products-list > ul > li > .bd > p {
+  position: absolute;
+  bottom: 12px;
+}
+
+.web-form-portlet legend {
+  display: none;
+}
+
+.web-form-portlet label {
+  color: #222;
+}
+
+.web-form-portlet .aui-field {
+  padding: 0 0 1.6em;
+}
+
+.web-form-portlet textarea {
+  width: 100%;
+  height: auto;
+}
+
+.web-form-portlet select {
+  width: 100%;
+}
+
+.web-form-portlet .inp-wrap {
+  margin: 6px 45px 0 0;
+}
+
+.web-form-portlet .buttons {
+  padding-top: 4px;
+}
+
+.web-form-portlet .aui-field input {
+  width: 233px;
+}
+
+.web-form-portlet textarea.focus, .web-form-portlet input.focus {
+  border: none;
+  background: none;
+}
+
+.crossroad a {
+  display: none;
+}
+
+.crossroad a:hover {
+  background: none;
+}
+
+.crossroad .portlet-body a {
+  display: block;
+}
+
+.crossroad .portlet-body a:hover {
+  background: #f3f6fb;
+}
+
+.crossroad li a {
+  display: block;
+}
+
+.crossroad li a:hover {
+  background: #f3f6fb;
+}
+
+.faq-list ul > li {
+  padding: 0;
+  margin: 0 0 20px;
+  background: none;
+  width: 100%;
+  position: relative;
+}
+
+.faq-list ul > li:hover .spc {
+  background: #f8fbfd;
+  cursor: pointer;
+}
+
+.faq-list ul > li:hover span, .faq-list ul > li:hover h2 {
+  color: #222;
+}
+
+.faq-list ul > li:hover h2:before, .faq-list ul > li:hover h2 b {
+  background-position: -60px -233px;
+}
+
+.faq-list ul > li.open:hover h2:before, .faq-list ul > li.open:hover h2 b {
+  background-position: -90px -233px;
+}
+
+.homepage .boxes .journal-content-article > a {
+  margin: -20px -25px;
+  padding: 20px 25px;
+}
+
+.contact-media-page .boxes .journal-content-article > a {
+  margin: -17px -26px;
+  padding: 17px 26px;
+}
+
+.boxes .journal-content-article > a {
+  margin: -20px -25px;
+  padding: 20px 25px;
+}
+
+.homepage .boxes .box1 .tip {
+  left: -168px;
+  top: -47px;
+}
+
+.boxes .journal-content-article > a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  zoom: 1;
+  position: relative;
+}
+
+.boxes .journal-content-article > a:before,
+.boxes .journal-content-article > a b {
+  content: '';
+  width: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fafbfc url("../images/cpoj/box-hover.png") 100% 0 no-repeat;
+  visibility: hidden;
+}
+
+.boxes .journal-content-article > a:hover {
+  background: #fafbfc url("../images/cpoj/box-hover.png") 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.boxes .journal-content-article > a:hover:before,
+.boxes .journal-content-article > a:hover b {
+  visibility: visible;
+}
+
+.aui .side-menu li a {
+  padding-right: 18px;
+}
+
+.side-menu li.one-rows {
+  background-position: 0 0;
+}
+
+.side-menu .three-rows.active a, .side-menu .three-rows.active a:hover {
+  background-position: -459px -43px;
+}
+
+.side-menu li.three-rows a {
+  padding: 8px 35px 6px 15px;
+  background-position: -230px 14px;
+  height: 51px;
+}
+
+.side-menu li.three-rows {
+  background-position: 0 22px;
+}
+
+.profil-page .profil-box .column-1-2 {
+  padding-top: 0px;
+}
+
+.profil-page .profil-box .column-1-2 {
+  padding-top: 0px;
+}
+
+.organizational-structure a:hover {
+  background: #f1f5f9 !important;
+}
+
+.organizational-structure-page .people-list li:hover .name {
+  filter: none;
+}
+
+.organizational-structure-page .people-list li {
+  vertical-align: top;
+}
+
+.organizational-structure-page .people-list li .overlay {
+  overflow: auto;
+}
+
+.homepage .boxes .box1 .tip {
+  left: -143px;
+  top: -30px;
+}
+
+.info-window .info-window-in .title-branch, .info-window .info-window-in .title-consultant {
+  background: none 0 -1198px no-repeat;
+  padding: 0;
+}
+
+.hd > p {
+  margin: 0;
+}
+
+.products-page .mlm-buttons a {
+  width: 218px;
+  margin-right: 20px;
+  float: left;
+}
+
+.products-list > ul > li.mlm {
+  display: none;
+}
+
+.products-list > ul > li.obsolete {
+  display: none;
+}
+
+.boxes div#box_flash_map {
+  margin: 0 0 6px;
+}
+
+object#box_flash_map {
+  margin: -15px -44px -10px -22px !important;
+  width: 320px;
+  height: 180px;
+  position: relative;
+}
+
+.text-page ul {
+  margin-bottom: 1.2em;
+}
+
+.text-page ul ul {
+  list-style-type: none;
+  margin: 0.7em 0 0;
+}
+
+.life-insurance-page .products-list {
+  overflow: hidden;
+}
+
+.life-insurance-page .products-wrap {
+  position: relative;
+}
+
+.life-insurance-page .ui-slider {
+  cursor: pointer;
+}
+
+.life-insurance-page .ui-slider-handle {
+  width: 141px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  *top: -3px;
+  margin-left: -70px;
+  background: url("../images/cpoj/slider2.png") 0 0 no-repeat;
+}
+
+.life-insurance-page .ui-slider-handle:hover {
+  background-position: 0 -100px;
+}
+
+.content-box .spc .journal-content-article > :first-child {
+  margin-top: 0;
+}
+
+.std-box .journal-content-article > :first-child {
+  margin-top: 0;
+}
+
+.columns > div .journal-content-article > :first-child {
+  margin-top: 0;
+}
+
+.main-crossroad .tip {
+  right: -160px;
+}
+
+.intro-wrapper .homepage .banner-rotator {
+  height: 266px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.intro-wrapper .homepage .banner-rotator .banner-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.cards-list {
+  overflow: hidden;
+  width: 940px;
+  position: relative;
+}
+
+.cards-list > div {
+  position: relative;
+}
+
+.cards-list a {
+  text-decoration: none;
+  color: #555;
+}
+
+.intro-wrapper .homepage .banner-rotator .prev,
+.intro-wrapper .homepage .banner-rotator .next {
+  z-index: 2;
+}
+
+.intro-wrapper .homepage .banner-rotator .pager {
+  z-index: 2;
+}
+
+.banner-rotator .pager a {
+  background-position: -91px 0;
+}
+
+.banner-rotator .pager a:hover {
+  background-position: -91px -28px;
+}
+
+.banner-rotator .pager .active {
+  background-position: -91px -14px;
+}
+
+#header .bottom {
+  width: 391px;
+}
+
+#footer p a.symbio span.r {
+  left: 6.3em;
+}
+
+ul.ui-corner-all, li.ui-menu-item a.ui-corner-all {
+  behavior: none;
+}
+
+/* PIE.htc bug - Doesn't like to round corners of hidden objects. */
+.main-crossroad .tab-products .item-zivot .ico {
+  background-position: 0 -50px;
+}
+
+.main-crossroad .tab-products .item-zivot:hover .ico {
+  background-position: 0 0px;
+}
+
+.main-crossroad .tab-products .item-auto .ico {
+  background-position: 0 -150px;
+}
+
+.main-crossroad .tab-products .item-auto:hover .ico {
+  background-position: 0 -100px;
+}
+
+.main-crossroad .tab-products .item-cestovani .ico {
+  background-position: 0 -250px;
+}
+
+.main-crossroad .tab-products .item-cestovani:hover .ico {
+  background-position: 0 -200px;
+}
+
+.main-crossroad .tab-products .item-bydleni .ico {
+  background-position: 0 -350px;
+}
+
+.main-crossroad .tab-products .item-bydleni:hover .ico {
+  background-position: 0 -300px;
+}
+
+.main-crossroad .tab-products .item-odpovednost .ico {
+  background-position: 0 -450px;
+}
+
+.main-crossroad .tab-products .item-odpovednost:hover .ico {
+  background-position: 0 -400px;
+}
+
+.main-crossroad .tab-products .item-zvirata .ico {
+  background-position: 0 -550px;
+}
+
+.main-crossroad .tab-products .item-zvirata:hover .ico {
+  background-position: 0 -500px;
+}
+
+.main-crossroad .tab-products .item-chata .ico {
+  background-position: 0 -650px;
+}
+
+.main-crossroad .tab-products .item-chata:hover .ico {
+  background-position: 0 -600px;
+}
+
+.main-crossroad .tab-products .item-penze .ico {
+  background-position: 0 -1050px;
+}
+
+.main-crossroad .tab-products .item-penze:hover .ico {
+  background-position: 0 -1000px;
+}
+
+.main-crossroad .tab-products .item-povolani .ico {
+  background-position: 0 -850px;
+}
+
+.main-crossroad .tab-products .item-povolani:hover .ico {
+  background-position: 0 -800px;
+}
+
+.main-crossroad .tab-products .item-uraz .ico {
+  background-position: 0 -1150px;
+}
+
+.main-crossroad .tab-products .item-uraz:hover .ico {
+  background-position: 0 -1100px;
+}
+
+.result-window .item-zivot .ico {
+  background-position: -4px -5px;
+}
+
+.result-window .item-auto .ico {
+  background-position: -4px -105px;
+}
+
+.result-window .item-cestovani .ico {
+  background-position: -4px -205px;
+}
+
+.result-window .item-bydleni .ico {
+  background-position: -4px -305px;
+}
+
+.result-window .item-odpovednost .ico {
+  background-position: -4px -405px;
+}
+
+.result-window .item-zvirata .ico {
+  background-position: -4px -505px;
+}
+
+.result-window .item-chata .ico {
+  background-position: -4px -605px;
+}
+
+.result-window .item-penze .ico {
+  background-position: -4px -1005px;
+}
+
+.result-window .item-povolani .ico {
+  background-position: -4px -805px;
+}
+
+.result-window .item-uraz .ico {
+  background-position: -4px -1105px;
+}
+
+#nav ul li#obcane a.opn {
+  background-position: -57px -92px;
+}
+
+#nav ul li#firmy a.opn {
+  background-position: -179px -92px;
+}
+
+#nav ul li#online-sluzby a.opn {
+  background-position: -301px -92px;
+}
+
+#nav ul li#skody-a-pojistne-udalosti a.opn {
+  background-position: -469px -92px;
+}
+
+#nav ul li#kontakty a.opn {
+  background-position: -702px -92px;
+}
+
+#nav ul li#o-nas a.opn {
+  background-position: -829px -92px;
+}
+
+#links ul li span {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#links ul li ul li a:hover {
+  color: white;
+}
+
+#links ul li ul li {
+  position: relative;
+}
+
+#links ul li ul li a {
+  width: auto;
+}
+
+#links > .in > ul {
+  width: 88px;
+}
+
+#links > .in > ul + ul {
+  margin-left: 125px;
+  width: 220px;
+}
+
+#links > .in > ul + ul + ul {
+  margin-left: 70px;
+  width: 210px;
+}
+
+#links > .in > ul + ul + ul + ul {
+  margin-left: 110px;
+  width: 115px;
+}
+
+.main-crossroad .tab-products ul ul {
+  height: 126px;
+}
+
+.big-font .main-crossroad .tab-products ul ul {
+  height: 209px;
+}
+
+.result-window .great-results .result-ico, .result-window .bad-results .result-ico {
+  display: block;
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  left: 28px;
+  top: 50%;
+  margin-top: -43px;
+  background: url("../images/cpoj/ico-sprite.png") 0 -55px no-repeat;
+}
+
+.result-window .bad-results .result-ico {
+  background-position: 0 -145px !important;
+}
+
+.status-na-stari,
+.status-pro-deti,
+.status-komplexni-pro-rodinu,
+.status-rodinni-dum,
+.status-bytovy-dum,
+.status-byt,
+.status-chata-chalupa,
+.status-vybaveni-domacnosti,
+.status-najemce,
+.status-pronajimatel,
+.status-kolej,
+.status-asistencni-sluzby,
+.status-sportovni-potreby,
+.status-pes-kocka,
+.status-sklep,
+.status-stodola,
+.status-zahrada,
+.status-plot,
+.status-ostatni-stavby,
+.status-bydleni,
+.status-stavba-a-demolice,
+.status-sport,
+.status-domaci-zvire,
+.status-deti,
+.status-cestovani,
+.status-nakupovani,
+.status-myslivost,
+.status-pri-zamestnani,
+.status-drzba-zbrane,
+.status-chov-koni,
+.status-pes,
+.status-kocka,
+.status-pouze-v-cr,
+.status-do-zahranici,
+.status-kratkodobe,
+.status-dlouhodobe,
+.status-odpocinek,
+.status-turistika,
+.status-sport,
+.status-exotika,
+.status-adrenalin,
+.status-k-mori,
+.status-na-hory,
+.status-na-nakupy,
+.status-na-kolo,
+.status-pamatky,
+.status-damska-panska-jizda,
+.status-au-pair,
+.status-studium-v-zahranici,
+.status-sluzebni-cesta,
+.status-pracovni-pobyty-staz,
+.status-povinne-ruceni,
+.status-havarijni-pojisteni,
+.status-pro-starsi-vuz,
+.status-flotila,
+.status-majetek,
+.status-preprava-zasilek,
+.status-zaruka-za-celni-dluh,
+.status-smluvni-zaruka,
+.status-zaruka-za-spotrebni-dan,
+.status-profesni-odpovednost,
+.status-clenove-organu-spolecnosti,
+.status-podnikatel-prumyslu,
+.status-silnicni-dopravce,
+.status-drazni-dopravce,
+.status-zasilatel,
+.status-zakonne-pojisteni-zamestnavatele,
+.status-les,
+.status-plodiny,
+.status-hospodarska-zvirata,
+.status-financni-ztraty,
+.status-zaruka-pro-pripad-upadku-agentury-prace,
+.status-financni-zpusobilost-dopravce,
+.status-pro-zamestnance {
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 21px;
+  margin: 0 0 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  background: url("../images/cpoj/btn-all.png") 0 0 repeat-x;
+  position: relative;
+}
+
+.col-side .categories p a {
+  text-decoration: none;
+}
+
+.col-side .categories p a:hover {
+  text-decoration: underline;
+}
+
+.statuses span, .categories > p > a {
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 21px;
+  margin: 0 0 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  background: url("../images/cpoj/btn-all.png") 0 0 repeat-x;
+  position: relative;
+  background-color: #0091cd;
+  background-position: 0 -600px;
+}
+
+.statuses span:before, .categories > p > a:before, .statuses span b, .categories > p > a b {
+  border-left-color: #b9ce48;
+}
+
+.statuses .status-na-stari, .categories > p > .status-na-stari,
+.statuses .status-najemce, .categories > p > .status-najemce,
+.statuses .status-zahrada, .categories > p > .status-zahrada, .categories > p > .status-zahrada, .categories > p > .status-zahrada,
+.statuses .status-cestovani, .categories > p > .status-cestovani,
+.statuses .status-pouze-v-cr, .categories > p > .status-pouze-v-cr,
+.statuses .status-adrenalin, .categories > p > .status-adrenalin,
+.statuses .status-studium-v-zahranici, .categories > p > .status-studium-v-zahranici,
+.statuses .status-preprava-zasilek, .categories > p > .status-preprava-zasilek,
+.statuses .status-drazni-dopravce, .categories > p > .status-drazni-dopravce,
+.statuses .status-financni-zpusobilost-dopravce, .categories > p > .status-financni-zpusobilost-dopravce {
+  background-color: #0091cd;
+  background-position: 0 -600px;
+}
+
+.statuses .status-pro-deti, .categories > p > .status-pro-deti,
+.statuses .status-pronajimatel, .categories > p > .status-pronajimatel,
+.statuses .status-plot, .categories > p > .status-plot,
+.statuses .status-nakupovani, .categories > p > .status-nakupovani,
+.statuses .status-do-zahranici, .categories > p > .status-do-zahranici,
+.statuses .status-k-mori, .categories > p > .status-k-mori,
+.statuses .status-sluzebni-cesta, .categories > p > .status-sluzebni-cesta,
+.statuses .status-zaruka-za-celni-dluh, .categories > p > .status-zaruka-za-celni-dluh,
+.statuses .status-zasilatel, .categories > p > .status-zasilatel {
+  background-color: #445c7d;
+  background-position: 0 -650px;
+}
+
+.statuses .status-komplexni-pro-rodinu, .categories > p > .status-komplexni-pro-rodinu,
+.statuses .status-kolej, .categories > p > .status-kolej,
+.statuses .status-ostatni-stavby, .categories > p > .status-ostatni-stavby,
+.statuses .status-myslivost, .categories > p > .status-myslivost,
+.statuses .status-kratkodobe, .categories > p > .status-kratkodobe,
+.statuses .status-na-hory, .categories > p > .status-na-hory,
+.statuses .status-pracovni-pobyty-staz, .categories > p > .status-pracovni-pobyty-staz,
+.statuses .status-smluvni-zaruka, .categories > p > .status-smluvni-zaruka,
+.statuses .status-zakonne-pojisteni-zamestnavatele, .categories > p > .status-zakonne-pojisteni-zamestnavatele {
+  background-color: #b12338;
+  background-position: 0 -700px;
+}
+
+.statuses .status-rodinni-dum, .categories > p > .status-rodinni-dum,
+.statuses .status-asistencni-sluzby, .categories > p > .status-asistencni-sluzby,
+.statuses .status-bydleni, .categories > p > .status-bydleni,
+.statuses .status-pri-zamestnani, .categories > p > .status-pri-zamestnani,
+.statuses .status-dlouhodobe, .categories > p > .status-dlouhodobe,
+.statuses .status-na-nakupy, .categories > p > .status-na-nakupy,
+.statuses .status-povinne-ruceni, .categories > p > .status-povinne-ruceni,
+.statuses .status-zaruka-za-spotrebni-dan, .categories > p > .status-zaruka-za-spotrebni-dan,
+.statuses .status-les, .categories > p > .status-les {
+  background-color: #676767;
+  background-position: 0 -750px;
+}
+
+.statuses .status-bytovy-dum, .categories > p > .status-bytovy-dum,
+.statuses .status-sportovni-potreby, .categories > p > .status-sportovni-potreby,
+.statuses .status-stavba-a-demolice, .categories > p > .status-stavba-a-demolice,
+.statuses .status-drzba-zbrane, .categories > p > .status-drzba-zbrane,
+.statuses .status-odpocinek, .categories > p > .status-odpocinek,
+.statuses .status-na-kolo, .categories > p > .status-na-kolo,
+.statuses .status-havarijni-pojisteni, .categories > p > .status-havarijni-pojisteni,
+.statuses .status-profesni-odpovednost, .categories > p > .status-profesni-odpovednost,
+.statuses .status-plodiny, .categories > p > .status-plodiny,
+.statuses .status-pro-zamestnance, .categories > p > .status-pro-zamestnance {
+  background-color: #904787;
+  background-position: 0 -800px;
+}
+
+.statuses .status-byt, .categories > p > .status-byt,
+.statuses .status-pes-kocka, .categories > p > .status-pes-kocka,
+.statuses .status-sport, .categories > p > .status-sport,
+.statuses .status-chov-koni, .categories > p > .status-chov-koni,
+.statuses .status-turistika, .categories > p > .status-turistika,
+.statuses .status-pamatky, .categories > p > .status-pamatky,
+.statuses .status-pro-starsi-vuz, .categories > p > .status-pro-starsi-vuz,
+.statuses .status-clenove-organu-spolecnosti, .categories > p > .status-clenove-organu-spolecnosti,
+.statuses .status-hospodarska-zvirata, .categories > p > .status-hospodarska-zvirata {
+  background-color: #003e6f;
+  background-position: 0 -850px;
+}
+
+.statuses .status-chata-chalupa, .categories > p > .status-chata-chalupa,
+.statuses .status-sklep, .categories > p > .status-sklep,
+.statuses .status-domaci-zvire, .categories > p > .status-domaci-zvire,
+.statuses .status-pes, .categories > p > .status-pes,
+.statuses .status-sport, .categories > p > .status-sport,
+.statuses .status-damska-panska-jizda, .categories > p > .status-damska-panska-jizda,
+.statuses .status-flotila, .categories > p > .status-flotila,
+.statuses .status-podnikatel-prumyslu, .categories > p > .status-podnikatel-prumyslu,
+.statuses .status-financni-ztraty, .categories > p > .status-financni-ztraty {
+  background-color: #f5740a;
+  background-position: 0 -900px;
+}
+
+.statuses .status-vybaveni-domacnosti, .categories > p > .status-vybaveni-domacnosti,
+.statuses .status-stodola, .categories > p > .status-stodola,
+.statuses .status-deti, .categories > p > .status-deti,
+.statuses .status-kocka, .categories > p > .status-kocka,
+.statuses .status-exotika, .categories > p > .status-exotika,
+.statuses .status-au-pair, .categories > p > .status-au-pair,
+.statuses .status-majetek, .categories > p > .status-majetek,
+.statuses .status-silnicni-dopravce, .categories > p > .status-silnicni-dopravce,
+.statuses .status-zaruka-pro-pripad-upadku-agentury-prace, .categories > p > .status-zaruka-pro-pripad-upadku-agentury-prace {
+  background-color: #8aaa1a;
+  background-position: 0 -950px;
+}
+
+.statuses .status-na-stari:before, .statuses .status-na-stari b, .categories > p > .status-na-stari:before, .categories > p > .status-na-stari b,
+.statuses .status-najemce:before, .statuses .status-najemce b, .categories > p > .status-najemce:before, .categories > p > .status-najemce b,
+.statuses .status-zahrada:before, .statuses .status-zahrada b, .categories > p > .status-zahrada:before, .categories > p > .status-zahrada b,
+.statuses .status-cestovani:before, .statuses .status-cestovani b, .categories > p > .status-cestovani:before, .categories > p > .status-cestovani b,
+.statuses .status-pouze-v-cr:before, .statuses .status-pouze-v-cr b, .categories > p > .status-pouze-v-cr:before, .categories > p > .status-pouze-v-cr b,
+.statuses .status-adrenalin:before, .statuses .status-adrenalin b, .categories > p > .status-adrenalin:before, .categories > p > .status-adrenalin b,
+.statuses .status-studium-v-zahranici:before, .statuses .status-studium-v-zahranici b, .categories > p > .status-studium-v-zahranici:before, .categories > p > .status-studium-v-zahranici b,
+.statuses .status-preprava-zasilek:before, .statuses .status-preprava-zasilek b, .categories > p > .status-preprava-zasilek:before, .categories > p > .status-preprava-zasilek b,
+.statuses .status-drazni-dopravce:before, .statuses .status-drazni-dopravce b, .categories > p > .status-drazni-dopravce:before, .categories > p > .status-drazni-dopravce b,
+.statuses .status-financni-zpusobilost-dopravce:before, .categories > p > .status-financni-zpusobilost-dopravce:before, .statuses .status-financni-zpusobilost-dopravce b, .categories > p > .status-financni-zpusobilost-dopravce b {
+  border-left-color: #00bee3;
+}
+
+.statuses .status-pro-deti:before, .statuses .status-pro-deti b, .categories > p > .status-pro-deti:before, .categories > p > .status-pro-deti b,
+.statuses .status-pronajimatel:before, .statuses .status-pronajimatel b, .categories > p > .status-pronajimatel:before, .categories > p > .status-pronajimatel b,
+.statuses .status-plot:before, .statuses .status-plot b, .categories > p > .status-plot:before, .categories > p > .status-plot b,
+.statuses .status-nakupovani:before, .statuses .status-nakupovani b, .categories > p > .status-nakupovani:before, .categories > p > .status-nakupovani b,
+.statuses .status-do-zahranici:before, .statuses .status-do-zahranici b, .categories > p > .status-do-zahranici:before, .categories > p > .status-do-zahranici b,
+.statuses .status-k-mori:before, .statuses .status-k-mori b, .categories > p > .status-k-mori:before, .categories > p > .status-k-mori b,
+.statuses .status-sluzebni-cesta:before, .statuses .status-sluzebni-cesta b, .categories > p > .status-sluzebni-cesta:before, .categories > p > .status-sluzebni-cesta b,
+.statuses .status-zaruka-za-celni-dluh:before, .statuses .status-zaruka-za-celni-dluh b, .categories > p > .status-zaruka-za-celni-dluh:before, .categories > p > .status-zaruka-za-celni-dluh b,
+.statuses .status-zasilatel:before, .categories > p > .status-zasilatel:before, .statuses .status-zasilatel b, .categories > p > .status-zasilatel b {
+  border-left-color: #7d94af;
+}
+
+.statuses .status-komplexni-pro-rodinu:before, .statuses .status-komplexni-pro-rodinu b, .categories > p > .status-komplexni-pro-rodinu:before, .categories > p > .status-komplexni-pro-rodinu b,
+.statuses .status-kolej:before, .statuses .status-kolej b, .categories > p > .status-kolej:before, .categories > p > .status-kolej b,
+.statuses .status-ostatni-stavby:before, .statuses .status-ostatni-stavby b, .categories > p > .status-ostatni-stavby:before, .categories > p > .status-ostatni-stavby b,
+.statuses .status-myslivost:before, .statuses .status-myslivost b, .categories > p > .status-myslivost:before, .categories > p > .status-myslivost b,
+.statuses .status-kratkodobe:before, .statuses .status-kratkodobe b, .categories > p > .status-kratkodobe:before, .categories > p > .status-kratkodobe b,
+.statuses .status-na-hory:before, .statuses .status-na-hory b, .categories > p > .status-na-hory:before, .categories > p > .status-na-hory b,
+.statuses .status-pracovni-pobyty-staz:before, .statuses .status-pracovni-pobyty-staz b, .categories > p > .status-pracovni-pobyty-staz:before, .categories > p > .status-pracovni-pobyty-staz b,
+.statuses .status-smluvni-zaruka:before, .statuses .status-smluvni-zaruka b, .categories > p > .status-smluvni-zaruka:before, .categories > p > .status-smluvni-zaruka b,
+.statuses .status-zakonne-pojisteni-zamestnavatele:before, .categories > p > .status-zakonne-pojisteni-zamestnavatele:before, .statuses .status-zakonne-pojisteni-zamestnavatele b, .categories > p > .status-zakonne-pojisteni-zamestnavatele b {
+  border-left-color: #d35670;
+}
+
+.statuses .status-rodinni-dum:before, .statuses .status-rodinni-dum b, .categories > p > .status-rodinni-dum:before, .categories > p > .status-rodinni-dum b,
+.statuses .status-asistencni-sluzby:before, .statuses .status-asistencni-sluzby b, .categories > p > .status-asistencni-sluzby:before, .categories > p > .status-asistencni-sluzby b,
+.statuses .status-bydleni:before, .statuses .status-bydleni b, .categories > p > .status-bydleni:before, .categories > p > .status-bydleni b,
+.statuses .status-pri-zamestnani:before, .statuses .status-pri-zamestnani b, .categories > p > .status-pri-zamestnani:before, .categories > p > .status-pri-zamestnani b,
+.statuses .status-dlouhodobe:before, .statuses .status-dlouhodobe b, .categories > p > .status-dlouhodobe:before, .categories > p > .status-dlouhodobe b,
+.statuses .status-na-nakupy:before, .statuses .status-na-nakupy b, .categories > p > .status-na-nakupy:before, .categories > p > .status-na-nakupy b,
+.statuses .status-povinne-ruceni:before, .statuses .status-povinne-ruceni b, .categories > p > .status-povinne-ruceni:before, .categories > p > .status-povinne-ruceni b,
+.statuses .status-zaruka-za-spotrebni-dan:before, .statuses .status-zaruka-za-spotrebni-dan b, .categories > p > .status-zaruka-za-spotrebni-dan:before, .categories > p > .status-zaruka-za-spotrebni-dan b,
+.statuses .status-les:before, .categories > p > .status-les:before, .statuses .status-les b, .categories > p > .status-les b {
+  border-left-color: #9c9c9c;
+}
+
+.statuses .status-bytovy-dum:before, .statuses .status-bytovy-dum b, .categories > p > .status-bytovy-dum:before, .categories > p > .status-bytovy-dum b,
+.statuses .status-sportovni-potreby:before, .statuses .status-sportovni-potreby b, .categories > p > .status-sportovni-potreby:before, .categories > p > .status-sportovni-potreby b,
+.statuses .status-stavba-a-demolice:before, .statuses .status-stavba-a-demolice b, .categories > p > .status-stavba-a-demolice:before, .categories > p > .status-stavba-a-demolice b,
+.statuses .status-drzba-zbrane:before, .statuses .status-drzba-zbrane b, .categories > p > .status-drzba-zbrane:before, .categories > p > .status-drzba-zbrane b,
+.statuses .status-odpocinek:before, .statuses .status-odpocinek b, .categories > p > .status-odpocinek:before, .categories > p > .status-odpocinek b,
+.statuses .status-na-kolo:before, .statuses .status-na-kolo b, .categories > p > .status-na-kolo:before, .categories > p > .status-na-kolo b,
+.statuses .status-havarijni-pojisteni:before, .statuses .status-havarijni-pojisteni b, .categories > p > .status-havarijni-pojisteni:before, .categories > p > .status-havarijni-pojisteni b,
+.statuses .status-profesni-odpovednost:before, .statuses .status-profesni-odpovednost b, .categories > p > .status-profesni-odpovednost:before, .categories > p > .status-profesni-odpovednost b,
+.statuses .status-plodiny:before, .statuses .status-plodiny b, .categories > p > .status-plodiny:before, .categories > p > .status-plodiny b,
+.statuses .status-pro-zamestnance:before, .categories > p > .status-pro-zamestnance:before, .statuses .status-pro-zamestnance b, .categories > p > .status-pro-zamestnance b {
+  border-left-color: #bd80b6;
+}
+
+.statuses .status-byt:before, .statuses .status-byt b, .categories > p > .status-byt:before, .categories > p > .status-byt b,
+.statuses .status-pes-kocka:before, .statuses .status-pes-kocka b, .categories > p > .status-pes-kocka:before, .categories > p > .status-pes-kocka b,
+.statuses .status-sport:before, .statuses .status-sport b, .categories > p > .status-sport:before, .categories > p > .status-sport b,
+.statuses .status-chov-koni:before, .statuses .status-chov-koni b, .categories > p > .status-chov-koni:before, .categories > p > .status-chov-koni b,
+.statuses .status-turistika:before, .statuses .status-turistika b, .categories > p > .status-turistika:before, .categories > p > .status-turistika b,
+.statuses .status-pamatky:before, .statuses .status-pamatky b, .categories > p > .status-pamatky:before, .categories > p > .status-pamatky b,
+.statuses .status-pro-starsi-vuz:before, .statuses .status-pro-starsi-vuz b, .categories > p > .status-pro-starsi-vuz:before, .categories > p > .status-pro-starsi-vuz b,
+.statuses .status-clenove-organu-spolecnosti:before, .statuses .status-clenove-organu-spolecnosti b, .categories > p > .status-clenove-organu-spolecnosti:before, .categories > p > .status-clenove-organu-spolecnosti b,
+.statuses .status-hospodarska-zvirata:before, .categories > p > .status-hospodarska-zvirata:before, .statuses .status-hospodarska-zvirata b, .categories > p > .status-hospodarska-zvirata b {
+  border-left-color: #006197;
+}
+
+.statuses .status-chata-chalupa:before, .statuses .status-chata-chalupa b, .categories > p > .status-chata-chalupa:before, .categories > p > .status-chata-chalupa b,
+.statuses .status-sklep:before, .statuses .status-sklep b, .categories > p > .status-sklep:before, .categories > p > .status-sklep b,
+.statuses .status-domaci-zvire:before, .statuses .status-domaci-zvire b, .categories > p > .status-domaci-zvire:before, .categories > p > .status-domaci-zvire b,
+.statuses .status-pes:before, .statuses .status-pes b, .categories > p > .status-pes:before, .categories > p > .status-pes b,
+.statuses .status-sport:before, .statuses .status-sport b, .categories > p > .status-sport:before, .categories > p > .status-sport b,
+.statuses .status-damska-panska-jizda:before, .statuses .status-damska-panska-jizda b, .categories > p > .status-damska-panska-jizda:before, .categories > p > .status-damska-panska-jizda b,
+.statuses .status-flotila:before, .statuses .status-flotila b, .categories > p > .status-flotila:before, .categories > p > .status-flotila b,
+.statuses .status-podnikatel-prumyslu:before, .statuses .status-podnikatel-prumyslu b, .categories > p > .status-podnikatel-prumyslu:before, .categories > p > .status-podnikatel-prumyslu b,
+.statuses .status-financni-ztraty:before, .categories > p > .status-financni-ztraty:before, .statuses .status-financni-ztraty b, .categories > p > .status-financni-ztraty b {
+  border-left-color: #f9a826;
+}
+
+.statuses .status-vybaveni-domacnosti:before, .statuses .status-vybaveni-domacnosti b, .categories > p > .status-vybaveni-domacnosti:before, .categories > p > .status-vybaveni-domacnosti b,
+.statuses .status-stodola:before, .statuses .status-stodola b, .categories > p > .status-stodola:before, .categories > p > .status-stodola b,
+.statuses .status-deti:before, .statuses .status-deti b, .categories > p > .status-deti:before, .categories > p > .status-deti b,
+.statuses .status-kocka:before, .statuses .status-kocka b, .categories > p > .status-kocka:before, .categories > p > .status-kocka b,
+.statuses .status-exotika:before, .statuses .status-exotika b, .categories > p > .status-exotika:before, .categories > p > .status-exotika b,
+.statuses .status-au-pair:before, .statuses .status-au-pair b, .categories > p > .status-au-pair:before, .categories > p > .status-au-pair b,
+.statuses .status-majetek:before, .statuses .status-majetek b, .categories > p > .status-majetek:before, .categories > p > .status-majetek b,
+.statuses .status-silnicni-dopravce:before, .statuses .status-silnicni-dopravce b, .categories > p > .status-silnicni-dopravce:before, .categories > p > .status-silnicni-dopravce b,
+.statuses .status-zaruka-pro-pripad-upadku-agentury-prace:before, .categories > p > .status-zaruka-pro-pripad-upadku-agentury-prace:before, .statuses .status-zaruka-pro-pripad-upadku-agentury-prace b, .categories > p > .status-zaruka-pro-pripad-upadku-agentury-prace b {
+  border-left-color: #b9ce48;
+}
+
+.new-mortgage-page .results-box > .box {
+  border-top: 1px solid #c2d4eb;
+  padding: 0 25px;
+}
+
+.new-mortgage-page .results-box .error-msg h2 {
+  font-size: 123%;
+  color: #C63751;
+  margin: 0 0 0.4em;
+}
+
+.new-mortgage-page .info {
+  position: relative;
+}
+
+.new-mortgage-page .results-box .error .inp-wrap {
+  background-color: #F7E7E7;
+}
+
+.new-mortgage-page .results-box .error .inp-fix {
+  border-color: #e7caca;
+}
+
+.new-mortgage-page .results-box .error .inp-wrap:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 294px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  background: url("../images/cpoj/ico-sprite.png") -30px 0 no-repeat;
+  z-index: 2;
+}
+
+.new-mortgage-page .results-box .ok .inp-wrap:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 294px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  background: url("../images/cpoj/ico-sprite.png") 0 0 no-repeat;
+  z-index: 2;
+}
+
+.new-mortgage-page .results-box .box2 {
+  margin: 0 -25px;
+  overflow: hidden;
+  position: relative;
+}
+
+* + html .new-mortgage-page .info {
+  height: 40px;
+}
+
+.new-mortgage-page .results-box .inp-text {
+  color: #8d8d8d;
+}
+
+.loader-div {
+  text-align: center;
+  line-height: 50px;
+}
+
+.main-crossroad .tab-subjects .item-injury {
+  background-position-y: 26px;
+}
+
+.main-crossroad .tab-subjects .item-responsibility {
+  background-position-y: 23px;
+}
+
+.selectBox-dropdown-menu {
+  max-height: 208px;
+}
+
+.contact-us-page #layout-column_column-2 dd {
+  margin: 0;
+}
+
+.contact-us-page .nb-results {
+  color: #999;
+  margin-top: 10px;
+}
+
+.contact-us-page .search-form {
+  width: 350px;
+}
+
+.contact-us-page .search-form .inp-text {
+  width: 266px;
+}
+
+.contact-us-page dt h2 {
+  margin-bottom: 0.2em;
+}
+
+.cpoj-theme-main h4 {
+  font-size: 1.23em;
+  margin: 1em 0 0.5em;
+  color: #555;
+  font-weight: normal;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.cpoj-theme-main h5 {
+  font-size: 1.15em;
+  margin: 1em 0 0.5em;
+  color: #555;
+  font-weight: normal;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.cpoj-theme-main ul ul {
+  margin-top: .7em;
+}
+
+.cpoj-theme-main ul ul li {
+  list-style: none;
+}
+
+#sign-in {
+  position: absolute;
+  bottom: 5px;
+  color: #aaa;
+  width: 100%;
+  text-align: center;
+}
+
+.blue-big-btn {
+  background-position: 100% -150px;
+}
+
+.blue-big-btn:hover, .blue-big-btn:focus {
+  background-position: 100% -200px;
+}
+
+.blue-big-btn:active {
+  background-position: 100% -250px;
+}
+
+.blue-big-btn:hover span, .blue-big-btn:hover input {
+  color: #fff;
+}
+
+.orange-big-btn {
+  background-position: 100% -300px;
+}
+
+.orange-big-btn:hover, .orange-big-btn:focus {
+  background-position: 100% -350px;
+}
+
+.orange-big-btn:active {
+  background-position: 100% -400px;
+}
+
+.orange-big-btn:hover span, .blue-big-btn:hover input {
+  color: #524700;
+}
+
+.green-big-btn {
+  background-position: 100% 0;
+}
+
+.green-big-btn:hover, .green-big-btn:focus {
+  background-position: 100% -50px;
+}
+
+.green-big-btn:active {
+  background-position: 100% -100px;
+}
+
+.green-big-btn span, .green-big-btn input, .green-big-btn:hover span, .green-big-btn:hover input {
+  color: #fff;
+}
+
+.banner-hp {
+  height: 238px;
+  padding: 27px 35px 1px;
+  background: url("../images/sample/banner-why-have-insurance.jpg") 0 0 no-repeat;
+  color: #222;
+}
+
+.banner-hp h2 {
+  margin: 0 0 0.4em;
+  text-transform: uppercase;
+}
+
+.banner-hp h2 strong {
+  display: block;
+  font-size: 1.5em;
+}
+
+.banner-hp p {
+  font-size: 1.38em;
+  width: 400px;
+  margin: 0 0 1.4em;
+}
+
+.banner-hp p + p {
+  width: auto;
+}
+
+.banner-hp .inline-btn {
+  height: 48px;
+  line-height: 48px;
+  background: #54732b url("../images/cpoj/btn-all-wide.png") 100% -600px no-repeat;
+  border: none;
+  margin: 0 18px 0 0;
+}
+
+.banner-hp .inline-btn:hover, .banner-hp .inline-btn:focus {
+  background-position: 100% -650px;
+}
+
+.banner-hp .inline-btn:active {
+  background-position: 100% -700px;
+}
+
+.banner-hp .inline-btn span {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 55px 0 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.banner-hp .blue-inline-btn {
+  background-color: #003e6f;
+  background-position: 100% -150px;
+}
+
+.banner-hp .blue-inline-btn:hover, .banner-hp .blue-inline-btn:focus {
+  background-position: 100% -200px;
+}
+
+.banner-hp .blue-inline-btn:active {
+  background-position: 100% -250px;
+}
+
+.banner-hp .blue-inline-btn span {
+  color: #fff;
+}
+
+.banner-hp .orange-inline-btn {
+  background-color: #e0a901;
+  background-position: 100% -300px;
+}
+
+.banner-hp .orange-inline-btn:hover, .banner-hp .orange-inline-btn:focus {
+  background-position: 100% -350px;
+}
+
+.banner-hp .orange-inline-btn:active {
+  background-position: 100% -400px;
+}
+
+.banner-hp .orange-inline-btn span {
+  color: #fff;
+}
+
+.banner-hp .smurf-inline-btn {
+  background-color: #0AA7DA;
+  background-position: 100% -450px;
+}
+
+.banner-hp .smurf-inline-btn:hover, .banner-hp .smurf-inline-btn:focus {
+  background-position: 100% -500px;
+}
+
+.banner-hp .smurf-inline-btn:active {
+  background-position: 100% -550px;
+}
+
+.banner-hp .smurf-inline-btn span {
+  color: #fff;
+}
+
+.banner-hp .brown-inline-btn {
+  background-color: #FF9B07;
+  background-position: 100% -600px;
+}
+
+.banner-hp .brown-inline-btn:hover, .banner-hp .brown-inline-btn:focus {
+  background-position: 100% -650px;
+}
+
+.banner-hp .brown-inline-btn:active {
+  background-position: 100% -700px;
+}
+
+.banner-hp .brown-inline-btn span {
+  color: #fff;
+}
+
+.banner-hp a.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -99999999px;
+}
+
+.std-box {
+  padding-bottom: 20px;
+}
+
+.apps-page #column-1 {
+  margin: 0 0 25px;
+}
+
+.hint-page .column-2-2 h2 {
+  margin-top: 1.3em;
+}
+
+.content-box {
+  position: relative;
+}
+
+.colums {
+  margin-bottom: 5px;
+}
+
+.aui .thick-list li > p {
+  margin-bottom: 0;
+}
+
+.products-page .annot {
+  font-size: 1.23em;
+  color: #114A78;
+  width: 530px;
+}
+
+.page-404 {
+  width: 940px;
+  font-size: 1em;
+  padding: 0;
+  margin: -12px -10px -10px;
+}
+
+.general-page .annot {
+  font-size: 1.23em;
+  color: #114A78;
+  width: 530px;
+}
+
+.general-page .annot.long {
+  width: auto;
+}
+
+.tooltip h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+}
+
+.tooltip b {
+  top: -9px;
+}
+
+.tooltip .close {
+  right: 10px;
+  top: 10px;
+}
+
+.journal-content-article .info-window, #nav-layer-kontakty .info-window {
+  width: 272px;
+  position: absolute;
+  left: -8px;
+  top: 22px;
+  display: none;
+}
+
+.journal-content-article {
+  position: relative;
+}
+
+.homepage .boxes .info-window-top, #nav-layer-kontakty .info-window-top, .column-2-3 .info-window-top, p.title-buttons + .info-window .info-window-top {
+  background: url(/cpoj-theme/images/cpoj/popup-window-bg.png) no-repeat 0 0;
+  height: 24px;
+}
+
+.homepage .boxes .info-window-mid, #nav-layer-kontakty .info-window-mid, .column-2-3 .info-window-mid, p.title-buttons + .info-window .info-window-mid {
+  background: url(/cpoj-theme/images/cpoj/popup-window-bg.png) no-repeat -272px 100%;
+  overflow: hidden;
+}
+
+.homepage .boxes .info-window-bot, #nav-layer-kontakty .info-window-bot, .column-2-3 .info-window-bot, p.title-buttons + .info-window .info-window-bot {
+  background: url(/cpoj-theme/images/cpoj/popup-window-bg.png) no-repeat -544px 0;
+  height: 15px;
+}
+
+.homepage .boxes .info-window li, #nav-layer-kontakty .info-window li, .column-2-3 .info-window li, p.title-buttons + .info-window li {
+  background: none;
+  padding-right: 16px;
+}
+
+.homepage .boxes .info-window strong, #nav-layer-kontakty .info-window strong, .column-2-3 .info-window strong, p.title-buttons + .info-window strong {
+  display: block;
+  padding: 10px 16px 10px;
+}
+
+.homepage .boxes .info-window ul, #nav-layer-kontakty .info-window ul, .column-2-3 .info-window ul, p.title-buttons + .info-window ul {
+  margin-bottom: 0;
+}
+
+p.title-buttons + .info-window {
+  left: 668px;
+  top: 44px;
+}
+
+#nav-layer-kontakty .info-window {
+  left: 64px;
+  top: 42px;
+}
+
+#nav-layer-kontakty .info-window strong {
+  font-size: 125%;
+}
+
+#nav-layer-kontakty .info-window ul li {
+  padding-left: 16px;
+}
+
+#nav-layer-kontakty .info-window ul li a {
+  text-decoration: underline;
+}
+
+#nav-layer-kontakty .info-window ul li a:hover {
+  text-decoration: none;
+}
+
+.column-2-3 h2 {
+  margin: 0 0 0.8em;
+}
+
+.column-of-4 {
+  width: 198px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid #c2d4eb;
+  float: left;
+  padding-right: 16px;
+}
+
+.column-1-4 {
+  margin: 0;
+}
+
+.column-4-4 {
+  padding-right: 0;
+  border: 0;
+}
+
+.column-of-4 a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup {
+  position: relative;
+  margin-bottom: 7px;
+  background: url("/cpoj-theme/images/cpoj/window-bg.png");
+  padding: 10px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  text-align: left;
+  z-index: 1000;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  display: none;
+}
+
+.popup .spc {
+  background: white url("/cpoj-theme/images/cpoj/grad5.png") 0 100% repeat-x;
+  padding: 5px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+  z-index: 1000;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+}
+
+.popup li {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup a {
+  padding: 7px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.popup a:hover {
+  background-color: #ECF1F9;
+}
+
+.banner-wrap .popup {
+  width: 184px;
+  top: -14px;
+  left: 0;
+}
+
+.nav-layer input.inp-text {
+  width: 240px;
+}
+
+#share .fb_iframe_widget {
+  overflow: visible;
+}
+
+.people-list li {
+  vertical-align: top;
+}
+
+.people-list .overlay {
+  padding: 52px 0 0 14px;
+  height: 92px;
+}
+
+.people-list li:hover {
+  border-color: #fff;
+  background: none;
+}
+
+.people-list li:hover .overlay {
+  border: 5px solid #d2dff0;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  behavior: none;
+  background: white url("../images/cpoj/grad1.png") 0 100% repeat-x;
+}
+
+.organizational-structure-page .people-list li .overlay {
+  height: 174px;
+  padding: 5px;
+}
+
+td .ico-thick-s {
+  margin: 0 auto;
+}
+
+.ico-thick-s {
+  font-size: 1em;
+  text-indent: -9999px;
+  display: block;
+}
+
+.web-form-portlet .inline-btn, .web-form-portlet .inp-wrap, .web-form-portlet .inp-fix {
+  behavior: none;
+}
+
+.reporting-page .box2 {
+  background: none;
+}
+
+.reporting-page .box2 p {
+  margin: 0.2em 0 0.4em;
+}
+
+.apps-page .banner-rotator {
+  height: 400px;
+}
+
+.apps-page .banner-wrap {
+  position: relative;
+}
+
+.reporting-page .boxes, .after-accident-page .boxes {
+  margin-top: 35px;
+}
+
+.annot-box {
+  background-image: url(/cpoj-theme/images/cpoj/annot-box.png);
+}
+
+.banner-hp .inline-btn {
+  background-image: url(/cpoj-theme/images/cpoj/btn-all-wide.png);
+}
+
+.packet-list .spc {
+  position: relative;
+  min-height: 245px;
+}
+
+.packet-list .spc .inline-btn {
+  position: absolute;
+  bottom: 15px;
+}
+
+.banner-rotator .inline-btn {
+  behavior: none;
+}
+
+/* 2) hlavicka
+--------------------------------------------------------------------------*/
+#wrapper #header {
+  width: 940px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  font-size: 10px;
+}
+
+#header #logo {
+  width: 223px;
+  height: 58px;
+  float: left;
+  margin-top: 29px;
+}
+
+#header .top,
+#header .bottom {
+  float: right;
+  clear: right;
+}
+
+#header .top {
+  margin-top: 19px;
+}
+
+#header .bottom {
+  margin: 12px 210px 0 0;
+}
+
+#header #logo span {
+  background-image: url("../images/cpoj/logo.png");
+}
+
+#header p.phone {
+  background: url("../images/cpoj/ico-phone.jpg") 0 0 no-repeat;
+  font-size: 23px;
+  color: #003d6e;
+  padding: 2px 0 0 30px;
+  float: left;
+  white-space: nowrap;
+  margin: 6px 28px 0 0;
+  line-height: 16px;
+  *clear: right;
+}
+
+#header form.search {
+  float: left;
+  *clear: right;
+}
+
+#header form.search {
+  width: 195px;
+}
+
+#header form.search .inp-text {
+  width: 111px;
+}
+
+#header form.search .inp-text:focus {
+  outline: none;
+}
+
+#header .inp-one-row {
+  display: block;
+}
+
+#header .inp-text, input.inp-text {
+  color: #39425c;
+  padding: 8px 7px;
+  font-size: 13px;
+  font-family: "mp", arial, helvetica, sans-serif;
+  height: 16px;
+  line-height: 16px;
+  border: none;
+  background: none;
+  *padding: 7px 7px 5px;
+}
+
+#header .inp-fix {
+  padding: 0 14px 0 0;
+  display: block;
+  border: 1px solid #cad7e7;
+  background: #fcfdfd;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+#header .inp-row {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+
+#header .inp-row .inp-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#header .inp-row .inline-btn {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+}
+
+#header .inp-row .inline-btn:active {
+  background-position: 0 -1200px !important;
+}
+
+#header .inline-btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: #e1ecf6 url("../images/cpoj/btn-all.png") 0 0px repeat-x;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #d5e4f2;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  position: relative;
+}
+
+#header .inline-btn span, .inline-btn input {
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background: none;
+  border: none;
+  padding: 0 15px;
+  color: #607999;
+  cursor: pointer;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  overflow: visible;
+  letter-spacing: 0px;
+  width: auto;
+  position: static;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  text-shadow: none;
+}
+
+#header .inline-btn input::-moz-focus-inner {
+  padding: 0;
+}
+
+#header .inline-btn input:hover, .inline-btn input:active, .inline-btn input:focus {
+  background: none;
+  border: none;
+}
+
+#header .inline-btn:hover {
+  background-position: 0 -1000px;
+}
+
+#header .inline-btn:active {
+  background-position: 0 -1100px;
+}
+
+#header .yellow-btn2 {
+  border-color: #efce01;
+  background-color: #e2c302;
+  background-position: 0 -501px;
+}
+
+#header .yellow-btn2 span, .yellow-btn2 input {
+  color: #6e6200;
+}
+
+#header .yellow-btn2:hover {
+  background-position: 0 -1300px;
+}
+
+#header .yellow-btn2:active {
+  background-position: 0 -1400px;
+}
+
+#header .textSize {
+  width: 53px;
+  height: 23px;
+  float: left;
+  margin: 0;
+}
+
+#header .textSize a {
+  width: 26px;
+  height: 23px;
+  float: left;
+}
+
+#header .textSize a span {
+  background-image: url("../images/cpoj/text-size.jpg");
+}
+
+#header .textSize a.big span {
+  background-position: -26px 0;
+}
+
+#header .textSize a.small:hover span,
+#header .textSize a.small:focus span,
+#header .textSize a.small:active span {
+  background-position: 0 -23px;
+}
+
+#header .textSize a.big:hover span,
+#header .textSize a.big:focus span,
+#header .textSize a.big:active span {
+  background-position: -26px -23px;
+}
+
+.lang {
+  font-size: 1.2em;
+  float: left;
+  margin: 4px 0 0 0;
+}
+
+#header .user {
+  position: absolute;
+  right: 0;
+  top: 47px;
+  width: 178px;
+  min-height: 0;
+  height: auto;
+  _height: auto;
+  padding: 7px 0 9px;
+}
+
+#header .user p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #222;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#header .user strong {
+  width: 125px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#header .user p:first-child {
+  margin: 0 0 11px;
+}
+
+#header .user .inline-btn {
+  display: block;
+}
+
+#header .user .inline-btn span {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+#header .switchLang {
+  float: left;
+  margin: 3px 0 0 15px;
+  font-size: 1.3em;
+}
+
+#header.v1 .rows,
+#header.v2 .rows,
+#header.v3 .rows,
+#header.v4 .rows {
+  float: right;
+}
+
+#header.v1 .rows .bottom,
+#header.v2 .rows .bottom,
+#header.v3 .rows .bottom,
+#header.v4 .rows .bottom {
+  margin-right: 0;
+}
+
+#header.v1 .user,
+#header.v2 .user,
+#header.v3 .user,
+#header.v4 .user {
+  position: static;
+  top: auto;
+  right: auto;
+  float: right;
+  width: auto;
+  margin: 17px 0 0 16px;
+  padding: 9px 12px;
+  border: 1px solid #dce5ee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.ie7 #header.v1 .user {
+  width: 190px;
+}
+
+.ie7 #header.v1 .user .c {
+  padding-bottom: 10px;
+}
+
+#header.v2 .smallText,
+#header.v3 .smallText,
+#header.v4 .smallText {
+  clear: both;
+  margin: 0 0 10px;
+  text-align: right;
+  color: #aaa;
+  font-size: 1.14em;
+  display: block;
+}
+
+#header .smallText {
+  display: none;
+}
+
+#header .user .c {
+  display: none;
+}
+
+#header.v1 .user .c,
+#header.v2 .user .c,
+#header.v3 .user .c,
+#header.v4 .user .c {
+  display: block;
+}
+
+#header.v1 .user .c p,
+#header.v2 .user .c p,
+#header.v3 .user .c p,
+#header.v4 .user .c p {
+  float: right;
+}
+
+#header.v1 .user .c p.name,
+#header.v2 .user .c p.name,
+#header.v3 .user .c p.name,
+#header.v4 .user .c p.name {
+  float: left;
+}
+
+#header.v1 .user .c p.name strong,
+#header.v2 .user .c p.name strong,
+#header.v3 .user .c p.name strong,
+#header.v4 .user .c p.name strong {
+  width: 131px;
+  display: block;
+  overflow: hidden;
+}
+
+#header.v1 .user .inline-btn span,
+#header.v2 .user .inline-btn span,
+#header.v3 .user .inline-btn span,
+#header.v4 .user .inline-btn span {
+  width: 185px;
+}
+
+#header.v6 .user .inline-btn span,
+#header.v7 .user .inline-btn span {
+  width: 174px;
+}
+
+#header.v2 .bottom,
+#header.v3 .bottom,
+#header.v4 .bottom {
+  width: auto;
+}
+
+#header.v4 .bottom {
+  display: none;
+}
+
+#header.v2 p.phone,
+#header.v3 p.phone,
+#header.v4 p.phone {
+  margin-right: 0;
+}
+
+#header.v2 h1,
+#header.v3 h1,
+#header.v4 h1 {
+  margin-bottom: 15px;
+}
+
+#header.v2 #logo,
+#header.v4 #logo {
+  width: 376px;
+}
+
+#header.v2 #logo span,
+#header.v4 #logo span {
+  background-image: url("../images/cpoj/logo-klientzona.png");
+}
+
+#header.v5 .user {
+  display: none;
+}
+
+#header.v5 .bottom {
+  margin-right: 0;
+  width: auto;
+}
+
+#header.v6 .bottom {
+  margin-right: 190px;
+  width: auto;
+}
+
+#header.v5 p.phone,
+#header.v6 p.phone {
+  margin-right: 0;
+}
+
+#header.v7 .bottom {
+  display: none;
+}
+
+/* 4) paticka
+------------------------------------------------------------------------------*/
+#content #share {
+  clear: both;
+  font-size: 1em;
+}
+
+#share .in {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 58px;
+  height: 45px;
+}
+
+#share .fb_iframe_widget, #share .twitter-share-button {
+  float: left;
+  height: 45px;
+  overflow: hidden;
+}
+
+#share .twitter-share-button {
+  margin-top: 1px;
+}
+
+#share a#print {
+  background: url("../images/cpoj/ico-print.jpg") left center no-repeat;
+  font-size: 1.3em;
+  padding-left: 31px;
+  height: 19px;
+  display: block;
+  float: right;
+}
+
+#share .safe-exit {
+  font-size: 1.1em;
+  float: left;
+  margin-right: 35px;
+}
+
+#wrapper #footer {
+  zoom: 1;
+  height: 100px;
+  margin: 0 auto -6px auto;
+  background: #013665 url("../images/cpoj/footer-bg.png") 0 0 repeat-x;
+  text-align: left;
+  font-size: 1em;
+  padding: 0;
+}
+
+#footer {
+  clear: both;
+}
+
+#footer .in {
+  width: 940px;
+  margin: 0 auto;
+}
+
+#footer p {
+  color: #859fb6;
+  margin-top: 30px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+#footer .left {
+  float: left;
+}
+
+#footer .right {
+  margin-top: 35px;
+  float: right;
+}
+
+#footer p a.symbio {
+  color: #859fb6;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+#footer p a.symbio:hover,
+#footer p a.symbio:focus,
+#footer p a.symbio:active {
+  color: #fff;
+}
+
+#footer p a.symbio span.r {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 6.3em;
+  top: 0;
+}
+
+#footer p a.symbio span.r span {
+  background: url("../images/cpoj/symbio.png") 0 0;
+}
+
+#footer p a.symbio:hover span.r span,
+#footer p a.symbio:focus span.r span,
+#footer p a.symbio:active span.r span {
+  background-position: 0 -19px;
+}
+
+.big-font .general-page .col-side {
+  width: 230px;
+}
+
+.big-font .general-page .col-side .side-menu ul li a {
+  font-size: 14px;
+}
+
+.faq-page .col-content,
+.faq-page .col-content .faq-list {
+  width: 700px;
+  float: left;
+}
+
+.faq-list .journal-content-article > h2::before,
+.faq-list .journal-content-article > h2 b {
+  display: none;
+}
+
+.faq-list .journal-content-article > h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+  color: #222;
+  margin: 0 0 0.6em;
+}
+
+.faq-list .info {
+  background: #e1ecf9;
+  padding: 1.2em 1.4em;
+  border: 1px solid #c1d5ea;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  margin: 0 0 25px;
+}
+
+.faq-list .info::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.faq-list .info p {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #5f7a98;
+  width: 490px;
+  display: inline-block;
+  margin-bottom: 0;
+  float: left;
+}
+
+.faq-list .info a {
+  display: inline-block;
+  padding: 9px 15px;
+  background: #e1ecf6 url("/cpoj-theme/images/cpoj/btn-all.png") 0 0 repeat-x;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(/cpoj-theme/css/PIE.htc);
+  border: 1px solid #c9d7e7;
+  float: right;
+  text-decoration: none;
+  color: #5f7a98;
+}
+
+.faq-list .info a:hover {
+  background-position: 0 -1000px;
+}
+
+.faq-list .info a:active {
+  background-position: 0 -1100px;
+}
+
+.faq-list .ico-menu li a {
+  padding: 15px 20px 20px 75px;
+}
+
+.faq-list .buttons .inline-btn input {
+  color: #FFF;
+  height: 34px;
+  line-height: 34px;
+}
+
+.products-list-varinata-b ul.c {
+  width: 720px;
+  float: left;
+}
+
+.products-list-varinata-b .gift-book {
+  float: right;
+  width: 218px;
+  border: 1px solid #d2dff0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 187px;
+  background: #f5f8fc url(../images/cpoj/gift-book-top.png) no-repeat 0 -9px;
+  position: relative;
+  display: block;
+  visibility: visible;
+}
+
+.products-list-varinata-b .gift-book-top {
+  background: url(../images/cpoj/gift-book-top.png) no-repeat -101px 0px;
+  width: 35px;
+  height: 9px;
+  position: absolute;
+  left: 101px;
+  top: -9px;
+}
+
+.products-list-varinata-b .gift-book .in {
+  padding: 15px 13px 148px 13px;
+  color: #607999;
+  background: url(../images/cpoj/gift-book-bottom.png) no-repeat left bottom;
+}
+
+.products-list-varinata-b .gift-book .label {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.products-list-varinata-b .gift-book .perex {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  line-height: 1.35em;
+}
+
+.products-list-varinata-b .gift-book ul li {
+  background: url(../images/cpoj/gift-book-ul.png) no-repeat 0 4px !important;
+  color: #636363;
+  font-size: 13px;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
+.products-list.products-list-varinata-b > ul > li {
+  height: 323px;
+}
+
+.products-list.products-list-varinata-b > ul > li > .bd {
+  height: 175px;
+}

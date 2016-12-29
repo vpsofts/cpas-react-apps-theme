@@ -1,0 +1,187 @@
+.formme {
+   p { font-size: 100%; }
+   label{
+      display:block;
+      margin-bottom:5px;
+      &.fontBg {
+        font-size: 1.53em;
+        margin: 0 0 1.1em;
+      }
+   }
+
+   & > div{ margin-bottom:10px; }
+
+   .radio-wrapper{ margin-bottom:5px; }
+
+   textarea,
+   textarea.focus {
+      width:100% !important;
+      background:none;
+      border:none;
+      min-height: 120px;
+   }
+
+   .inp-wrap{
+      width:250px;
+      &.textarea-wrap{ width:99%; }
+      
+      &.error:before { display: none; }
+   }
+
+   .inp-text{ width:100%; }
+
+   .infoIcon {
+      background:url("/cpoj-theme/images/cpoj/ico-sprite.png") no-repeat scroll -50px -40px transparent;
+      width:15px;
+      height:15px;
+      display:inline-block;
+      margin-left:5px;
+   }
+   fieldset legend {
+        font-size: 1.53em;
+        margin: 0 0 0.4em;
+        color: #222;
+   }
+   
+   .comForm_info {
+       color: #adaeaf;
+       font-size: 1.1em;
+   }
+   
+   
+   .required { color: #39425C; }
+   label.error {
+      font-weight: normal;
+      position: absolute;
+      left: 300px;
+      top: 8px;
+      white-space: nowrap;
+      
+      &:before {
+         content: "";
+         position: absolute;
+         top: -7px;
+         left: -45px;
+         width: 30px;
+         height: 30px;
+         margin: 0px 0px 0px 10px;
+         background: transparent url("/cpoj-theme/images/cpoj/ico-sprite.png") no-repeat scroll -30px 0px;         
+      }
+   }
+   .textarea-wrap.error { margin-bottom: 50px; }
+   textarea + label.error {
+      position: relative;
+      top: 40px;
+      left: 35px;
+   }
+   input[type="file"] {
+       border: 0;
+       background: none;
+       margin-left: 9px;
+   }
+   .column {
+       
+       .jquery-radio {
+           margin-right: 5px;
+       }
+       
+   }
+   .mb10 { 
+       margin-bottom: 10px;
+       display: inline-block;
+   }
+   .twoColumn .column {
+       width: 281px;
+       float: left;
+   }
+   .columnSmall .inp-wrap {
+       width: 125px;
+   }
+   .threeRadioColumn .column {
+       width: 110px;
+       margin-right: 15px;
+       float: left;
+   }
+   .aui-button {
+   
+           
+       .aui-button-content {
+            border: none;
+            height: 34px;
+            line-height: 34px;
+            background: #005083 url("/cpoj-theme/images/cpoj/btn-all.png") repeat-x 0 -400px;
+            border: 1px solid #005083;
+            border-radius: 5px;
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            vertical-align: middle; 
+       }
+        input {
+            border: 0;
+            background: none;          
+            color: #ffffff;          
+            border-radius: 0;
+            cursor: pointer;
+            display: inline-block;
+            font-family: arial,helvetica,sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            height: 32px;
+            letter-spacing: 0;
+            line-height: 32px;
+            margin: 0;
+            overflow: visible;
+            padding: 0 15px;
+            position: static;
+            text-shadow: none;
+            vertical-align: top;
+            width: auto;
+            
+        }
+   }
+   
+}
+
+.thankBox {
+   width: 100%;
+   background:url("/cpoj-theme/images/cpoj/bg-grad.png") repeat-x scroll 0 0 #F5F8F9;
+   border: 1px solid #D2DFF0;
+   border-radius: 5px;
+   margin-bottom: 20px;
+
+   .in {
+      padding: 70px 10%;
+      width: 80%;
+      height: 113px;
+   }
+
+   h2 {
+      font-size: 4em;
+      font-weight: bold;
+      color: #a5c02a;
+      position: relative;
+      padding-left: 115px;
+      margin: 10px 0;
+
+      &:after{
+         position: absolute;
+         left: 0;
+         top: -10px;
+         width: 87px;
+         height: 87px;
+         background: url(/cpoj-theme/images/cpoj/ico-sprite.png) left -56px no-repeat;
+         content: "";
+      }
+   }
+
+   p{
+      font-size:1em;
+      color:#444;
+      padding-left:115px;
+      margin:0;
+   }     
+}
